@@ -1,0 +1,31 @@
+{
+  "@context": "http://schema.org",
+  "@type": "CafeOrCoffeeShop",
+  "image": [],
+  "@id": "https://www.blueberryfood.co.uk/smedley-street-matlock",
+  "name": "Blueberry Cafe, Smedley Street Matlock",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "87-89 Smedley St E",
+    "addressLocality": "Matlock",
+    "addressRegion": "",
+    "postalCode": "DE4 3FQ",
+    "addressCountry": "UK"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 53.1420474,
+    "longitude": -1.5506789
+  },
+  "url": "https://www.blueberryfood.co.uk/smedley-street-matlock",
+  "telephone": "01629 593476",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "08:00",
+      "closes": "15:00"
+    }
+  ],
+  "menu": "http://www.example.com/menu"
+}

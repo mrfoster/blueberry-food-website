@@ -1,0 +1,38 @@
+{
+    "@context": "http://schema.org",
+    "@type": "CafeOrCoffeeShop",
+    "image": [],
+    "@id": "https://www.blueberryfood.co.uk/castleton",
+    "name": "Blueberry Cafe, Castleton",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "148 W 51st St",
+      "addressLocality": "New York",
+      "addressRegion": "NY",
+      "postalCode": "10019",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 40.761293,
+      "longitude": -73.982294
+    },
+    "url": "https://www.blueberryfood.co.uk/castleton",
+    "telephone": "+44 01433 620020",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "09:30",
+        "closes": "17:30"
+      }
+    ]
+  }
