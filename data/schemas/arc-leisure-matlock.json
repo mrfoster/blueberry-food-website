@@ -34,5 +34,6 @@
       "opens": "08:00",
       "closes": "18:00"
     }
-  ]
+  ],
+  "hasMenu": ["https://www.blueberryfood.co.uk/menus/blueberry-arc-menu-may-2017.pdf"]
 }

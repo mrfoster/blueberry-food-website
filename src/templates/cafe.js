@@ -29,7 +29,7 @@ const Cafe = ({ data }) => {
 
       {/* <pre>{JSON.stringify(schema, null, 2)}</pre> */}
       <ContactDetails data={schema} />
-      <Map data={schema} />
+      <Map data={data} />
       <OpeningHours data={schema} />
 
       <script
@@ -69,6 +69,7 @@ export const pageQuery = graphql`
     locationsJson(id: { eq: $id }) {
       name
       content
+      googlePlaceId
     }
   }
 `

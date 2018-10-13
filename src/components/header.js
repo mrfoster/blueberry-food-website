@@ -1,5 +1,4 @@
 import React from 'react'
-import Headroom from 'react-headroom'
 
 const Header = ({title}) => (
   <header>
