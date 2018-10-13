@@ -1,7 +1,10 @@
-@import 'node_modules/bootstrap/scss/bootstrap.scss';
 
 $colour1: #26166b;
 $colour2: #093697;
+
+$blue: $colour2;
+
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
 
 html {
   padding-top: 1em;
