@@ -2,15 +2,14 @@ import React from 'react'
 import { graphql, Link } from 'gatsby'
 
 import Layout from '../components/layout'
+import Header from '../components/header'
 
 const IndexPage = ({ data }) => {
   const locations = data.allLocationsJson.edges.map(x => x.node)
   return (
     <Layout>
-      <header>
-        <img src="/logo.svg" />
-        <h1>Welcome to Blueberry food.</h1>
-      </header>
+      <Header title="Blueberry Food Company" />
+
       <section>
         <h2>Cafes</h2>
         <nav>
@@ -23,6 +22,7 @@ const IndexPage = ({ data }) => {
           </ul>
         </nav>
       </section>
+
       <section>
         <h2>Catering</h2>
         <p>

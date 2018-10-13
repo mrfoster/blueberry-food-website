@@ -1,9 +1,9 @@
 import React from 'react'
 import Headroom from 'react-headroom'
 
-const Header = () => (
+const Header = ({title}) => (
   <header>
-<h1>Blueberry Food</h1>
+    <h1 className="display-4">{title}</h1>
   </header>
 )
 

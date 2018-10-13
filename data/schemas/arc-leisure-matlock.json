@@ -1,0 +1,38 @@
+{
+  "@context": "http://schema.org",
+  "@type": "CafeOrCoffeeShop",
+  "image": [],
+  "@id": "https://www.blueberryfood.co.uk/arc-leisure-matlock",
+  "name": "Blueberry Cafe, Arc Leisure Matlock",
+  "servesCuisine": "",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Bakewell Rd",
+    "addressLocality": "",
+    "addressRegion": "Matlock",
+    "postalCode": "DE4 3AZ",
+    "addressCountry": "UK"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 53.1423184,
+    "longitude": -1.5720833
+  },
+  "url": "https://www.blueberryfood.co.uk/arc-leisure-matlock",
+  "email": "enquiries@blueberryfood.co.uk",
+  "telephone": "+44 (0)7468 565348",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "08:30",
+      "closes": "19:30"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Saturday", "Sunday"],
+      "opens": "08:00",
+      "closes": "18:00"
+    }
+  ]
+}

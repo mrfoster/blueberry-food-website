@@ -1,6 +1,19 @@
 @import 'node_modules/bootstrap/scss/bootstrap.scss';
 
-// .container {
+$colour1: #26166b;
+$colour2: #093697;
 
-//     padding-top : 100px;
-// }
+html {
+  padding-top: 1em;
+}
+
+body,
+html {
+  background-color: #eee;
+}
+
+.card {
+  border-radius: 2px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  padding: 3em;
+}

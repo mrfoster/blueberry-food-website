@@ -1,0 +1,55 @@
+{
+  "@context": "http://schema.org",
+  "@type": "CafeOrCoffeeShop",
+  "image": [],
+  "@id": "https://www.blueberryfood.co.uk/castleton-visitor-centre",
+  "name": "Blueberry Cafe, Castleton's Visitor Centre",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Buxton Road",
+    "addressLocality": "Castleton",
+    "addressRegion": "Hope Valley",
+    "postalCode": "S33 8WP",
+    "addressCountry": "UK"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 53.3432947,
+    "longitude": -1.7776916
+  },
+  "url": "https://www.blueberryfood.co.uk/castleton-visitor-centre",
+  "email": "enquiries@blueberryfood.co.uk",
+  "telephone": "+44 (0)1433 620020",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "name": "Summer April - October",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "09:30",
+      "closes": "17:30"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "name": "Winter November - March",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "10:00",
+      "closes": "16:00"
+    }
+  ]
+}

@@ -18,7 +18,8 @@
     "longitude": -1.5506789
   },
   "url": "https://www.blueberryfood.co.uk/smedley-street-matlock",
-  "telephone": "01629 593476",
+  "email": "enquiries@blueberryfood.co.uk",
+  "telephone": "+44 (0)1629 593476",
   "openingHoursSpecification": [
     {
       "@type": "OpeningHoursSpecification",
@@ -27,5 +28,5 @@
       "closes": "15:00"
     }
   ],
-  "menu": "http://www.example.com/menu"
+  "hasMenu": ["http://www.example.com/menu"]
 }

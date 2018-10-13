@@ -9,16 +9,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="17.845381mm"
-   height="17.845381mm"
-   viewBox="0 0 17.84538 17.845381"
+   width="20mm"
+   height="20mm"
+   viewBox="0 0 19.999999 20"
    version="1.1"
    id="svg4078"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
-   sodipodi:docname="logo.svg"
-   inkscape:export-filename="C:\checkouts\Personal\blueberry-food-website\static\logo.png"
-   inkscape:export-xdpi="728.74884"
-   inkscape:export-ydpi="728.74884">
+   sodipodi:docname="logo.svg">
   <defs
      id="defs4072" />
   <sodipodi:namedview
@@ -29,8 +26,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="7.9195959"
-     inkscape:cx="101.4477"
-     inkscape:cy="57.438332"
+     inkscape:cx="95.598492"
+     inkscape:cy="17.236009"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -42,8 +39,8 @@
      units="mm"
      inkscape:pagecheckerboard="true"
      fit-margin-top="0"
-     fit-margin-left="0"
-     fit-margin-right="0"
+     fit-margin-left="5"
+     fit-margin-right="5"
      fit-margin-bottom="0"
      inkscape:measure-start="68.4378,84.8528"
      inkscape:measure-end="91.7976,33.335" />
@@ -63,10 +60,10 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(1.322918,-279.15462)">
+     transform="translate(1.3229167,-277)">
     <g
        id="g842"
-       transform="rotate(-35.4,7.9087136,289.75124)">
+       transform="translate(0.4573783,-0.247865)">
       <path
          inkscape:connector-curvature="0"
          id="path877"

@@ -1,9 +1,17 @@
 import React from 'react'
+import CookieConsent from './cookie-consent'
 import './layout.scss'
+import Helmet from "react-helmet";
 
 const Layout = ({ children }) => (
   <>
-    <div className="container">{children}</div>
+    <Helmet title="Blueberry Food Company">
+      <html lang="en" />
+    </Helmet>
+
+    <div className="container card">{children}</div>
+
+    <CookieConsent />
   </>
 )
 

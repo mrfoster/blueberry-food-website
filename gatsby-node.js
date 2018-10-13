@@ -34,7 +34,8 @@ exports.createPages = ({ actions, graphql }) => {
         path: id,
         component: path.resolve(`src/templates/cafe.js`),
         context: {
-          id: `https://www.blueberryfood.co.uk/${id}`,
+          id: id,
+          schemaId: `https://www.blueberryfood.co.uk/${id}`
         },
       })
     })
