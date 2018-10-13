@@ -34,7 +34,7 @@ const Cafe = ({ data }) => {
 
       <script
         type="text/javascript"
-        src="http://widget.ratings.food.gov.uk/fhrswidget.jss?FHRSID=1035177&Culture=en-GB"
+        src="https://widget.ratings.food.gov.uk/fhrswidget.jss?FHRSID=1035177&Culture=en-GB"
       />
     </Layout>
   )

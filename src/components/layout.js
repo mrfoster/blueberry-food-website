@@ -1,11 +1,19 @@
 import React from 'react'
 import CookieConsent from './cookie-consent'
 import './layout.scss'
-import Helmet from "react-helmet";
+import Helmet from 'react-helmet'
 
 const Layout = ({ children }) => (
   <>
-    <Helmet title="Blueberry Food Company">
+    <Helmet
+      title="Blueberry Food Company"
+      meta={[
+        {
+          name: 'description',
+          content: "kbjhkvb kgkjhb kjhb kj",
+        },
+      ]}
+    >
       <html lang="en" />
     </Helmet>
 

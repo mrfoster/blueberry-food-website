@@ -11,10 +11,10 @@ const OpeningHours = ({ data }) => (
             <br />
           </>
         )}
-        {o.length < 7 &&
-          o.length > 1 && (
+        {o.dayOfWeek.length < 7 &&
+          o.dayOfWeek.length > 1 && (
             <>
-              {o.dayOfWeek[0]}-{o.dayOfWeek[o.dayOfWeek.length - 1]}
+              {o.dayOfWeek[0]} - {o.dayOfWeek[o.dayOfWeek.length - 1]}
               <br />
             </>
           )}
