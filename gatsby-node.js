@@ -11,11 +11,12 @@ exports.createPages = ({ actions, graphql }) => {
 
   return graphql(`
     {
-      allLocationsJson {
-        edges {
-          node {
-            id
-            name
+      allPages: allPagesJson {
+        pages: edges {
+          page: node {
+            slug
+            template
+            schemaId
           }
         }
       }
@@ -26,16 +27,15 @@ exports.createPages = ({ actions, graphql }) => {
       return Promise.reject(result.errors)
     }
 
-    const locations = result.data.allLocationsJson.edges
+    const pages = result.data.allPages.pages
 
-    return locations.forEach(({ node }) => {
-      const id = node.id
+    return pages.forEach(({ page }) => {
       createPage({
-        path: id,
-        component: path.resolve(`src/templates/cafe.js`),
+        path: page.slug,
+        component: path.resolve(`src/templates/${page.template}.js`),
         context: {
-          id: id,
-          schemaId: `https://www.blueberryfood.co.uk/${id}`
+          slug: page.slug,
+          schemaId: page.schemaId
         },
       })
     })

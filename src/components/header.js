@@ -1,8 +1,9 @@
 import React from 'react'
 
-const Header = ({title}) => (
+const Header = ({ title, subTitle }) => (
   <header>
-    <h1 className="display-4">{title}</h1>
+    <h1>{title}</h1>
+    {subTitle && <h2>{subTitle}</h2>}
   </header>
 )
 

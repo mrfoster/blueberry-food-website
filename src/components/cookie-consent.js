@@ -21,7 +21,7 @@ class CookieConsent extends Component {
         <div>
           This website uses cookies to ensure you get the best experience on our
           website.
-          <button className="btn btn-primary" onClick={this.dismiss}>
+          <button onClick={this.dismiss}>
             Got it!
           </button>
         </div>

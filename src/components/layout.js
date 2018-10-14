@@ -19,7 +19,7 @@ const Layout = ({ children }) => (
       <html lang="en" />
     </Helmet>
 
-    <div className="container card">{children}</div>
+    <div className="page">{children}</div>
 
     <CookieConsent />
   </>

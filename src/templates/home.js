@@ -4,19 +4,19 @@ import { graphql, Link } from 'gatsby'
 import Layout from '../components/layout'
 import Header from '../components/header'
 
-const IndexPage = ({ data }) => {
-  const locations = data.allLocationsJson.edges.map(x => x.node)
+const Home = ({ data }) => {
+  const cafePages = data.cafePages.pages.map(x => x.page)
   return (
     <Layout>
-      <Header title="Blueberry Food Company" />
+      <Header title={data.page.name} />
 
       <section>
         <h2>Cafes</h2>
         <nav>
           <ul>
-            {locations.map(l => (
-              <li key={l.id}>
-                <Link to={l.id}>{l.name}</Link>
+            {cafePages.map(page => (
+              <li key={page.slug}>
+                <Link to={page.slug}>{page.name}</Link>
               </li>
             ))}
           </ul>
@@ -36,14 +36,17 @@ const IndexPage = ({ data }) => {
   )
 }
 
-export default IndexPage
+export default Home
 
 export const pageQuery = graphql`
   {
-    allLocationsJson {
-      edges {
-        node {
-          id
+    page: pagesJson(slug: { eq: "/" }) {
+      name
+    }
+    cafePages: allPagesJson(filter: { template: { eq: "cafe" } }) {
+      pages: edges {
+        page: node {
+          slug
           name
         }
       }

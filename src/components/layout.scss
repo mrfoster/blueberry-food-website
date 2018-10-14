@@ -3,22 +3,38 @@ $colour1: #26166b;
 $colour2: #093697;
 
 $blue: $colour2;
+$link-color: $colour2;
 @import 'node_modules/bootstrap/scss/bootstrap-reboot';
 
 html {
   padding: 1em;
 }
 
-body,
-html {
-  background-color: #eee;
+section {
+  margin-bottom: 1em;
+}
+@media (min-width: 768px) {
+  body,
+  html {
+    background-color: #eee;
+    padding: 1em 5%;
+  }
+
+  .page {
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    padding: 2.5em;
+  }
 }
 
-.card {
-  background-color: #fff;
-  border-radius: 2px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-  padding: 3em;
+.page > header {
+  h1 {
+    margin: 0;
+  }
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  border-bottom: 1px solid #999999;
 }
 
 .map {

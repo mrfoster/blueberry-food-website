@@ -3,7 +3,9 @@
   "@type": "CafeOrCoffeeShop",
   "image": [],
   "@id": "https://www.blueberryfood.co.uk/arc-leisure-matlock",
-  "name": "Blueberry Cafe, Arc Leisure Matlock",
+  "name": "Blueberry Cafe",
+  "location": "Arc Leisure Matlock",
+  "description": "Phasellus lacus diam, elementum a elit id, rhoncus tristique quam. Donec posuere tristique odio, a tincidunt leo rutrum nec.",
   "servesCuisine": "",
   "address": {
     "@type": "PostalAddress",

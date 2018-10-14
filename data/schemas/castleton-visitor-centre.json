@@ -3,7 +3,10 @@
   "@type": "CafeOrCoffeeShop",
   "image": [],
   "@id": "https://www.blueberryfood.co.uk/castleton-visitor-centre",
-  "name": "Blueberry Cafe, Castleton's Visitor Centre",
+  "name": "Blueberry Cafe",
+  "location": "Castleton Visitor Centre",
+  "description": "Nunc a lectus vel justo placerat rhoncus. Fusce dignissim ante nisl, quis bibendum nisl consectetur in. Donec tincidunt vel sapien ut efficitur.",
+  "servesCuisine": "",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Buxton Road",

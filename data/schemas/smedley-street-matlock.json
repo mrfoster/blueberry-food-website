@@ -3,7 +3,10 @@
   "@type": "CafeOrCoffeeShop",
   "image": [],
   "@id": "https://www.blueberryfood.co.uk/smedley-street-matlock",
-  "name": "Blueberry Cafe, Smedley Street Matlock",
+  "name": "Blueberry Cafe",
+  "location": "Smedley Street Matlock",
+  "description": "",
+  "servesCuisine": "",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "87-89 Smedley St E",

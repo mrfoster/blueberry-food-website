@@ -11,26 +11,24 @@ import OpeningHours from '../components/opening-hours'
 import Helmet from 'react-helmet'
 
 const Cafe = ({ data }) => {
-  const location = data.locationsJson
-  const schema = data.schemasJson
   return (
     <Layout>
-      <Helmet title={schema.name} />
+      <Helmet title={`${data.schema.name} - ${data.schema.location}`} />
 
-      <Header title="Blueberry Cafe" />
+      <Header title={data.schema.name} subTitle={data.schema.location} />
 
       <section>
-        <h2>{location.name}</h2>
-
-        {location.content && (
-          <section dangerouslySetInnerHTML={{ __html: location.content }} />
+        {data.page.content && (
+          <section
+            dangerouslySetInnerHTML={{ __html: data.page.content }}
+          />
         )}
       </section>
 
       {/* <pre>{JSON.stringify(schema, null, 2)}</pre> */}
-      <ContactDetails data={schema} />
+      <ContactDetails data={data.schema} />
       <Map data={data} />
-      <OpeningHours data={schema} />
+      <OpeningHours data={data.schema} />
     </Layout>
   )
 }
@@ -38,9 +36,10 @@ const Cafe = ({ data }) => {
 export default Cafe
 
 export const pageQuery = graphql`
-  query($id: String!, $schemaId: String!) {
-    schemasJson(_id: { eq: $schemaId }) {
+  query($slug: String!, $schemaId: String!) {
+    schema: schemasJson(_id: { eq: $schemaId }) {
       name
+      location
       address {
         streetAddress
         addressLocality
@@ -61,8 +60,8 @@ export const pageQuery = graphql`
         closes
       }
     }
-    locationsJson(id: { eq: $id }) {
-      name
+
+    page: pagesJson(slug: { eq: $slug }) {
       content
       googlePlaceId
     }
