@@ -20,10 +20,10 @@ module.exports = {
         name: 'Blueberry Food Website',
         short_name: 'blueberry',
         start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
+        background_color: '#ffffff',
+        theme_color: '#ffffff',
         display: 'minimal-ui',
-        icon: 'static/icon.png', // This path is relative to the root of the site.
+        icon: 'static/logo.png', // This path is relative to the root of the site.
       },
     },
     'gatsby-plugin-offline',

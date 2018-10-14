@@ -25,7 +25,6 @@ const Cafe = ({ data }) => {
         )}
       </section>
 
-      {/* <pre>{JSON.stringify(schema, null, 2)}</pre> */}
       <ContactDetails data={data.schema} />
       <Map data={data} />
       <OpeningHours data={data.schema} />
