@@ -1,34 +1,50 @@
-import React from 'react'
+import React, { Component } from 'react'
 import './animate.css'
 
-const Header = ({ title, subTitle }) => {
-  const animationClasses = [
-    'bounce',
-    'rubberBand',
-    'swing',
-    'tada',
-    'wobble',
-    'jello',
-    'heartBeat',
-  ]
-  const animationClass =
-    animationClasses[Math.floor(Math.random() * animationClasses.length)]
+class Header extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      title: props.title,
+      subTitle: props.subTitle,
+      animationClass: '',
+    }
+  }
 
-  return (
-    <header>
-      <h1>
-        <img
-          width="48"
-          height="48"
-          alt="Blueberry Logo"
-          className={`logo animated ${animationClass}`}
-          src="/logo.svg"
-        />
-        {title}
-      </h1>
-      {subTitle && <h2>{subTitle}</h2>}
-    </header>
-  )
+  componentDidMount() {
+    const animationClasses = [
+      'bounce',
+      'rubberBand',
+      'swing',
+      'tada',
+      'wobble',
+      'jello',
+      'heartBeat',
+    ]
+
+    this.setState({
+      animationClass:
+        animationClasses[Math.floor(Math.random() * animationClasses.length)],
+    })
+  }
+
+  render() {
+    return (
+      <header>
+        <h1>
+          <img
+            width="48"
+            height="48"
+            alt="Blueberry Logo"
+            className={`logo animated ${this.state.animationClass}`}
+            src="/logo.svg"
+          />
+          {this.state.title}
+        </h1>
+        {this.state.subTitle && <h2>{this.state.subTitle}</h2>}
+      </header>
+    )
+  }
 }
 
 export default Header

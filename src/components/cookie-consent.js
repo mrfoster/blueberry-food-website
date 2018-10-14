@@ -3,16 +3,18 @@ import React, { Component } from 'react'
 class CookieConsent extends Component {
   constructor(props) {
     super(props)
-    const cookieConsentStatus =
-      typeof window === 'undefined' ||
-      localStorage.getItem('cookieConsentStatus')
-    this.state = { cookieConsentStatus: cookieConsentStatus }
+    this.state = { cookieConsentStatus: 'unknown' }
   }
 
   dismiss = () => {
     localStorage.setItem('cookieConsentStatus', 'dismiss')
-
     this.setState({ cookieConsentStatus: 'dismiss' })
+  }
+
+  componentDidMount() {
+    this.setState({
+      cookieConsentStatus: localStorage.getItem('cookieConsentStatus'),
+    })
   }
 
   render() {
@@ -21,9 +23,7 @@ class CookieConsent extends Component {
         <div>
           This website uses cookies to ensure you get the best experience on our
           website.
-          <button onClick={this.dismiss}>
-            Got it!
-          </button>
+          <button onClick={this.dismiss}>Got it!</button>
         </div>
       )
     )
