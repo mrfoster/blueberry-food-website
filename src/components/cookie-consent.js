@@ -4,7 +4,7 @@ class CookieConsent extends Component {
   constructor(props) {
     super(props)
     const cookieConsentStatus =
-      typeof window !== 'undefined' ||
+      typeof window === 'undefined' ||
       localStorage.getItem('cookieConsentStatus')
     this.state = { cookieConsentStatus: cookieConsentStatus }
   }
