@@ -27,6 +27,13 @@ module.exports = {
       },
     },
     'gatsby-plugin-offline',
-    'gatsby-plugin-netlify'
+    {
+      resolve: 'gatsby-plugin-netlify',
+      options: {
+        allPageHeaders: [
+          "Content-Security-Policy:default-src 'none'; script-src 'self'; connect-src 'self'; img-src 'self'; style-src 'self'; frame-src 'self' 'https://www.google.com/maps'",
+        ],
+      },
+    },
   ],
 }

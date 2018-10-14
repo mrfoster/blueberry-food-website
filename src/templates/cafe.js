@@ -31,11 +31,6 @@ const Cafe = ({ data }) => {
       <ContactDetails data={schema} />
       <Map data={data} />
       <OpeningHours data={schema} />
-
-      <script
-        type="text/javascript"
-        src="https://widget.ratings.food.gov.uk/fhrswidget.jss?FHRSID=1035177&Culture=en-GB"
-      />
     </Layout>
   )
 }

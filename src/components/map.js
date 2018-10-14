@@ -6,8 +6,7 @@ const Map = ({ data }) => {
     <section>
       <h3>Find us</h3>
       <iframe
-        width="600"
-        height="450"
+        className="map"
         frameBorder="0"
         title={data.schemasJson.name}
         src={`https://www.google.com/maps/embed/v1/place?q=place_id:${

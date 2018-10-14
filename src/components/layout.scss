@@ -3,8 +3,7 @@ $colour1: #26166b;
 $colour2: #093697;
 
 $blue: $colour2;
-
-@import 'node_modules/bootstrap/scss/bootstrap.scss';
+@import 'node_modules/bootstrap/scss/bootstrap-reboot';
 
 html {
   padding: 1em;
@@ -16,7 +15,13 @@ html {
 }
 
 .card {
+  background-color: #fff;
   border-radius: 2px;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   padding: 3em;
+}
+
+.map {
+  width: 100%;
+  height: 400px;
 }
