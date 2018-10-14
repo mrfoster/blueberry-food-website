@@ -31,7 +31,7 @@ module.exports = {
       resolve: 'gatsby-plugin-netlify',
       options: {
         allPageHeaders: [
-          "Content-Security-Policy:default-src 'self'; script-src 'self' 'unsafe-inline'; connect-src 'self'; img-src 'self'; style-src 'self' 'unsafe-inline'; frame-src 'self' https://www.google.com/",
+          "Content-Security-Policy:default-src 'self'; base-uri 'self'; script-src 'self' 'unsafe-inline'; connect-src 'self'; img-src 'self'; style-src 'self' 'unsafe-inline'; frame-src 'self' https://www.google.com/",
         ],
       },
     },

@@ -10,8 +10,10 @@ const Layout = ({ children }) => (
       meta={[
         {
           name: 'description',
-          content: "kbjhkvb kgkjhb kjhb kj",
+          content:
+            'Blueberry Food Company specialises in creating the most delicious, tailor made buffets. We cater for both private parties and for business lunches or functions.',
         },
+        { property: 'og:type', content: 'website' },
       ]}
     >
       <html lang="en" />

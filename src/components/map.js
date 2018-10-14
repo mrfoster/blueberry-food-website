@@ -8,6 +8,7 @@ const Map = ({ data }) => {
       <iframe
         className="map"
         frameBorder="0"
+        sandbox="allow-scripts allow-same-origin allow-popups"
         title={data.schemasJson.name}
         src={`https://www.google.com/maps/embed/v1/place?q=place_id:${
           data.locationsJson.googlePlaceId
