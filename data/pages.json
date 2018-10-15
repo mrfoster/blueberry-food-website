@@ -14,13 +14,35 @@
     "content": "<p>Phasellus lacus diam, elementum a elit id, rhoncus tristique quam. Donec posuere tristique odio, a tincidunt leo rutrum nec.</p>",
     "images": [
       {
-        "image": "../static/img/castleton-visitor-centre/1.jpg"
+        "image": "../static/castleton-visitor-centre/1.jpg"
       },
       {
-        "image": "../static/img/castleton-visitor-centre/2.jpg"
+        "image": "../static/castleton-visitor-centre/2.jpg"
       },
       {
-        "image": "../static/img/castleton-visitor-centre/7.jpg"
+        "image": "../static/castleton-visitor-centre/3.jpg"
+      },
+      {
+        "image": "../static/castleton-visitor-centre/4.jpg"
+      },
+      {
+        "image": "../static/castleton-visitor-centre/5.jpg"
+      },
+      {
+        "image": "../static/castleton-visitor-centre/6.jpg"
+      },
+      {
+        "image": "../static/castleton-visitor-centre/7.jpg"
+      }
+    ],
+    "downloads": [
+      {
+        "filePath": "../static/castleton-visitor-centre/blueberry-menu-castleton.pdf",
+        "name": "Menu"
+      },
+      {
+        "filePath": "../static/castleton-visitor-centre/blueberry-castleton-a5-sunday-menu.pdf",
+        "name": "Sunday Menu"
       }
     ]
   },
@@ -34,7 +56,37 @@
     "content": "<p>Nunc a lectus vel justo placerat rhoncus. Fusce dignissim ante nisl, quis bibendum nisl consectetur in. Donec tincidunt vel sapien ut efficitur.</p>",
     "images": [
       {
-        "image": "../static/img/smedley-street-matlock/3.jpg"
+        "image": "../static/smedley-street-matlock/1.jpg"
+      },
+      {
+        "image": "../static/smedley-street-matlock/2.jpg"
+      },
+      {
+        "image": "../static/smedley-street-matlock/3.jpg"
+      },
+      {
+        "image": "../static/smedley-street-matlock/4.jpg"
+      },
+      {
+        "image": "../static/smedley-street-matlock/5.jpg"
+      },
+      {
+        "image": "../static/smedley-street-matlock/7.jpg"
+      },
+      {
+        "image": "../static/smedley-street-matlock/8.jpg"
+      },
+      {
+        "image": "../static/smedley-street-matlock/9.jpg"
+      },
+      {
+        "image": "../static/smedley-street-matlock/10.jpg"
+      }
+    ],
+    "downloads": [
+      {
+        "filePath": "../static/smedley-street-matlock/blueberry-cafe-menu-april-2017.pdf",
+        "name": "Menu"
       }
     ]
   },
@@ -46,7 +98,28 @@
     "googlePlaceId": "ChIJjco8NKCJeUgR6ve5QVs7Vmo",
     "images": [
       {
-        "image": "../static/img/arc-leisure-matlock/3.jpg"
+        "image": "../static/arc-leisure-matlock/1.jpg"
+      },
+      {
+        "image": "../static/arc-leisure-matlock/2.jpg"
+      },
+      {
+        "image": "../static/arc-leisure-matlock/3.jpg"
+      },
+      {
+        "image": "../static/arc-leisure-matlock/4.jpg"
+      },
+      {
+        "image": "../static/arc-leisure-matlock/5.jpg"
+      },
+      {
+        "image": "../static/arc-leisure-matlock/7.jpg"
+      }
+    ],
+    "downloads": [
+      {
+        "filePath": "../static/arc-leisure-matlock/blueberry-arc-menu-may-2017.pdf",
+        "name": "Menu"
       }
     ]
   }
