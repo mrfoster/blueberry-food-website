@@ -7,7 +7,7 @@ import Header from '../components/header'
 import ContactDetails from '../components/contact-details'
 import Map from '../components/map'
 import OpeningHours from '../components/opening-hours'
-
+import Gallery from '../components/gallery'
 import Helmet from 'react-helmet'
 
 const Cafe = ({ data }) => {
@@ -19,15 +19,14 @@ const Cafe = ({ data }) => {
 
       <section>
         {data.page.content && (
-          <section
-            dangerouslySetInnerHTML={{ __html: data.page.content }}
-          />
+          <section dangerouslySetInnerHTML={{ __html: data.page.content }} />
         )}
       </section>
 
       <ContactDetails data={data.schema} />
       <Map data={data} />
       <OpeningHours data={data.schema} />
+      <Gallery data={data} />
     </Layout>
   )
 }
@@ -63,6 +62,15 @@ export const pageQuery = graphql`
     page: pagesJson(slug: { eq: $slug }) {
       content
       googlePlaceId
+      images {
+        image {
+          childImageSharp {
+            fixed(width: 200) {
+              ...GatsbyImageSharpFixed_withWebp_tracedSVG
+            }
+          }
+        }
+      }
     }
   }
 `

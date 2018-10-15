@@ -2,7 +2,7 @@
   {
     "slug": "/",
     "template": "home",
-    "name": "Blueberry Food"
+    "name": "Blueberry Food Company"
   },
   {
     "slug": "castleton-visitor-centre",
@@ -11,7 +11,18 @@
     "name": "Castleton Visitor Centre",
     "googlePlaceId": "ChIJ0QcqYfssekgRcTidLHKH7RU",
     "faceBook": "https://www.facebook.com/BlueberryCafeCastleton/",
-    "content": "<p>Phasellus lacus diam, elementum a elit id, rhoncus tristique quam. Donec posuere tristique odio, a tincidunt leo rutrum nec.</p>"
+    "content": "<p>Phasellus lacus diam, elementum a elit id, rhoncus tristique quam. Donec posuere tristique odio, a tincidunt leo rutrum nec.</p>",
+    "images": [
+      {
+        "image": "../static/img/castleton-visitor-centre/1.jpg"
+      },
+      {
+        "image": "../static/img/castleton-visitor-centre/2.jpg"
+      },
+      {
+        "image": "../static/img/castleton-visitor-centre/7.jpg"
+      }
+    ]
   },
   {
     "slug": "smedley-street-matlock",
@@ -20,13 +31,23 @@
     "name": "Smedley Street Matlock",
     "googlePlaceId": "ChIJ-_HCzz6JeUgRjTAzqIAelP0",
     "faceBook": "https://www.facebook.com/pages/Blueberry-Food-Company/1521259654555196",
-    "content": "<p>Nunc a lectus vel justo placerat rhoncus. Fusce dignissim ante nisl, quis bibendum nisl consectetur in. Donec tincidunt vel sapien ut efficitur.</p>"
+    "content": "<p>Nunc a lectus vel justo placerat rhoncus. Fusce dignissim ante nisl, quis bibendum nisl consectetur in. Donec tincidunt vel sapien ut efficitur.</p>",
+    "images": [
+      {
+        "image": "../static/img/smedley-street-matlock/3.jpg"
+      }
+    ]
   },
   {
     "slug": "arc-leisure-matlock",
     "template": "cafe",
     "schemaId": "https://www.blueberryfood.co.uk/arc-leisure-matlock",
     "name": "Arc Leisure Matlock",
-    "googlePlaceId": "ChIJjco8NKCJeUgR6ve5QVs7Vmo"
+    "googlePlaceId": "ChIJjco8NKCJeUgR6ve5QVs7Vmo",
+    "images": [
+      {
+        "image": "../static/img/arc-leisure-matlock/3.jpg"
+      }
+    ]
   }
 ]

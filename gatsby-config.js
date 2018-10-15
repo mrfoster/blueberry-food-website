@@ -8,7 +8,14 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: './data',
+        path: `${__dirname}/data`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/static/img`,
       },
     },
     'gatsby-transformer-json',
@@ -27,6 +34,9 @@ module.exports = {
       },
     },
     'gatsby-plugin-offline',
+
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: 'gatsby-plugin-netlify',
       options: {

@@ -1,12 +1,23 @@
 
 $colour1: #26166b;
 $colour2: #093697;
+$shadowColour: #000;
+$backgroundColour: #eee;
+$pageColour: #fff;
 
-$blue: $colour2;
 $link-color: $colour2;
 // $font-family-base:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 // $font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
 @import 'node_modules/bootstrap/scss/bootstrap-reboot';
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $colour1;
+}
 
 section {
   margin-bottom: 1em;
@@ -18,13 +29,13 @@ section {
 @media (min-width: 768px) {
   body,
   html {
-    background-color: #eee;
+    background-color: $backgroundColour;
   }
 
   .page {
-    background-color: #fff;
+    background-color: $pageColour;
     border-radius: 3px;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 3px 6px rgba($shadowColour,0.16), 0 3px 6px rgba($shadowColour,0.23);
     padding: 2.5em;
     margin: 1em 10%;
   }
@@ -37,6 +48,12 @@ section {
     width: 48px;
     margin-right: 5px;
   }
+
+  h1,
+  h2 {
+    color: $colour2;
+  }
+
   padding-bottom: 1em;
   margin-bottom: 1em;
   border-bottom: 1px solid #999999;
@@ -45,4 +62,26 @@ section {
 .map {
   width: 100%;
   height: 400px;
+}
+
+.cookie-consent {
+  position: fixed;
+  bottom: 0;
+  background-color: $colour1;
+  color: $backgroundColour;
+  padding: 1em;
+  right: 0;
+  left: 0;
+  font-size: 80%;
+  opacity: .9;
+
+  > p {
+    display: block;
+    float: left;
+    margin: 0;
+  }
+
+  > button {
+    float: right;
+  }
 }
