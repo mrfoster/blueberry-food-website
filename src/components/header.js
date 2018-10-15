@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'gatsby'
 import './animate.css'
 
 class Header extends Component {
@@ -32,13 +33,15 @@ class Header extends Component {
     return (
       <header>
         <h1>
-          <img
-            width="48"
-            height="48"
-            alt="Blueberry Logo"
-            className={`logo animated ${this.state.animationClass}`}
-            src="/logo.svg"
-          />
+          <Link to="/">
+            <img
+              width="48"
+              height="48"
+              alt="Blueberry Logo"
+              className={`logo animated ${this.state.animationClass}`}
+              src="/logo.svg"
+            />
+          </Link>
           {this.state.title}
         </h1>
         {this.state.subTitle && <h2>{this.state.subTitle}</h2>}

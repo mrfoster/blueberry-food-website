@@ -32,12 +32,17 @@ section {
     background-color: $backgroundColour;
   }
 
+  body {
+    padding: 1em 10%;
+  }
+
   .page {
     background-color: $pageColour;
     border-radius: 3px;
     box-shadow: 0 3px 6px rgba($shadowColour,0.16), 0 3px 6px rgba($shadowColour,0.23);
     padding: 2.5em;
-    margin: 1em 10%;
+    margin: 0 auto;
+    max-width: 1024px;
   }
 }
 

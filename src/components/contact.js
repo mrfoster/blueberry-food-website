@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-const ContactDetails = ({ data }) => {
+const Contact = ({ data }) => {
   const address = data.address
   const addressLines = [
     address.streetAddress,
@@ -27,4 +27,4 @@ const ContactDetails = ({ data }) => {
   )
 }
 
-export default ContactDetails
+export default Contact

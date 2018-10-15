@@ -4,10 +4,11 @@ import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 
 import Header from '../components/header'
-import ContactDetails from '../components/contact-details'
+import Contact from '../components/contact'
 import Map from '../components/map'
 import OpeningHours from '../components/opening-hours'
 import Gallery from '../components/gallery'
+import Documents from '../components/documents'
 import Helmet from 'react-helmet'
 
 const Cafe = ({ data }) => {
@@ -23,10 +24,11 @@ const Cafe = ({ data }) => {
         )}
       </section>
 
-      <ContactDetails data={data.schema} />
+      <Contact data={data.schema} />
       <Map data={data} />
       <OpeningHours data={data.schema} />
       <Gallery data={data} />
+      <Documents data={data} />
     </Layout>
   )
 }
@@ -63,13 +65,20 @@ export const pageQuery = graphql`
       content
       googlePlaceId
       images {
-        image {
+        filePath {
           childImageSharp {
             fixed(width: 200) {
               ...GatsbyImageSharpFixed_withWebp_tracedSVG
             }
           }
         }
+        name
+      }
+      documents {
+        filePath {
+          publicURL
+        }
+        name
       }
     }
   }
