@@ -24,11 +24,11 @@ const Cafe = ({ data }) => {
         )}
       </section>
 
-      <Contact data={data.schema} />
-      <Map data={data} />
-      <OpeningHours data={data.schema} />
       <Gallery data={data} />
+      <Contact data={data.schema} />
+      <OpeningHours data={data.schema} />
       <Documents data={data} />
+      <Map data={data} />
     </Layout>
   )
 }

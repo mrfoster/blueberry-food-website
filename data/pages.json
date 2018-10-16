@@ -119,11 +119,6 @@
         "name": "Cafe counter"
       },
       {
-        "filePath": "../static/arc-leisure-matlock/2.jpg",
-        "type": "image",
-        "name": "Cup of coffee"
-      },
-      {
         "filePath": "../static/arc-leisure-matlock/3.jpg",
         "type": "image",
         "name": "Cafe counter"
@@ -142,6 +137,11 @@
         "filePath": "../static/arc-leisure-matlock/7.jpg",
         "type": "image",
         "name": "Leisure centre"
+      },
+      {
+        "filePath": "../static/arc-leisure-matlock/2.jpg",
+        "type": "image",
+        "name": "Cup of coffee"
       }
     ],
     "documents": [

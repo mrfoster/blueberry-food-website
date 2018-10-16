@@ -37,7 +37,7 @@ class Header extends Component {
             <img
               width="48"
               height="48"
-              alt="Blueberry Logo"
+              alt="Company Logo"
               className={`logo animated ${this.state.animationClass}`}
               src="/logo.svg"
             />

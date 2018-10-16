@@ -3,6 +3,7 @@ import { graphql, Link } from 'gatsby'
 
 import Layout from '../components/layout'
 import Header from '../components/header'
+import { FaTruck, FaUtensils } from 'react-icons/fa'
 
 const Home = ({ data }) => {
   const cafePages = data.cafePages.pages.map(x => x.page)
@@ -11,7 +12,19 @@ const Home = ({ data }) => {
       <Header title={data.page.name} />
 
       <section>
-        <h2>Cafes</h2>
+        <h2>
+           Cafes <FaUtensils />
+        </h2>
+        <div>
+          {cafePages.map(page => (
+            <div class="card" key={page.slug}>
+              <Link to={page.slug}>{page.name}</Link>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section>
         <nav>
           <ul>
             {cafePages.map(page => (
@@ -24,7 +37,9 @@ const Home = ({ data }) => {
       </section>
 
       <section>
-        <h2>Catering</h2>
+        <h2>
+          <FaTruck /> Catering
+        </h2>
         <p>
           Vestibulum eu viverra massa. Pellentesque eget lectus id purus
           consequat blandit. Duis vestibulum non orci vel egestas. Nulla a

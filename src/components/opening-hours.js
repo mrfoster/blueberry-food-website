@@ -1,8 +1,11 @@
 import * as React from 'react'
+import { FaDoorOpen } from 'react-icons/fa'
 
 const OpeningHours = ({ data }) => (
   <section>
-    <h3>Opening Hours</h3>
+    <h3>
+      <FaDoorOpen /> Opening Hours
+    </h3>
     {data.openingHoursSpecification.map((o, i) => (
       <p key={i}>
         {o.name && (

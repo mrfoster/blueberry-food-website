@@ -1,10 +1,13 @@
 import React from 'react'
+import { FaMapMarkerAlt } from 'react-icons/fa'
 
 const Map = ({ data }) => {
   const apiKey = 'AIzaSyBI-CY3rt_aGrcyQopvDBrv3_x_jxVxDR4'
   return (
     <section>
-      <h3>Find us</h3>
+      <h3>
+        <FaMapMarkerAlt /> Find us
+      </h3>
       <iframe
         className="map"
         frameBorder="0"
