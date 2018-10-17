@@ -1,19 +1,11 @@
 import React, { Component } from 'react'
 import { Link } from 'gatsby'
-import './animate.css'
+import Bounce from 'react-reveal/Bounce'
+import Reveal from 'react-reveal/Reveal'
 
 class Header extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      title: props.title,
-      subTitle: props.subTitle,
-      animationClass: '',
-    }
-  }
-
   componentDidMount() {
-    const animationClasses = [
+    const effects = [
       'bounce',
       'rubberBand',
       'swing',
@@ -24,27 +16,22 @@ class Header extends Component {
     ]
 
     this.setState({
-      animationClass:
-        animationClasses[Math.floor(Math.random() * animationClasses.length)],
+      effect: effects[Math.floor(Math.random() * effects.length)],
     })
   }
 
   render() {
     return (
       <header>
-        <h1>
-          <Link to="/">
-            <img
-              width="48"
-              height="48"
-              alt="Company Logo"
-              className={`logo animated ${this.state.animationClass}`}
-              src="/logo.svg"
-            />
-          </Link>
-          {this.state.title}
-        </h1>
-        {this.state.subTitle && <h2>{this.state.subTitle}</h2>}
+        <Link to="/" className="logo">
+          <Reveal when={this.state} effect={this.state && this.state.effect}>
+            <img width="48" height="48" alt="Company Logo" src="/logo.svg" />
+          </Reveal>
+        </Link>
+
+        <Bounce right>
+          <h1>{this.props.title}</h1>
+        </Bounce>
       </header>
     )
   }

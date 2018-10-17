@@ -2,10 +2,10 @@ import * as React from 'react'
 import { FaDoorOpen } from 'react-icons/fa'
 
 const OpeningHours = ({ data }) => (
-  <section>
-    <h3>
-      <FaDoorOpen /> Opening Hours
-    </h3>
+  <section id="openingTimes">
+    <h2>
+      <FaDoorOpen /> Opening Times
+    </h2>
     {data.openingHoursSpecification.map((o, i) => (
       <p key={i}>
         {o.name && (

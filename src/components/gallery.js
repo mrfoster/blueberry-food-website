@@ -6,10 +6,10 @@ const Gallery = ({ data }) => {
   return (
     <>
       {data.page.images.length && (
-        <section>
-          <h3>
+        <section id="images">
+          <h2>
             <FaImages /> Images
-          </h3>
+          </h2>
           {data.page.images.map((image, index) => (
             <Img
               key={index}

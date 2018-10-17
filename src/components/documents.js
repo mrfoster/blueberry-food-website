@@ -1,11 +1,14 @@
 import * as React from 'react'
+import { FaCopy } from 'react-icons/fa'
 
 const Documents = ({ data }) => {
   return (
     <>
       {data.page.documents.length && (
-        <section>
-          <h3>Documents</h3>
+        <section id="documents">
+          <h2>
+            <FaCopy /> Documents
+          </h2>
           <ul>
             {data.page.documents.map((doc, index) => (
               <li key={index}>

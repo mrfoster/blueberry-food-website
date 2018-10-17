@@ -1,5 +1,6 @@
 import * as React from 'react'
-import { FaAddressCard, FaPhone, FaHome, FaAt } from 'react-icons/fa'
+import { FaAddressCard } from 'react-icons/fa'
+
 const Contact = ({ data }) => {
   const address = data.address
   const addressLines = [
@@ -10,8 +11,8 @@ const Contact = ({ data }) => {
   ]
 
   return (
-    <section>
-      <h3><FaAddressCard /> Contact us</h3>
+    <section id="contact">
+      <h2><FaAddressCard /> Contact us</h2>
       <em>Address:</em>
       <address>
         {addressLines.filter(x => !!x).map((l, i) => (

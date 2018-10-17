@@ -3,6 +3,8 @@ import { graphql, Link } from 'gatsby'
 
 import Layout from '../components/layout'
 import Header from '../components/header'
+
+import Heading from '../components/heading'
 import { FaTruck, FaUtensils } from 'react-icons/fa'
 
 const Home = ({ data }) => {
@@ -13,11 +15,11 @@ const Home = ({ data }) => {
 
       <section>
         <h2>
-           Cafes <FaUtensils />
+          <FaUtensils /> Cafes
         </h2>
         <div>
           {cafePages.map(page => (
-            <div class="card" key={page.slug}>
+            <div className="card" key={page.slug}>
               <Link to={page.slug}>{page.name}</Link>
             </div>
           ))}

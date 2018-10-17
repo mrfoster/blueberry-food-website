@@ -2,6 +2,8 @@ import React from 'react'
 import CookieConsent from './cookie-consent'
 import './layout.scss'
 import Helmet from 'react-helmet'
+import Fade from 'react-reveal/Fade'
+import './animate.css'
 
 const Layout = ({ children }) => (
   <>
@@ -19,7 +21,9 @@ const Layout = ({ children }) => (
       <html lang="en" />
     </Helmet>
 
-    <div className="page">{children}</div>
+    <div className="page">
+      <Fade>{children}</Fade>
+    </div>
 
     <CookieConsent />
   </>

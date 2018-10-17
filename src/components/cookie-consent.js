@@ -1,11 +1,6 @@
 import React, { Component } from 'react'
 
 class CookieConsent extends Component {
-  constructor(props) {
-    super(props)
-    this.state = { cookieConsentStatus: 'unknown' }
-  }
-
   dismiss = () => {
     localStorage.setItem('cookieConsentStatus', 'dismiss')
     this.setState({ cookieConsentStatus: 'dismiss' })
@@ -19,7 +14,7 @@ class CookieConsent extends Component {
 
   render() {
     return (
-      !this.state.cookieConsentStatus && (
+      this.state && !this.state.cookieConsentStatus && (
         <div className="cookie-consent">
           <p>
             This website uses cookies to ensure you get the best experience on
