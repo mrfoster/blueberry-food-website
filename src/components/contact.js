@@ -25,8 +25,8 @@ const Contact = ({ data }) => {
         ))}
       </address>
       <em>Tel:</em>
-      <a href={`tel:${data.schema.telephone}`}>{data.telephone}</a> <br />
-      <em>Email:</em> <a href={`mailto:${data.schema.email}`}>{data.email}</a>
+      <a href={`tel:${data.schema.telephone}`}>{data.schema.telephone}</a> <br />
+      <em>Email:</em> <a href={`mailto:${data.schema.email}`}>{data.schema.email}</a>
       <br />
       {data.page.vcf && <a href={data.page.vcf.publicURL}>Add to contacts</a>}
     </section>
