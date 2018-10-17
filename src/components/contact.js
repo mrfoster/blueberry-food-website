@@ -2,7 +2,7 @@ import * as React from 'react'
 import { FaAddressCard } from 'react-icons/fa'
 
 const Contact = ({ data }) => {
-  const address = data.address
+  const address = data.schema.address
   const addressLines = [
     address.streetAddress,
     address.addressLocality,
@@ -12,7 +12,9 @@ const Contact = ({ data }) => {
 
   return (
     <section id="contact">
-      <h2><FaAddressCard /> Contact us</h2>
+      <h2>
+        <FaAddressCard /> Contact us
+      </h2>
       <em>Address:</em>
       <address>
         {addressLines.filter(x => !!x).map((l, i) => (
@@ -22,10 +24,11 @@ const Contact = ({ data }) => {
           </span>
         ))}
       </address>
-      <em>Tel:</em> <a href={`tel:${data.telephone}`}>{data.telephone}</a> <br />
-      <em>Email:</em> <a href={`mailto:${data.email}`}>{data.email}</a>
-
-      <a href="/arc-leisure-matlock/contact.vcf">Add</a>
+      <em>Tel:</em>
+      <a href={`tel:${data.schema.telephone}`}>{data.telephone}</a> <br />
+      <em>Email:</em> <a href={`mailto:${data.schema.email}`}>{data.email}</a>
+      <br />
+      {data.page.vcf && <a href={data.page.vcf.publicURL}>Add to contacts</a>}
     </section>
   )
 }

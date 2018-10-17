@@ -1,0 +1,10 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Blueberry Cafe - Smedley Street Matlock
+ORG:Blueberry Food Company
+PHOTO;MEDIATYPE=image/svg:https://www.blueberryfood.co.uk/logo.svg
+TEL;TYPE=WORK,VOICE:+44 1629 593476
+ADR;TYPE=WORK:Blueberry Cafe,87-89 Smedley St E;Matlock;DE4 3FQ;UK
+EMAIL:enquiries@blueberryfood.co.uk
+URL:https://www.blueberryfood.co.uk/smedley-street-matlock
+END:VCARD

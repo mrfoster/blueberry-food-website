@@ -1,15 +1,10 @@
 BEGIN:VCARD
-VERSION:4.0
-N:Gump;Forrest;;Mr.;
-FN:Forrest Gump
-ORG:Bubba Gump Shrimp Co.
-TITLE:Shrimp Man
-PHOTO;MEDIATYPE=image/gif:http://www.example.com/dir_photos/my_photo.gif
-TEL;TYPE=work,voice;VALUE=uri:tel:+1-111-555-1212
-TEL;TYPE=home,voice;VALUE=uri:tel:+1-404-555-1212
-ADR;TYPE=WORK;PREF=1;LABEL="100 Waters Edge\nBaytown\, LA 30314\nUnited States of America":;;100 Waters Edge;Baytown;LA;30314;United States of America
-ADR;TYPE=HOME;LABEL="42 Plantation St.\nBaytown\, LA 30314\nUnited States of America":;;42 Plantation St.;Baytown;LA;30314;United States of America
-EMAIL:forrestgump@example.com
-REV:20080424T195243Z
-x-qq:21588891
+VERSION:3.0
+FN:Blueberry Cafe - Arc Leisure Matlock
+ORG:Blueberry Food Company
+PHOTO;MEDIATYPE=image/svg:https://www.blueberryfood.co.uk/logo.svg
+TEL;TYPE=WORK,VOICE:+44 7468 565348
+ADR;TYPE=WORK:Blueberry Cafe,Arc Leisure Matlock;Bakewell Rd;Matlock;DE4 3AZ;UK
+EMAIL:enquiries@blueberryfood.co.uk
+URL:https://www.blueberryfood.co.uk/arc-leisure-matlock
 END:VCARD

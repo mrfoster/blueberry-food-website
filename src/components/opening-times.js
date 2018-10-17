@@ -1,12 +1,12 @@
 import * as React from 'react'
 import { FaDoorOpen } from 'react-icons/fa'
 
-const OpeningHours = ({ data }) => (
+const OpeningTimes = ({ data }) => (
   <section id="openingTimes">
     <h2>
       <FaDoorOpen /> Opening Times
     </h2>
-    {data.openingHoursSpecification.map((o, i) => (
+    {data.schema.openingHoursSpecification.map((o, i) => (
       <p key={i}>
         {o.name && (
           <>
@@ -27,4 +27,4 @@ const OpeningHours = ({ data }) => (
   </section>
 )
 
-export default OpeningHours
+export default OpeningTimes
