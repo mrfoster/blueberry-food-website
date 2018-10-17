@@ -9,7 +9,6 @@ import Map from '../components/map'
 import OpeningHours from '../components/opening-times'
 import Gallery from '../components/gallery'
 import Documents from '../components/documents'
-import Heading from '../components/heading'
 import Helmet from 'react-helmet'
 import { FaUtensils } from 'react-icons/fa'
 

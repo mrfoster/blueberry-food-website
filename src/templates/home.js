@@ -4,7 +4,6 @@ import { graphql, Link } from 'gatsby'
 import Layout from '../components/layout'
 import Header from '../components/header'
 
-import Heading from '../components/heading'
 import { FaTruck, FaUtensils } from 'react-icons/fa'
 
 const Home = ({ data }) => {
