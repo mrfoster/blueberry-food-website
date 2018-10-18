@@ -52,6 +52,23 @@
         "filePath": "../static/castleton-visitor-centre/blueberry-castleton-a5-sunday-menu.pdf",
         "name": "Sunday Menu"
       }
+    ],
+    "links": [
+      {
+        "image": "../static/eqm-logo.jpg",
+        "url": "http://www.eqm.org.uk/peakdistrict/index.asp",
+        "title": "Environmental Quality Mark"
+      },
+      {
+        "image": "../static/trip-advisor.png",
+        "url": "https://www.tripadvisor.co.uk/Restaurant_Review-g499576-d12941738-Reviews-Blueberry_Cafe-Castleton_Hope_Valley_Peak_District_National_Park_England.html",
+        "title": "Trip Advisor"
+      },
+      {
+        "image": "../static/visit-peak-district.jpg",
+        "url": "https://www.visitpeakdistrict.com/",
+        "title": "Visit Peak District"
+      }
     ]
   },
   {
@@ -106,6 +123,13 @@
         "filePath": "../static/smedley-street-matlock/blueberry-cafe-menu-april-2017.pdf",
         "name": "Menu"
       }
+    ],
+    "links": [
+      {
+        "image": "../static/food-hygiene-rating.png",
+        "url": "http://ratings.food.gov.uk/business/en-GB/1035177/Blueberry-Food-Company%2c-Ground-Floor-Derbyshire",
+        "title": "Food Hygiene Rating"
+      }
     ]
   },
   {
@@ -156,9 +180,25 @@
     ],
     "links": [
       {
-        "url": "https://www.tripadvisor.co.uk/Restaurant_Review-g499576-d12941738-Reviews-Blueberry_Cafe-Castleton_Hope_Valley_Peak_District_National_Park_England.html",
-        "name": "Trip Advisor"
+        "image": "../static/food-hygiene-rating.png",
+        "url": "http://ratings.food.gov.uk/business/en-GB/258471/Blueberry-Cafe-Ltd-Matlock",
+        "title": "Food Hygiene Rating"
       }
     ]
+  },
+  {
+    "slug": "millers-dale",
+    "template": "cafe",
+    "schemaId": "https://www.blueberryfood.co.uk/millers-dale",
+    "name": "Millers Dale",
+    "content": "<p>Nunc a lectus vel justo placerat rhoncus. Fusce dignissim ante nisl, quis bibendum nisl consectetur in. Donec tincidunt vel sapien ut efficitur.</p>",
+    "googlePlaceId": "ChIJozXNyE8uekgRj1cZfUyeFaI",
+    "documents": [],
+    "images": [      {
+      "filePath": "../static/millers-dale/1.jpg",
+      "type": "image",
+      "name": "Station"
+    }],
+    "links": []
   }
 ]

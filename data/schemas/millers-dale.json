@@ -1,0 +1,26 @@
+{
+  "@context": "http://schema.org",
+  "@type": "CafeOrCoffeeShop",
+  "image": [],
+  "@id": "https://www.blueberryfood.co.uk/millers-dale",
+  "name": "Blueberry Cafe",
+  "location": "Millers Dale",
+  "description": "",
+  "servesCuisine": "",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Millers Dale Station",
+    "addressLocality": "Wormhill",
+    "addressRegion": "Buxton",
+    "postalCode": "SK17 8SN",
+    "addressCountry": "UK"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 53.256122,
+    "longitude": -1.7940223
+  },
+  "url": "https://www.blueberryfood.co.uk/millers-dale",
+  "email": "enquiries@blueberryfood.co.uk",
+  "hasMenu": []
+}

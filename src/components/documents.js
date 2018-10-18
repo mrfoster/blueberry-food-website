@@ -4,7 +4,7 @@ import { FaCopy } from 'react-icons/fa'
 const Documents = ({ data }) => {
   return (
     <>
-      {data.page.documents.length && (
+      {!!data.page.documents.length && (
         <section id="documents">
           <h2>
             <FaCopy /> Documents

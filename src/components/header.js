@@ -32,6 +32,12 @@ class Header extends Component {
         <Bounce right>
           <h1>{this.props.title}</h1>
         </Bounce>
+        {/* <div id="sotdwidget">
+          <a href="https://www.scoresonthedoors.org.uk/business/blueberry-cafe-ltd-matlock-derbyshire-458558.html">
+            "Blueberry Cafe Ltd" Food Hygiene Rating
+          </a>
+        </div>
+        <script src="https://www.scoresonthedoors.org.uk/widget/widget.php?id=458558&type=FH" /> */}
       </header>
     )
   }

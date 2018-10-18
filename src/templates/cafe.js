@@ -9,6 +9,7 @@ import Map from '../components/map'
 import OpeningTimes from '../components/opening-times'
 import Gallery from '../components/gallery'
 import Documents from '../components/documents'
+import Links from '../components/links'
 import Helmet from 'react-helmet'
 import { FaUtensils } from 'react-icons/fa'
 
@@ -33,6 +34,7 @@ const Cafe = ({ data }) => {
       <OpeningTimes data={data} />
       <Documents data={data} />
       <Map data={data} />
+      <Links data={data} />
     </Layout>
   )
 }
@@ -74,7 +76,7 @@ export const pageQuery = graphql`
       images {
         filePath {
           childImageSharp {
-            fixed(width: 200) {
+            fixed(width: 400) {
               ...GatsbyImageSharpFixed_withWebp_tracedSVG
             }
           }
@@ -86,6 +88,17 @@ export const pageQuery = graphql`
           publicURL
         }
         name
+      },
+      links {
+        url
+        title
+        image {
+          childImageSharp {
+            fixed(width: 100) {
+              ...GatsbyImageSharpFixed_withWebp_tracedSVG
+            }
+          }
+        }
       }
     }
   }

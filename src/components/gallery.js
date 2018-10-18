@@ -5,7 +5,7 @@ import { FaImages } from 'react-icons/fa'
 const Gallery = ({ data }) => {
   return (
     <>
-      {data.page.images.length && (
+      {!!data.page.images.length && (
         <section id="images">
           <h2>
             <FaImages /> Images
