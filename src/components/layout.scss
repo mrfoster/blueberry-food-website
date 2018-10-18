@@ -60,15 +60,10 @@ section {
 }
 
 .card {
-  &:hover {
-    
-  }
   text-align: center;
   box-shadow: 0 4px 8px 0 rgba($shadowColour, 0.2), 0 6px 20px 0 rgba($shadowColour, 0.19);
   width: 31%;
   height: 100px;
-  // padding: 0.5em;
-  // margin: 0.5em;
   float: left;
   padding: 1%;
   margin: 1%;
@@ -76,11 +71,14 @@ section {
 }
 
 .page header {
-  position: relative;
+  @include clearfix();
+
   .logo {
+    float: left;
     display: block;
     width: 48px;
     height: 48px;
+    margin-right: 5px;
 
     > img {
       display: block;
@@ -88,9 +86,6 @@ section {
   }
 
   h1 {
-    position: absolute;
-    top: 0;
-    left: 53px;
     margin: 0;
     color: $colour2;
   }

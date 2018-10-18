@@ -12,7 +12,7 @@ const Home = ({ data }) => {
     <Layout>
       <Header title={data.page.name} />
 
-      <section>
+      {/* <section>
         <h2>
           <FaUtensils /> Cafes
         </h2>
@@ -23,9 +23,12 @@ const Home = ({ data }) => {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
 
       <section>
+        <h2>
+          <FaUtensils /> Cafes
+        </h2>
         <nav>
           <ul>
             {cafePages.map(page => (
