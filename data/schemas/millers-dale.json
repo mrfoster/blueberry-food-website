@@ -6,7 +6,7 @@
   "name": "Blueberry Cafe",
   "location": "Millers Dale",
   "description": "",
-  "servesCuisine": "",
+  "servesCuisine": "Traditional, Local",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Millers Dale Station",

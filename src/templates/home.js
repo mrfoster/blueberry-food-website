@@ -40,7 +40,7 @@ const Home = ({ data }) => {
         </nav>
       </section>
 
-      <section>
+      {/* <section>
         <h2>
           <FaTruck /> Catering
         </h2>
@@ -50,7 +50,7 @@ const Home = ({ data }) => {
           aliquet neque. Sed ac tincidunt urna, nec pretium sem. Vestibulum sit
           amet tristique dui. Aliquam ullamcorper eget risus in sodales.
         </p>
-      </section>
+      </section> */}
     </Layout>
   )
 }

@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'gatsby'
 import Bounce from 'react-reveal/Bounce'
 import Reveal from 'react-reveal/Reveal'
+import { FaUtensils } from 'react-icons/fa'
 
 class Header extends Component {
   componentDidMount() {
@@ -32,12 +33,11 @@ class Header extends Component {
         <Bounce right>
           <h1>{this.props.title}</h1>
         </Bounce>
-        {/* <div id="sotdwidget">
-          <a href="https://www.scoresonthedoors.org.uk/business/blueberry-cafe-ltd-matlock-derbyshire-458558.html">
-            "Blueberry Cafe Ltd" Food Hygiene Rating
-          </a>
-        </div>
-        <script src="https://www.scoresonthedoors.org.uk/widget/widget.php?id=458558&type=FH" /> */}
+        {this.props.subTitle && (
+          <h2>
+            <FaUtensils /> {this.props.subTitle}
+          </h2>
+        )}
       </header>
     )
   }

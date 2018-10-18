@@ -6,7 +6,7 @@
   "name": "Blueberry Cafe",
   "location": "Arc Leisure Matlock",
   "description": "Phasellus lacus diam, elementum a elit id, rhoncus tristique quam. Donec posuere tristique odio, a tincidunt leo rutrum nec.",
-  "servesCuisine": "",
+  "servesCuisine": "Traditional, Local",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Bakewell Rd",

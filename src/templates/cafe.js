@@ -18,16 +18,16 @@ const Cafe = ({ data }) => {
     <Layout>
       <Helmet title={`${data.schema.name} - ${data.schema.location}`} />
 
-      <Header title={data.schema.name} />
+      <Header title={data.schema.name} subTitle={data.schema.location} />
 
-      <h2>
+      {/* <h2>
         <FaUtensils /> {data.schema.location}
       </h2>
       <section>
         {data.page.content && (
           <section dangerouslySetInnerHTML={{ __html: data.page.content }} />
         )}
-      </section>
+      </section> */}
 
       <Gallery data={data} />
       <Contact data={data} />

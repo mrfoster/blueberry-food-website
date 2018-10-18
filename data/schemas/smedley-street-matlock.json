@@ -6,7 +6,7 @@
   "name": "Blueberry Cafe",
   "location": "Smedley Street Matlock",
   "description": "",
-  "servesCuisine": "",
+  "servesCuisine": "Traditional, Local",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "87-89 Smedley St E",
