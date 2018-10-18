@@ -27,15 +27,13 @@ const Contact = ({ data }) => {
       {data.schema.telephone && (
         <>
           <em>Tel:</em>
-          <a href={`tel:${data.schema.telephone}`}>
-            {data.schema.telephone}
-          </a>{' '}
+          <a href={`tel:${data.schema.telephone}`}>{data.schema.telephone}</a>
           <br />
         </>
       )}
       {data.schema.email && (
         <>
-          <em>Email:</em>{' '}
+          <em>Email:</em>
           <a href={`mailto:${data.schema.email}`}>{data.schema.email}</a>
           <br />
         </>
