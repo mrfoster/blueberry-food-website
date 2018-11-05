@@ -13,6 +13,10 @@
     "faceBook": "https://www.facebook.com/BlueberryCafeCastleton/",
     "content": "<p>Phasellus lacus diam, elementum a elit id, rhoncus tristique quam. Donec posuere tristique odio, a tincidunt leo rutrum nec.</p>",
     "vcf": "../static/castleton-visitor-centre/contact.vcf",
+    "primaryImage": {
+      "filePath": "../static/castleton-visitor-centre/1.jpg",
+      "name": "Cafe interior"
+    },
     "images": [
       {
         "filePath": "../static/castleton-visitor-centre/1.jpg",
@@ -80,6 +84,10 @@
     "faceBook": "https://www.facebook.com/pages/Blueberry-Food-Company/1521259654555196",
     "content": "<p>Nunc a lectus vel justo placerat rhoncus. Fusce dignissim ante nisl, quis bibendum nisl consectetur in. Donec tincidunt vel sapien ut efficitur.</p>",
     "vcf": "../static/castleton-visitor-centre/contact.vcf",
+    "primaryImage": {
+      "filePath": "../static/smedley-street-matlock/1.jpg",
+      "name": "Cafe entrance"
+    },
     "images": [
       {
         "filePath": "../static/smedley-street-matlock/1.jpg",
@@ -140,35 +148,33 @@
     "content": "<p>Nunc a lectus vel justo placerat rhoncus. Fusce dignissim ante nisl, quis bibendum nisl consectetur in. Donec tincidunt vel sapien ut efficitur.</p>",
     "googlePlaceId": "ChIJjco8NKCJeUgR6ve5QVs7Vmo",
     "vcf": "../static/castleton-visitor-centre/contact.vcf",
+    "primaryImage": {
+      "filePath": "../static/arc-leisure-matlock/1.jpg",
+      "name": "Cafe entrance"
+    },
     "images": [
       {
         "filePath": "../static/arc-leisure-matlock/1.jpg",
-        "type": "image",
         "name": "Cafe counter"
       },
       {
         "filePath": "../static/arc-leisure-matlock/3.jpg",
-        "type": "image",
         "name": "Cafe counter"
       },
       {
         "filePath": "../static/arc-leisure-matlock/4.jpg",
-        "type": "image",
         "name": "Children's play area"
       },
       {
         "filePath": "../static/arc-leisure-matlock/5.jpg",
-        "type": "image",
         "name": "Cafe counter"
       },
       {
         "filePath": "../static/arc-leisure-matlock/7.jpg",
-        "type": "image",
         "name": "Leisure centre"
       },
       {
         "filePath": "../static/arc-leisure-matlock/2.jpg",
-        "type": "image",
         "name": "Cup of coffee"
       }
     ],
@@ -194,11 +200,16 @@
     "content": "<p>Nunc a lectus vel justo placerat rhoncus. Fusce dignissim ante nisl, quis bibendum nisl consectetur in. Donec tincidunt vel sapien ut efficitur.</p>",
     "googlePlaceId": "ChIJozXNyE8uekgRj1cZfUyeFaI",
     "documents": [],
-    "images": [      {
+    "primaryImage": {
       "filePath": "../static/millers-dale/1.jpg",
-      "type": "image",
       "name": "Station"
-    }],
+    },
+    "images": [
+      {
+        "filePath": "../static/millers-dale/1.jpg",
+        "name": "Station"
+      }
+    ],
     "links": []
   }
 ]

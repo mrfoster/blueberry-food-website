@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React from 'react'
 import { FaCopy } from 'react-icons/fa'
 
 const Documents = ({ data }) => {

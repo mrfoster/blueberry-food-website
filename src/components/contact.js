@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React from 'react'
 import { FaAddressCard } from 'react-icons/fa'
 
 const Contact = ({ data }) => {

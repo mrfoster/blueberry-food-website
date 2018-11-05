@@ -1,0 +1,15 @@
+.blocks {
+  ul {
+    padding: 0;
+    list-style: none;
+
+    li {
+      float: left;
+
+      a {
+        display: block;
+      }
+    }
+
+  }
+}

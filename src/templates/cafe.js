@@ -7,7 +7,7 @@ import Header from '../components/header'
 import Contact from '../components/contact'
 import Map from '../components/map'
 import OpeningTimes from '../components/opening-times'
-import Gallery from '../components/gallery'
+import Images from '../components/images'
 import Documents from '../components/documents'
 import Links from '../components/links'
 import Helmet from 'react-helmet'
@@ -29,7 +29,7 @@ const Cafe = ({ data }) => {
         )}
       </section>
 
-      <Gallery data={data} />
+      <Images data={data} />
       <Contact data={data} />
       <OpeningTimes data={data} />
       <Documents data={data} />
