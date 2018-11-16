@@ -2,21 +2,11 @@
   position: relative;
 
   .image {
-    margin: 0 1em;
+    margin: 0 .5em;
   }
 
-  .slick-next {
-    top: 100px;
-    right: 10px;
-    position: absolute;
-  }
-
-  .slick-prev {
-    top: 100px;
-    left: 10px;
-    position: absolute;
-    z-index: 9999;
-
+  .slick-arrow {
+    display: none !important;
   }
 }
 

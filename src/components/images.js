@@ -31,11 +31,14 @@ class Images extends Component {
     const data = this.props.data
     const settings = {
       className: 'center',
+      focusOnSelect: true,
       centerMode: true,
       infinite: true,
-      centerPadding: '150px',
+      centerPadding: '20%',
       slidesToShow: 1,
       speed: 500,
+      // nextArrow: <span/>,
+      // prevArrow: <span/>
     }
     return (
       <>
