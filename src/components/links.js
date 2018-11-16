@@ -13,12 +13,12 @@ const Links = ({ data }) => {
           <ul>
             {data.page.links.map((l, i) => (
               <li key={i}>
-                <a href={l.url} target="_blank" rel="noopener noreferrer">
+                <a href={l.url} target="_blank" rel="noopener noreferrer" title={l.title}>
                   <Img
                     fixed={l.image.childImageSharp.fixed}
                     alt={l.title}
                   />
-                  {l.title}
+                  <span>{l.title}</span>
                 </a>
               </li>
             ))}

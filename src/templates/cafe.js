@@ -17,6 +17,17 @@ const Cafe = ({ data }) => {
   return (
     <Layout>
       <Helmet title={`${data.schema.name} - ${data.schema.location}`} />
+      <Helmet
+        script={[
+          {
+            type: 'application/ld+json',
+            innerHTML: JSON.stringify({
+              '@type': 'NewsArticle',
+              headline: 'Article headline',
+            }),
+          },
+        ]}
+      />
 
       <Header title={data.schema.name} />
 
@@ -76,8 +87,8 @@ export const pageQuery = graphql`
       images {
         filePath {
           childImageSharp {
-            fixed(width: 400) {
-              ...GatsbyImageSharpFixed_withWebp_tracedSVG
+            fluid(maxWidth: 800, maxHeight: 600) {
+              ...GatsbyImageSharpFluid_withWebp_tracedSVG
             }
           }
         }
@@ -88,7 +99,7 @@ export const pageQuery = graphql`
           publicURL
         }
         name
-      },
+      }
       links {
         url
         title

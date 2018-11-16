@@ -1,13 +1,48 @@
 .blocks {
   ul {
+    margin: -1em;
     padding: 0;
     list-style: none;
 
     li {
       float: left;
+      width: 50%;
+      padding: 1em;
 
-      a {
-        display: block;
+      transition: all .2s ease-in-out;
+
+      &:hover {
+        z-index: 999;
+        transform: scale(1.05);
+      }
+
+      .link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:before {
+          content: '';
+          padding: 35% 0;
+          display: inline-block;
+        }
+
+        &:hover {
+          text-decoration: none;
+        }
+
+        position: relative;
+
+        span {
+          font-size: 1.2em;
+          background-color: rgba($color: #fff, $alpha: 0.8);
+          color: black;
+          padding: 1em;
+          border-radius: .5em;
+          display: block;
+          position: relative;
+          z-index: 9999;
+        }
       }
     }
 

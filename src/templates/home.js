@@ -6,13 +6,13 @@ import Header from '../components/header'
 import Img from 'gatsby-image'
 import './home.scss'
 import { FaTruck, FaUtensils } from 'react-icons/fa'
+import Contact from '../components/contact'
 
 const Home = ({ data }) => {
   const cafePages = data.cafePages.pages.map(x => x.page)
   return (
     <Layout>
       <Header title={data.page.name} />
-
       {/* <section>
         <h2>
           <FaUtensils /> Cafes
@@ -25,7 +25,6 @@ const Home = ({ data }) => {
           ))}
         </div>
       </section> */}
-
       <section className="blocks">
         <h2>
           <FaUtensils /> Cafes
@@ -34,18 +33,24 @@ const Home = ({ data }) => {
         <ul>
           {cafePages.map(page => (
             <li key={page.slug}>
-              <Link to={page.slug}>
+              <Link to={page.slug} className="link">
+                <span>{page.name}</span>{' '}
                 <Img
                   alt={page.name}
-                  fixed={page.primaryImage.filePath.childImageSharp.fixed}
+                  fluid={page.primaryImage.filePath.childImageSharp.fluid}
+                  style={{
+                    position: 'absolute',
+                    left: 0,
+                    top: 0,
+                    width: '100%',
+                    height: '100%',
+                  }}
                 />
-                {page.name}
               </Link>
             </li>
           ))}
         </ul>
       </section>
-
       <section>
         <h2>
           <FaTruck /> Catering
@@ -57,6 +62,7 @@ const Home = ({ data }) => {
           amet tristique dui. Aliquam ullamcorper eget risus in sodales.
         </p>
       </section>
+      <Contact data={{ page: data.page, schema: data.schema.provider }} />
     </Layout>
   )
 }
@@ -64,9 +70,26 @@ const Home = ({ data }) => {
 export default Home
 
 export const pageQuery = graphql`
-  {
-    page: pagesJson(slug: { eq: "/" }) {
+  query($slug: String!, $schemaId: String!) {
+    schema: schemasJson(_id: { eq: $schemaId }) {
       name
+      provider {
+        address {
+          streetAddress
+          addressLocality
+          addressRegion
+          postalCode
+          addressCountry
+        }
+        telephone
+        email
+      }
+    }
+    page: pagesJson(slug: { eq: $slug }) {
+      name
+      vcf {
+        publicURL
+      }
     }
     cafePages: allPagesJson(filter: { template: { eq: "cafe" } }) {
       pages: edges {
@@ -76,8 +99,8 @@ export const pageQuery = graphql`
           primaryImage {
             filePath {
               childImageSharp {
-                fixed(width: 350, height: 200) {
-                  ...GatsbyImageSharpFixed_withWebp
+                fluid(maxWidth: 470, maxHeight: 350) {
+                  ...GatsbyImageSharpFluid_withWebp
                 }
               }
             }

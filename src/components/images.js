@@ -4,14 +4,27 @@ import { FaImages } from 'react-icons/fa'
 import Fade from 'react-reveal/Fade'
 
 class Images extends Component {
-  currentIndex = 0
+  state = {
+    currentIndex: 0,
+  }
 
   prev = () => {
-    alert('prev')
+    this.setIndex(this.state.currentIndex - 1)
   }
 
   next = () => {
-    alert('next')
+    this.setIndex(this.state.currentIndex + 1)
+  }
+
+  setIndex = i => {
+    const l = this.props.data.page.images.length
+
+    if (i < 0) {
+      i = l - 1
+    } else if (i >= l) {
+      i = 0
+    }
+    this.setState({ currentIndex: i })
   }
 
   render() {
@@ -24,14 +37,15 @@ class Images extends Component {
               <FaImages /> Images
             </h2>
             <div className="images">
-              {data.page.images.map((image, index) => (
-                <Fade key={index} left opposite when={this.show}>
-                  <Img
-                    fixed={image.filePath.childImageSharp.fixed}
-                    alt={image.name}
-                  />
-                </Fade>
-              ))}
+              <Fade left opposite show={true}>
+                <Img
+                  fluid={
+                    data.page.images[this.state.currentIndex].filePath
+                      .childImageSharp.fluid
+                  }
+                  alt={data.page.images[this.state.currentIndex].name}
+                />
+              </Fade>
             </div>
             <button onClick={this.prev}>Prev</button>
             <button onClick={this.next}>Next</button>
