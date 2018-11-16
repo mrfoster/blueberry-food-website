@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Img from 'gatsby-image'
 import { FaImages } from 'react-icons/fa'
-import Fade from 'react-reveal/Fade'
+import Slider from 'react-slick'
 
 class Images extends Component {
   state = {
@@ -29,6 +29,14 @@ class Images extends Component {
 
   render() {
     const data = this.props.data
+    const settings = {
+      className: 'center',
+      centerMode: true,
+      infinite: true,
+      centerPadding: '150px',
+      slidesToShow: 1,
+      speed: 500,
+    }
     return (
       <>
         {!!data.page.images.length && (
@@ -36,19 +44,17 @@ class Images extends Component {
             <h2>
               <FaImages /> Images
             </h2>
-            <div className="images">
-              <Fade left opposite show={true}>
-                <Img
-                  fluid={
-                    data.page.images[this.state.currentIndex].filePath
-                      .childImageSharp.fluid
-                  }
-                  alt={data.page.images[this.state.currentIndex].name}
-                />
-              </Fade>
-            </div>
-            <button onClick={this.prev}>Prev</button>
-            <button onClick={this.next}>Next</button>
+            <Slider {...settings} className="images">
+              {data.page.images.map((image, index) => (
+                <div key={index}>
+                  <Img
+                    fluid={image.filePath.childImageSharp.fluid}
+                    alt={image.name}
+                    className="image"
+                  />
+                </div>
+              ))}
+            </Slider>
           </section>
         )}
       </>
