@@ -5,6 +5,15 @@
  */
 
 const path = require('path')
+const fs = require('fs-extra')
+
+exports.onCreateNode = async ({ node, getNode, actions }) => {
+  const { createNodeField } = actions
+  if (node.absolutePath && node.absolutePath.endsWith('.json')) {
+    const content = await fs.readFile(node.absolutePath, 'utf8')
+    createNodeField({ node, name: 'content', value: content })
+  }
+}
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
@@ -17,6 +26,7 @@ exports.createPages = ({ actions, graphql }) => {
             slug
             template
             schemaId
+            schemaName
           }
         }
       }
@@ -35,7 +45,8 @@ exports.createPages = ({ actions, graphql }) => {
         component: path.resolve(`src/templates/${page.template}.js`),
         context: {
           slug: page.slug,
-          schemaId: page.schemaId
+          schemaId: page.schemaId,
+          schemaName: page.schemaName
         },
       })
     })

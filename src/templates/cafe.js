@@ -21,10 +21,7 @@ const Cafe = ({ data }) => {
         script={[
           {
             type: 'application/ld+json',
-            innerHTML: JSON.stringify({
-              '@type': 'NewsArticle',
-              headline: 'Article headline',
-            }),
+            innerHTML: data.schemaContent.fields.content,
           },
         ]}
       />
@@ -53,7 +50,12 @@ const Cafe = ({ data }) => {
 export default Cafe
 
 export const pageQuery = graphql`
-  query($slug: String!, $schemaId: String!) {
+  query($slug: String!, $schemaId: String!, $schemaName: String!) {
+    schemaContent: file(name: { eq: $schemaName }) {
+      fields {
+        content
+      }
+    }
     schema: schemasJson(_id: { eq: $schemaId }) {
       name
       location

@@ -7,11 +7,19 @@ import Img from 'gatsby-image'
 import './home.scss'
 import { FaTruck, FaUtensils } from 'react-icons/fa'
 import Contact from '../components/contact'
-
+import Helmet from 'react-helmet'
 const Home = ({ data }) => {
   const cafePages = data.cafePages.pages.map(x => x.page)
   return (
     <Layout>
+      <Helmet
+        script={[
+          {
+            type: 'application/ld+json',
+            innerHTML: data.schemaContent.fields.content,
+          },
+        ]}
+      />
       <Header title={data.page.name} />
       {/* <section>
         <h2>
@@ -70,7 +78,12 @@ const Home = ({ data }) => {
 export default Home
 
 export const pageQuery = graphql`
-  query($slug: String!, $schemaId: String!) {
+  query($slug: String!, $schemaId: String!, $schemaName: String!) {
+    schemaContent: file(name: { eq: $schemaName }) {
+      fields {
+        content
+      }
+    }
     schema: schemasJson(_id: { eq: $schemaId }) {
       name
       provider {
