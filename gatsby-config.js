@@ -47,7 +47,8 @@ module.exports = {
       resolve: 'gatsby-plugin-netlify',
       options: {
         allPageHeaders: [
-          "Content-Security-Policy:default-src 'self'; base-uri 'self'; script-src 'self' 'unsafe-inline'; connect-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; frame-src 'self' https://www.google.com/",
+          // TODO: remove unsafe-inline once gatsby supports it
+          "Content-Security-Policy:default-src 'self'; base-uri 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com/ https://www.google-analytics.com; connect-src 'self'; img-src 'self' data: https://www.google-analytics.com; style-src 'self' 'unsafe-inline'; frame-src 'self' https://www.google.com/",
         ],
       },
     },
