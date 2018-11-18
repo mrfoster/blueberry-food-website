@@ -1,10 +1,9 @@
 {
   "@context": "http://schema.org",
   "@type": "CafeOrCoffeeShop",
-  "image": "arc-leisure-matlock/1.jpg",
+  "image": "https://www.blueberryfood.co.uk/arc-leisure-matlock/1.jpg",
   "@id": "https://www.blueberryfood.co.uk/arc-leisure-matlock",
-  "name": "Blueberry Cafe",
-  "location": "Arc Leisure Matlock",
+  "name": "Blueberry Cafe - Arc Leisure Matlock",
   "priceRange": "£",
   "description": "Phasellus lacus diam, elementum a elit id, rhoncus tristique quam. Donec posuere tristique odio, a tincidunt leo rutrum nec.",
   "servesCuisine": "Traditional, Local",

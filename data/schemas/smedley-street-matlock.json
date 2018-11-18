@@ -1,10 +1,9 @@
 {
   "@context": "http://schema.org",
   "@type": "CafeOrCoffeeShop",
-  "image": "smedley-street-matlock/1.jpg",
+  "image": "https://www.blueberryfood.co.uk/smedley-street-matlock/1.jpg",
   "@id": "https://www.blueberryfood.co.uk/smedley-street-matlock",
-  "name": "Blueberry Cafe",
-  "location": "Smedley Street Matlock",
+  "name": "Blueberry Cafe - Smedley Street Matlock",
   "priceRange": "£",
   "description": "",
   "servesCuisine": "Traditional, Local",

@@ -16,7 +16,7 @@ import { FaUtensils } from 'react-icons/fa'
 const Cafe = ({ data }) => {
   return (
     <Layout>
-      <Helmet title={`${data.schema.name} - ${data.schema.location}`} />
+      <Helmet title={data.schema.name} />
       <Helmet
         script={[
           {
@@ -26,10 +26,10 @@ const Cafe = ({ data }) => {
         ]}
       />
 
-      <Header title={data.schema.name} />
+      <Header title="Blueberry Cafe" />
 
       <h2>
-        <FaUtensils /> {data.schema.location}
+        <FaUtensils /> {data.page.name}
       </h2>
       <section>
         {data.page.content && (
@@ -58,7 +58,6 @@ export const pageQuery = graphql`
     }
     schema: schemasJson(_id: { eq: $schemaId }) {
       name
-      location
       address {
         streetAddress
         addressLocality
@@ -81,6 +80,7 @@ export const pageQuery = graphql`
     }
 
     page: pagesJson(slug: { eq: $slug }) {
+      name
       content
       googlePlaceId
       vcf {

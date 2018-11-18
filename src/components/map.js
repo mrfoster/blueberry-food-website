@@ -12,7 +12,7 @@ const Map = ({ data }) => {
         className="map"
         frameBorder="0"
         sandbox="allow-scripts allow-same-origin allow-popups"
-        title={`${data.schema.name} - ${data.schema.location}`}
+        title={data.schema.name}
         src={`https://www.google.com/maps/embed/v1/place?q=place_id:${
           data.page.googlePlaceId
         }&key=${apiKey}`}

@@ -1,10 +1,9 @@
 {
   "@context": "http://schema.org",
   "@type": "CafeOrCoffeeShop",
-  "image": "millers-dale/1.jpg",
+  "image": "https://www.blueberryfood.co.uk/millers-dale/1.jpg",
   "@id": "https://www.blueberryfood.co.uk/millers-dale",
-  "name": "Blueberry Cafe",
-  "location": "Millers Dale",
+  "name": "Blueberry Cafe - Millers Dale",
   "priceRange": "£",
   "description": "",
   "servesCuisine": "Traditional, Local",

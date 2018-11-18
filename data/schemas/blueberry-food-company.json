@@ -1,7 +1,6 @@
 {
   "@context": "http://schema.org",
   "@type": "FoodService",
-  "image": [],
   "@id": "https://www.blueberryfood.co.uk",
   "name": "Blueberry Food Company",
   "url": "https://www.blueberryfood.co.uk",
