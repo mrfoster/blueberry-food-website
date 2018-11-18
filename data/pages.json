@@ -144,6 +144,11 @@
         "image": "../static/food-hygiene-rating.png",
         "url": "http://ratings.food.gov.uk/business/en-GB/1035177/Blueberry-Food-Company%2c-Ground-Floor-Derbyshire",
         "title": "Food Hygiene Rating"
+      },
+      {
+        "image": "../static/flogo_RGB_HEX-512.png",
+        "url": "https://www.facebook.com/Blueberry-Food-Company-127740100603563",
+        "title": "Facebook Page"
       }
     ]
   },
