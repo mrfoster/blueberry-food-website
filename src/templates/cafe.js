@@ -31,11 +31,9 @@ const Cafe = ({ data }) => {
       <h2>
         <FaUtensils /> {data.page.name}
       </h2>
-      <section>
-        {data.page.content && (
-          <section dangerouslySetInnerHTML={{ __html: data.page.content }} />
-        )}
-      </section>
+      {data.page.content && (
+        <section dangerouslySetInnerHTML={{ __html: data.page.content }} />
+      )}
 
       <Images data={data} />
       <Contact data={data} />

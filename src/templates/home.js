@@ -21,18 +21,6 @@ const Home = ({ data }) => {
         ]}
       />
       <Header title={data.page.name} />
-      {/* <section>
-        <h2>
-          <FaUtensils /> Cafes
-        </h2>
-        <div>
-          {cafePages.map(page => (
-            <div className="card" key={page.slug}>
-              <Link to={page.slug}>{page.name}</Link>
-            </div>
-          ))}
-        </div>
-      </section> */}
       <section className="blocks">
         <h2>
           <FaUtensils /> Cafes
@@ -59,17 +47,15 @@ const Home = ({ data }) => {
           ))}
         </ul>
       </section>
-      <section>
-        <h2>
-          <FaTruck /> Catering
-        </h2>
-        <p>
-          Vestibulum eu viverra massa. Pellentesque eget lectus id purus
-          consequat blandit. Duis vestibulum non orci vel egestas. Nulla a
-          aliquet neque. Sed ac tincidunt urna, nec pretium sem. Vestibulum sit
-          amet tristique dui. Aliquam ullamcorper eget risus in sodales.
-        </p>
-      </section>
+      {data.page.content && (
+        <section>
+          <h2>
+            <FaTruck /> Catering
+          </h2>
+
+          <div dangerouslySetInnerHTML={{ __html: data.page.content }} />
+        </section>
+      )}
       <Contact data={{ page: data.page, schema: data.schema.provider }} />
     </Layout>
   )
