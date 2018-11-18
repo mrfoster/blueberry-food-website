@@ -1,10 +1,11 @@
 {
   "@context": "http://schema.org",
   "@type": "CafeOrCoffeeShop",
-  "image": [],
+  "image": "castleton-visitor-centre/1.jpg",
   "@id": "https://www.blueberryfood.co.uk/castleton-visitor-centre",
   "name": "Blueberry Cafe",
   "location": "Castleton Visitor Centre",
+  "priceRange": "£",
   "description": "Nunc a lectus vel justo placerat rhoncus. Fusce dignissim ante nisl, quis bibendum nisl consectetur in. Donec tincidunt vel sapien ut efficitur.",
   "servesCuisine": "Traditional, Local",
   "address": {
