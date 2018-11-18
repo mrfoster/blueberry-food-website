@@ -47,7 +47,8 @@ const Home = ({ data }) => {
           ))}
         </ul>
       </section>
-      {data.page.content && (
+
+      {!!data.page.content && (
         <section>
           <h2>
             <FaTruck /> Catering
@@ -86,6 +87,7 @@ export const pageQuery = graphql`
     }
     page: pagesJson(slug: { eq: $slug }) {
       name
+      content
       vcf {
         publicURL
       }
