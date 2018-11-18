@@ -15,11 +15,6 @@
       "postalCode": "DE4 3FQ",
       "addressCountry": "UK"
     },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 53.1420474,
-      "longitude": -1.5506789
-    },
     "email": "enquiries@blueberryfood.co.uk",
     "telephone": "+44 (0)7468 565348"
   }

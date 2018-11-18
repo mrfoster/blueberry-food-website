@@ -20,6 +20,12 @@ module.exports = {
     },
     'gatsby-transformer-json',
     'gatsby-plugin-sass',
+    {
+      resolve: `gatsby-plugin-google-tagmanager`,
+      options: {
+        id: 'GTM-WCF9F36',
+      },
+    },
     'gatsby-plugin-sitemap',
     {
       resolve: `gatsby-plugin-manifest`,
