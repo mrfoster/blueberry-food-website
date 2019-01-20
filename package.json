@@ -38,7 +38,7 @@
   },
   "devDependencies": {
     "bootstrap": "4.2.1",
-    "prettier": "1.15.3"
+    "prettier": "1.16.0"
   },
   "repository": {
     "type": "git",
