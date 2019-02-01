@@ -49,14 +49,6 @@
       }
     ],
     "documents": [
-      {
-        "filePath": "../static/castleton-visitor-centre/blueberry-menu-castleton.pdf",
-        "name": "Menu"
-      },
-      {
-        "filePath": "../static/castleton-visitor-centre/blueberry-castleton-a5-sunday-menu.pdf",
-        "name": "Sunday Menu"
-      }
     ],
     "links": [
       {
@@ -134,10 +126,6 @@
       }
     ],
     "documents": [
-      {
-        "filePath": "../static/smedley-street-matlock/blueberry-cafe-menu-april-2017.pdf",
-        "name": "Menu"
-      }
     ],
     "links": [
       {
@@ -192,10 +180,6 @@
       }
     ],
     "documents": [
-      {
-        "filePath": "../static/arc-leisure-matlock/blueberry-arc-menu-may-2017.pdf",
-        "name": "Menu"
-      }
     ],
     "links": [
       {
@@ -204,26 +188,5 @@
         "title": "Food Hygiene Rating"
       }
     ]
-  },
-  {
-    "slug": "millers-dale",
-    "template": "cafe",
-    "schemaId": "https://www.blueberryfood.co.uk/millers-dale",
-    "schemaName": "millers-dale",
-    "name": "Millers Dale",
-    "content": "<p>Nunc a lectus vel justo placerat rhoncus. Fusce dignissim ante nisl, quis bibendum nisl consectetur in. Donec tincidunt vel sapien ut efficitur.</p>",
-    "googlePlaceId": "ChIJozXNyE8uekgRj1cZfUyeFaI",
-    "documents": [],
-    "primaryImage": {
-      "filePath": "../static/millers-dale/1.jpg",
-      "name": "Station"
-    },
-    "images": [
-      {
-        "filePath": "../static/millers-dale/1.jpg",
-        "name": "Station"
-      }
-    ],
-    "links": []
   }
 ]
