@@ -94,6 +94,12 @@ export const pageQuery = graphql`
         }
         name
       }
+      documents {
+        filePath {
+          publicURL
+        }
+        name
+      }
       links {
         url
         title
