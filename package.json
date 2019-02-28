@@ -16,7 +16,7 @@
     "gatsby-plugin-sitemap": "2.0.6",
     "gatsby-source-filesystem": "2.0.23",
     "gatsby-transformer-json": "2.1.8",
-    "gatsby-transformer-sharp": "2.1.14",
+    "gatsby-transformer-sharp": "2.1.15",
     "node-sass": "4.11.0",
     "react": "16.8.3",
     "react-dom": "16.8.3",
