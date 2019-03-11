@@ -50,11 +50,11 @@
     ],
     "documents": [
       {
-        "filePath": "../static/castleton-visitor-centre/blueberry-cafe-castleton-main-menu-april-2018.pdf",
+        "filePath": "../static/castleton-visitor-centre/blueberry-cafe-menu-castleton-feb-2019.pdf",
         "name": "Main Menu"
       },
       {
-        "filePath": "../static/castleton-visitor-centre/blueberry-cafe-castleton-drinks-menu-april-2018.pdf",
+        "filePath": "../static/castleton-visitor-centre/blueberry-cafe-castleton-drinks-march-2019.pdf",
         "name": "Drinks Menu"
       }
     ],
@@ -135,11 +135,11 @@
     ],
     "documents": [
       {
-        "filePath": "../static/smedley-street-matlock/bfc-cafe-menu-april-2018.pdf",
+        "filePath": "../static/smedley-street-matlock/blueberry-cafe-menu-feb-2019.pdf",
         "name": "Cafe Menu"
       },
       {
-        "filePath": "../static/smedley-street-matlock/bfc-cafe-takeaway-menu-march-2018.pdf",
+        "filePath": "../static/smedley-street-matlock/blueberry-cafe-takeaway-menu-2019.pdf",
         "name": "Takeaway Menu"
       }
     ],
@@ -197,11 +197,11 @@
     ],
     "documents": [
       {
-        "filePath": "../static/arc-leisure-matlock/blueberry-arc-menu-april-2018.pdf",
+        "filePath": "../static/arc-leisure-matlock/blueberry-cafe-menu-feb-2019.pdf",
         "name": "Menu"
       },
       {
-        "filePath": "../static/arc-leisure-matlock/blueberry-arc-drinks-menu-april-2018.pdf",
+        "filePath": "../static/arc-leisure-matlock/blueberry-arc-drinks-menu-feb 2019.pdf",
         "name": "Drinks Menu"
       }
     ],
