@@ -16,7 +16,7 @@
     "name": "Castleton Visitor Centre",
     "googlePlaceId": "ChIJ0QcqYfssekgRcTidLHKH7RU",
     "faceBook": "https://www.facebook.com/BlueberryCafeCastleton/",
-    "content": "<p>Blueberry Cafe at Castleton is situated inside Castleton's Visitor Centre, in the heart of the stunning Peak District. The cafe welcomes everyone including dogs with well behaved owners and muddly boots.</p><p>The cafe menu offers a taste of the Peak District with a selection of hot homemade dishes including Homity pie, Peak District Burger, homemade soups, sandwiches, salads, lighter bites, homemade cakes, freshly ground coffees and loose leaf local teas.</p><p>Takeaway food is also available from the kiosk window next to the Cafe, if you would like to grab something quick to take with you on one of the <a href='https://www.visitpeakdistrict.com/things-to-do/activities/walking-and-hiking/10-great-walks-in-the-peak-district-and-derbyshire' target='_blank' rel='noopener noreferrer'>beautiful nearby walks</a>.</p><p>Blueberry Cafe is accredited with the Environmental Quality Mark which shows our ongoing committment to promoting the Peak District and also protecting the local environment.  All our takeaway disposables are compostable and we no longer stock plastic straws, this is just one of the many initialtives we have in place at our cafe.  Please visit the <a href='http://www.eqm.org.uk/peakdistrict/about-eqm.asp' target='_blank' rel='noopener noreferrer'>EQM website</a> to find out more.</p>",
+    "content": "<p>Blueberry Cafe at Castleton is situated inside Castleton's Visitor Centre, in the heart of the stunning Peak District. The cafe welcomes everyone including dogs with well behaved owners and muddy boots.</p><p>The cafe menu offers a taste of the Peak District with a selection of hot homemade dishes including Peak District Burger, homemade soups, sandwiches, salads, lighter bites, homemade cakes, freshly ground coffees and loose leaf local teas.</p><p>Takeaway food is also available from the kiosk window next to the Cafe, if you would like to grab something quick to take with you on one of the <a href='https://www.visitpeakdistrict.com/things-to-do/activities/walking-and-hiking/10-great-walks-in-the-peak-district-and-derbyshire' target='_blank' rel='noopener noreferrer'>beautiful nearby walks</a>.</p><p>Blueberry Cafe is accredited with the Environmental Quality Mark which shows our ongoing committment to promoting the Peak District and also protecting the local environment.  All our takeaway disposables are compostable and we no longer stock plastic straws, this is just one of the many initiatives we have in place at our cafe.  Please visit the <a href='http://www.eqm.org.uk/peakdistrict/about-eqm.asp' target='_blank' rel='noopener noreferrer'>EQM website</a> to find out more.</p>",
     "vcf": "../static/castleton-visitor-centre/contact.vcf",
     "primaryImage": {
       "filePath": "../static/castleton-visitor-centre/1.jpg",
@@ -50,11 +50,11 @@
     ],
     "documents": [
       {
-        "filePath": "../static/castleton-visitor-centre/blueberry-cafe-menu-castleton-feb-2019.pdf",
+        "filePath": "../static/castleton-visitor-centre/blueberry-cafe-castleton-menu-feb-2019.pdf",
         "name": "Main Menu"
       },
       {
-        "filePath": "../static/castleton-visitor-centre/blueberry-cafe-castleton-drinks-march-2019.pdf",
+        "filePath": "../static/castleton-visitor-centre/blueberry-cafe-castleton-drinks-menu-march-2019.pdf",
         "name": "Drinks Menu"
       }
     ],
@@ -162,7 +162,7 @@
     "schemaId": "https://www.blueberryfood.co.uk/arc-leisure-matlock",
     "schemaName": "arc-leisure-matlock",
     "name": "Arc Leisure Matlock",
-    "content": "<p>Blueberry Cafe at the Arc Leisure Centre offers an eat in or takeaway service, with menu options to suit all the family.</p><p>We pride ourselves with offering homemade items whenever possible and strive to ensure our supplier are as local as possible.</p><p>Our takeaway disposables are compostable as we feel strongly about always striving to reduce any negative impact on the local environment.</p><p>We are delighted to be working in partnership with Freedom Leisure, please visit <a href='https://www.freedom-leisure.co.uk/centres/arc-leisure-matlock/' target='_blank' rel='noopener noreferrer'>www.freedom-leisure.co.uk/centres/arc-leisure-matlock/</a> to find out more.</p>",
+    "content": "<p>Blueberry Cafe at the Arc Leisure Centre offers an eat in or takeaway service, with menu options to suit all the family.</p><p>We pride ourselves with offering homemade items whenever possible and strive to ensure our suppliers are as local as possible.</p><p>Our takeaway disposables are compostable as we feel strongly about always striving to reduce any negative impact on the local environment.</p><p>We are delighted to be working in partnership with Freedom Leisure, please visit <a href='https://www.freedom-leisure.co.uk/centres/arc-leisure-matlock/' target='_blank' rel='noopener noreferrer'>www.freedom-leisure.co.uk/centres/arc-leisure-matlock/</a> to find out more.</p>",
     "googlePlaceId": "ChIJjco8NKCJeUgR6ve5QVs7Vmo",
     "vcf": "../static/arc-leisure-matlock/contact.vcf",
     "primaryImage": {
@@ -197,11 +197,11 @@
     ],
     "documents": [
       {
-        "filePath": "../static/arc-leisure-matlock/blueberry-cafe-menu-feb-2019.pdf",
+        "filePath": "../static/arc-leisure-matlock/blueberry-cafe-arc-menu-feb-2019.pdf",
         "name": "Menu"
       },
       {
-        "filePath": "../static/arc-leisure-matlock/blueberry-arc-drinks-menu-feb 2019.pdf",
+        "filePath": "../static/arc-leisure-matlock/blueberry-cafe-arc-drinks-menu-feb-2019.pdf",
         "name": "Drinks Menu"
       }
     ],
