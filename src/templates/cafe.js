@@ -15,6 +15,9 @@ const Cafe = ({ data }) => {
   return (
     <Layout>
       <Helmet title={data.schema.name} />
+      {data.schema.description && (
+        <Helmet description={data.schema.description} />
+      )}
       <Helmet
         script={[
           {

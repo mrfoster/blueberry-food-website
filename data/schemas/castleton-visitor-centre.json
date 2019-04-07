@@ -5,7 +5,7 @@
   "@id": "https://www.blueberryfood.co.uk/castleton-visitor-centre",
   "name": "Blueberry Cafe - Castleton Visitor Centre",
   "priceRange": "£",
-  "description": "Nunc a lectus vel justo placerat rhoncus. Fusce dignissim ante nisl, quis bibendum nisl consectetur in. Donec tincidunt vel sapien ut efficitur.",
+  "description": "Blueberry Cafe at Castleton is situated inside Castleton's Visitor Centre, in the heart of the stunning Peak District. The cafe welcomes everyone including dogs with well behaved owners and muddy boots.",
   "servesCuisine": "Traditional, Local",
   "address": {
     "@type": "PostalAddress",

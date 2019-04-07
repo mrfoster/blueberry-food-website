@@ -5,7 +5,7 @@
   "@id": "https://www.blueberryfood.co.uk/smedley-street-matlock",
   "name": "Blueberry Cafe - Smedley Street Matlock",
   "priceRange": "£",
-  "description": "",
+  "description": "Blueberry Food Company on Smedley street is home to our cosy Blueberry Cafe and it's also where we create the most delicious, tailor made buffets. We cater for both private parties and business lunches or functions and deliver free of charge.",
   "servesCuisine": "Traditional, Local",
   "address": {
     "@type": "PostalAddress",

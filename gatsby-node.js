@@ -16,7 +16,14 @@ exports.onCreateNode = async ({ node, getNode, actions }) => {
 }
 
 exports.createPages = ({ actions, graphql }) => {
-  const { createPage } = actions
+  const { createPage, createRedirect } = actions
+
+  createRedirect({
+    fromPath: `/therefreshmentroom`,
+    isPermanent: true,
+    redirectInBrowser: true,
+    toPath: `/the-refreshment-room`,
+  })
 
   return graphql(`
     {
@@ -46,7 +53,7 @@ exports.createPages = ({ actions, graphql }) => {
         context: {
           slug: page.slug,
           schemaId: page.schemaId,
-          schemaName: page.schemaName
+          schemaName: page.schemaName,
         },
       })
     })
