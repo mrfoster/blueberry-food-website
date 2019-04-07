@@ -15,9 +15,7 @@ const Cafe = ({ data }) => {
   return (
     <Layout>
       <Helmet title={data.schema.name} />
-      {data.schema.description && (
-        <Helmet description={data.schema.description} />
-      )}
+
       <Helmet
         script={[
           {
@@ -57,6 +55,7 @@ export const pageQuery = graphql`
     }
     schema: schemasJson(_id: { eq: $schemaId }) {
       name
+      description
       address {
         streetAddress
         addressLocality
