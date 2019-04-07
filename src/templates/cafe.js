@@ -15,7 +15,16 @@ const Cafe = ({ data }) => {
   return (
     <Layout>
       <Helmet title={data.schema.name} />
-
+      {data.schema.name && (
+        <Helmet
+          meta={[
+            {
+              name: 'description',
+              content: data.schema.description,
+            },
+          ]}
+        />
+      )}
       <Helmet
         script={[
           {
