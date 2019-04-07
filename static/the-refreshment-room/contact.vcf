@@ -1,0 +1,10 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:The Refreshment Room
+ORG:Blueberry Food Company
+PHOTO;MEDIATYPE=image/svg:https://www.blueberryfood.co.uk/logo.svg
+TEL;TYPE=WORK,VOICE:+44 1298 871869
+ADR;TYPE=WORK:The Refreshment Room;Wormhill;Miller's Dale;Buxton;SK17 8SN;UK
+EMAIL:enquiries@blueberryfood.co.uk
+URL:https://www.blueberryfood.co.uk/the-refreshment-room
+END:VCARD

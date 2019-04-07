@@ -1,17 +1,15 @@
-import React from 'react'
-
 import { graphql } from 'gatsby'
-import Layout from '../components/layout'
-
-import Header from '../components/header'
-import Contact from '../components/contact'
-import Map from '../components/map'
-import OpeningTimes from '../components/opening-times'
-import Images from '../components/images'
-import Documents from '../components/documents'
-import Links from '../components/links'
+import React from 'react'
 import Helmet from 'react-helmet'
 import { FaUtensils } from 'react-icons/fa'
+import Contact from '../components/contact'
+import Documents from '../components/documents'
+import Header from '../components/header'
+import Images from '../components/images'
+import Layout from '../components/layout'
+import Links from '../components/links'
+import Map from '../components/map'
+import OpeningTimes from '../components/opening-times'
 
 const Cafe = ({ data }) => {
   return (
@@ -26,10 +24,10 @@ const Cafe = ({ data }) => {
         ]}
       />
 
-      <Header title="Blueberry Cafe" />
+      <Header title={data.page.name} />
 
       <h2>
-        <FaUtensils /> {data.page.name}
+        <FaUtensils /> {data.page.location}
       </h2>
       {data.page.content && (
         <section dangerouslySetInnerHTML={{ __html: data.page.content }} />
@@ -79,6 +77,7 @@ export const pageQuery = graphql`
 
     page: pagesJson(slug: { eq: $slug }) {
       name
+      location
       content
       googlePlaceId
       vcf {

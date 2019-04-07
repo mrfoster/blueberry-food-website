@@ -13,7 +13,8 @@
     "template": "cafe",
     "schemaId": "https://www.blueberryfood.co.uk/castleton-visitor-centre",
     "schemaName": "castleton-visitor-centre",
-    "name": "Castleton Visitor Centre",
+    "name": "Blueberry Cafe",
+    "location": "Castleton Visitor Centre",
     "googlePlaceId": "ChIJ0QcqYfssekgRcTidLHKH7RU",
     "faceBook": "https://www.facebook.com/BlueberryCafeCastleton/",
     "content": "<p>Blueberry Cafe at Castleton is situated inside Castleton's Visitor Centre, in the heart of the stunning Peak District. The cafe welcomes everyone including dogs with well behaved owners and muddy boots.</p><p>The cafe menu offers a taste of the Peak District with a selection of hot homemade dishes including Peak District Burger, homemade soups, sandwiches, salads, lighter bites, homemade cakes, freshly ground coffees and loose leaf local teas.</p><p>Takeaway food is also available from the kiosk window next to the Cafe, if you would like to grab something quick to take with you on one of the <a href='https://www.visitpeakdistrict.com/things-to-do/activities/walking-and-hiking/10-great-walks-in-the-peak-district-and-derbyshire' target='_blank' rel='noopener noreferrer'>beautiful nearby walks</a>.</p><p>Blueberry Cafe is accredited with the Environmental Quality Mark which shows our ongoing committment to promoting the Peak District and also protecting the local environment.  All our takeaway disposables are compostable and we no longer stock plastic straws, this is just one of the many initiatives we have in place at our cafe.  Please visit the <a href='http://www.eqm.org.uk/peakdistrict/about-eqm.asp' target='_blank' rel='noopener noreferrer'>EQM website</a> to find out more.</p>",
@@ -86,7 +87,8 @@
     "template": "cafe",
     "schemaId": "https://www.blueberryfood.co.uk/smedley-street-matlock",
     "schemaName": "smedley-street-matlock",
-    "name": "Smedley Street Matlock",
+    "name": "Blueberry Cafe",
+    "location": "Smedley Street Matlock",
     "googlePlaceId": "ChIJ-_HCzz6JeUgRjTAzqIAelP0",
     "faceBook": "https://www.facebook.com/pages/Blueberry-Food-Company/1521259654555196",
     "content": "<p>Blueberry Food Company on Smedley street is home to our cosy Blueberry Cafe and it's also where we create the most delicious, tailor made buffets.  We cater for both private parties and business lunches or functions and deliver free of charge.</p><p>The Cafe offers freshly ground coffee, homemade cakes and slices, freshly filled cobs and baguettes, breakfasts, salads and  homemade hot food.</p><p>All our food is sourced from local suppliers and we are always striving to reduce any negative impact our business may have on the local environment.</p>",
@@ -161,7 +163,8 @@
     "template": "cafe",
     "schemaId": "https://www.blueberryfood.co.uk/arc-leisure-matlock",
     "schemaName": "arc-leisure-matlock",
-    "name": "Arc Leisure Matlock",
+    "name": "Blueberry Cafe",
+    "location": "Arc Leisure Matlock",
     "content": "<p>Blueberry Cafe at the Arc Leisure Centre offers an eat in or takeaway service, with menu options to suit all the family.</p><p>We pride ourselves with offering homemade items whenever possible and strive to ensure our suppliers are as local as possible.</p><p>Our takeaway disposables are compostable as we feel strongly about always striving to reduce any negative impact on the local environment.</p><p>We are delighted to be working in partnership with Freedom Leisure, please visit <a href='https://www.freedom-leisure.co.uk/centres/arc-leisure-matlock/' target='_blank' rel='noopener noreferrer'>www.freedom-leisure.co.uk/centres/arc-leisure-matlock/</a> to find out more.</p>",
     "googlePlaceId": "ChIJjco8NKCJeUgR6ve5QVs7Vmo",
     "vcf": "../static/arc-leisure-matlock/contact.vcf",
@@ -172,7 +175,7 @@
     "images": [
       {
         "filePath": "../static/arc-leisure-matlock/1.jpg",
-        "name": "Cafe counter"
+        "name": "Cafe entrance"
       },
       {
         "filePath": "../static/arc-leisure-matlock/3.jpg",
@@ -210,6 +213,65 @@
         "image": "../static/food-hygiene-rating.png",
         "url": "http://ratings.food.gov.uk/business/en-GB/258471/Blueberry-Cafe-Ltd-Matlock",
         "title": "Food Hygiene Rating"
+      }
+    ]
+  },
+  {
+    "slug": "the-refreshment-room",
+    "template": "cafe",
+    "schemaId": "https://www.blueberryfood.co.uk/the-refreshment-room",
+    "schemaName": "the-refreshment-room",
+    "name": "The Refreshment Room",
+    "location": "The Monsal Trail, Miller's Dale Station",
+    "faceBook": "https://www.facebook.com/therefreshmentroom/",
+    "content": "<p>The Refreshment Room is operated by Blueberry Cafe and is set in a former railway building at Miller's Dale Station along the Monsal Trail.</p><p>The cafe menu offers a taste of the Peak District with a selection of hot homemade dishes including Peak District Burger, homemade soups, sandwiches, salads, lighter bites, homemade cakes, freshly ground coffees and loose leaf local teas.</p><p>Takeaway food is also available to buy from the cafe, why not take a picnic along the trail and stop off to the admire one of the many nature reserves or landmarks. Please see the <a href='https://www.peakdistrict.gov.uk/__data/assets/pdf_file/0011/125579/monsal-trail-leaflet.pdf' target='_blank' rel='noopener'>Monsal Trail information leaflet</a> to plan your day.</p><p>The Refreshment Room works hard to promote the Peak District and also to protect the local environment. All our takeaway disposables are compostable or 100% recyclable.</p><p>Our staff are trained to answer your questions about the local area and to offer advice about nearby walks, trails and the general locality.</p><p>Please also visit the PDNP web page about <a href='https://www.peakdistrict.gov.uk/__data/assets/pdf_file/0011/125579/monsal-trail-leaflet.pdf' target='_blank' rel='noopener'>The Monsal Trail</a>, where you will find plenty of useful information about the Trail along with events and activities that take place throughout the year.</p>",
+    "googlePlaceId": "ChIJozXNyE8uekgRj1cZfUyeFaI",
+    "vcf": "../static/the-refreshment-room/contact.vcf",
+    "primaryImage": {
+      "filePath": "../static/the-refreshment-room/1.jpg",
+      "name": "Cafe exterior"
+    },
+    "images": [
+      {
+        "filePath": "../static/the-refreshment-room/1.jpg",
+        "name": "Cafe exterior"
+      },
+      {
+        "filePath": "../static/the-refreshment-room/3.jpg",
+        "name": "Seating area"
+      },
+      {
+        "filePath": "../static/the-refreshment-room/7.jpg",
+        "name": "Counter"
+      },
+      {
+        "filePath": "../static/the-refreshment-room/10.jpg",
+        "name": "Chalk menu"
+      },
+      {
+        "filePath": "../static/the-refreshment-room/12.jpg",
+        "name": "Counter"
+      },
+      {
+        "filePath": "../static/the-refreshment-room/14.jpg",
+        "name": "Seating area"
+      }
+    ],
+    "documents": [
+      {
+        "filePath": "../static/the-refreshment-room/the-refreshment-room-menu-food.pdf",
+        "name": "Food Menu"
+      },
+      {
+        "filePath": "../static/the-refreshment-room/the-refreshment-room-menu-drinks.pdf",
+        "name": "Drinks Menu"
+      }
+    ],
+    "links": [
+      {
+        "image": "../static/flogo_RGB_HEX-512.png",
+        "url": "https://www.facebook.com//therefreshmentroom/",
+        "title": "Facebook Page"
       }
     ]
   }

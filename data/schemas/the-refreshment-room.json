@@ -1,28 +1,28 @@
 {
   "@context": "http://schema.org",
   "@type": "CafeOrCoffeeShop",
-  "image": "https://www.blueberryfood.co.uk/castleton-visitor-centre/1.jpg",
-  "@id": "https://www.blueberryfood.co.uk/castleton-visitor-centre",
-  "name": "Blueberry Cafe - Castleton Visitor Centre",
+  "image": "https://www.blueberryfood.co.uk/the-refreshment-room/1.jpg",
+  "@id": "https://www.blueberryfood.co.uk/the-refreshment-room",
+  "name": "The Refreshment Room",
   "priceRange": "£",
-  "description": "Nunc a lectus vel justo placerat rhoncus. Fusce dignissim ante nisl, quis bibendum nisl consectetur in. Donec tincidunt vel sapien ut efficitur.",
+  "description": "",
   "servesCuisine": "Traditional, Local",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Buxton Road",
-    "addressLocality": "Castleton",
-    "addressRegion": "Hope Valley",
-    "postalCode": "S33 8WP",
+    "streetAddress": "The Refreshment Room",
+    "addressLocality": "Wormhill",
+    "addressRegion": "Buxton",
+    "postalCode": "SK17 8SN",
     "addressCountry": "UK"
   },
   "geo": {
     "@type": "GeoCoordinates",
-    "latitude": 53.3432947,
-    "longitude": -1.7776916
+    "latitude": 53.256122,
+    "longitude": -1.7940223
   },
-  "url": "https://www.blueberryfood.co.uk/castleton-visitor-centre",
+  "url": "https://www.blueberryfood.co.uk/the-refreshment-room",
   "email": "enquiries@blueberryfood.co.uk",
-  "telephone": "+44 (0)1433 620020",
+  "telephone": "+44 (0)1298 871869",
   "openingHoursSpecification": [
     {
       "@type": "OpeningHoursSpecification",
@@ -59,8 +59,5 @@
       "validThrough": "2020-03-31"
     }
   ],
-  "hasMenu": [
-    "https://www.blueberryfood.co.uk/castleton-visitor-centre/blueberry-cafe-castleton-drinks-menu-march-2019.pdf",
-    "https://www.blueberryfood.co.uk/castleton-visitor-centre/blueberry-cafe-castleton-menu-feb-2019.pdf"
-  ]
+  "hasMenu": []
 }
