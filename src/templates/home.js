@@ -1,13 +1,13 @@
-import React from 'react'
 import { graphql, Link } from 'gatsby'
-
-import Layout from '../components/layout'
-import Header from '../components/header'
 import Img from 'gatsby-image'
-import './home.scss'
+import React from 'react'
+import Helmet from 'react-helmet'
 import { FaTruck, FaUtensils } from 'react-icons/fa'
 import Contact from '../components/contact'
-import Helmet from 'react-helmet'
+import Header from '../components/header'
+import Layout from '../components/layout'
+import './home.scss'
+
 const Home = ({ data }) => {
   const cafePages = data.cafePages.pages.map(x => x.page)
   return (
@@ -30,7 +30,11 @@ const Home = ({ data }) => {
           {cafePages.map(page => (
             <li key={page.slug}>
               <Link to={page.slug} className="link">
-                <span>{page.name}</span>{' '}
+                <span>
+                  {page.name}
+                  <br />
+                  {page.location}
+                </span>{' '}
                 <Img
                   alt={page.name}
                   fluid={page.primaryImage.filePath.childImageSharp.fluid}
@@ -97,6 +101,7 @@ export const pageQuery = graphql`
         page: node {
           slug
           name
+          location
           primaryImage {
             filePath {
               childImageSharp {
