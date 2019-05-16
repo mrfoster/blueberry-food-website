@@ -17,29 +17,33 @@ const Contact = ({ data }) => {
       </h2>
       <em>Address:</em>
       <address>
-        {addressLines.filter(x => !!x).map((l, i) => (
-          <span key={i}>
-            {l}
-            <br />
-          </span>
-        ))}
+        {addressLines
+          .filter(x => !!x)
+          .map((l, i) => (
+            <span key={i}>
+              {l}
+              <br />
+            </span>
+          ))}
       </address>
       {data.schema.telephone && (
-        <>
+        <p>
           <em>Tel:</em>{' '}
           <a href={`tel:${data.schema.telephone}`}>{data.schema.telephone}</a>
-          <br />
-        </>
+        </p>
       )}
       {data.schema.email && (
-        <>
+        <p>
           <em>Email:</em>{' '}
           <a href={`mailto:${data.schema.email}`}>{data.schema.email}</a>
-          <br />
-        </>
+        </p>
       )}
 
-      {data.page.vcf && <a href={data.page.vcf.publicURL}>Add to contacts</a>}
+      {data.page.vcf && (
+        <p>
+          <a href={data.page.vcf.publicURL}>Add to contacts</a>
+        </p>
+      )}
     </section>
   )
 }
