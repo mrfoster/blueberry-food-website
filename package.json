@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "author": "Chris Foster",
   "dependencies": {
-    "gatsby": "2.13.72",
+    "gatsby": "2.13.73",
     "gatsby-image": "2.2.10",
     "gatsby-plugin-google-tagmanager": "2.1.6",
     "gatsby-plugin-manifest": "2.2.6",
@@ -14,7 +14,7 @@
     "gatsby-plugin-sass": "2.1.10",
     "gatsby-plugin-sharp": "2.2.13",
     "gatsby-plugin-sitemap": "2.2.7",
-    "gatsby-source-filesystem": "2.1.10",
+    "gatsby-source-filesystem": "2.1.11",
     "gatsby-transformer-json": "2.2.3",
     "gatsby-transformer-sharp": "2.2.7",
     "node-sass": "4.12.0",
