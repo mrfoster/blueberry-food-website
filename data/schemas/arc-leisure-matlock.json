@@ -27,19 +27,19 @@
     {
       "@type": "OpeningHoursSpecification",
       "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-      "opens": "08:30",
+      "opens": "08:15",
       "closes": "19:00"
     },
     {
       "@type": "OpeningHoursSpecification",
       "dayOfWeek": ["Saturday", "Sunday"],
-      "opens": "08:00",
-      "closes": "18:00"
+      "opens": "08:15",
+      "closes": "17:45"
     }
   ],
   "hasMenu": [
-    "https://www.blueberryfood.co.uk/arc-leisure-matlock/blueberry-cafe-arc-menu-feb-2019.pdf",
-    "https://www.blueberryfood.co.uk/arc-leisure-matlock/blueberry-cafe-arc-drinks-menu-feb-2019.pdf",
-    "https://www.blueberryfood.co.uk/arc-leisure-matlock/blueberry-cafe-arc-childrens-party-menu-2019.pdf"
+    "https://www.blueberryfood.co.uk/arc-leisure-matlock/blueberry-arc-menu-2020.pdf",
+    "https://www.blueberryfood.co.uk/arc-leisure-matlock/blueberry-arc-drinks-menu-2020.pdf",
+    "https://www.blueberryfood.co.uk/arc-leisure-matlock/blueberry-cafe-kids-party-2019.png"
   ]
 }

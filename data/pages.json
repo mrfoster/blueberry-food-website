@@ -196,15 +196,15 @@
     ],
     "documents": [
       {
-        "filePath": "../static/arc-leisure-matlock/blueberry-cafe-arc-menu-feb-2019.pdf",
+        "filePath": "../static/arc-leisure-matlock/blueberry-arc-menu-2020.pdf",
         "name": "Menu"
       },
       {
-        "filePath": "../static/arc-leisure-matlock/blueberry-cafe-arc-drinks-menu-feb-2019.pdf",
+        "filePath": "../static/arc-leisure-matlock/blueberry-arc-drinks-menu-2020.pdf",
         "name": "Drinks Menu"
       },
       {
-        "filePath": "../static/arc-leisure-matlock/blueberry-cafe-arc-childrens-party-menu-2019.pdf",
+        "filePath": "../static/arc-leisure-matlock/blueberry-cafe-kids-party-2019.png",
         "name": "Children's Party Menu"
       }
     ],
