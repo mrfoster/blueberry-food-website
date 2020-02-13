@@ -94,6 +94,7 @@ export const pageQuery = graphql`
       vcf {
         publicURL
       }
+      openingTimes
       images {
         filePath {
           childImageSharp {
