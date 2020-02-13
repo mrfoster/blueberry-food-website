@@ -15,7 +15,7 @@ const OpeningTimes = ({ data }) => (
         {data.schema.openingHoursSpecification &&
           Object.entries(
             data.schema.openingHoursSpecification.reduce((o, x) => {
-              o[x.name || ''] = {
+              o[x.name] = {
                 ...o[x.name],
                 ...x.dayOfWeek.reduce((days, day) => {
                   days[day] = { opens: x.opens, closes: x.closes }
@@ -25,7 +25,7 @@ const OpeningTimes = ({ data }) => (
               return o
             }, {})
           )
-            .map(x => ({ name: x[0], days: x[1] }))
+            .map(x => ({ name: x[0] === "null" ? "" : x[0], days: x[1] }))
             .map((o, i) => (
               <>
                 {o.name && <h3>{o.name}</h3>}
