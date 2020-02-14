@@ -1,33 +1,43 @@
 import React from "react"
 import { FaDoorOpen } from "react-icons/fa"
 
-const OpeningTimes = ({ data }) => (
-  <>
-    {(data.schema.openingHoursSpecification || data.page.openingTimes) && (
-      <section id="openingTimes">
-        <h2>
-          <FaDoorOpen /> Opening Times
-        </h2>
-        {data.page.openingTimes && (
-          <p dangerouslySetInnerHTML={{ __html: data.page.openingTimes }}></p>
-        )}
+const OpeningTimes = ({ data }) => {
+  const openingTimes = Object.values(
+    data.schema.openingHoursSpecification.reduce((o, x) => {
+      const key = `${x.name} ${x.validFrom} ${x.validThrough}`
+      o[key] = {
+        ...x,
+        id: key,
+        validFrom: new Date(x.validFrom),
+        validThrough: new Date(x.validThrough),
+        days: {
+          ...o[key]?.days,
+          ...x.dayOfWeek.reduce((days, day) => {
+            days[day] = { opens: x.opens, closes: x.closes }
+            return days
+          }, {}),
+        },
+      }
+      return o
+    }, {})
+  )
 
-        {data.schema.openingHoursSpecification &&
-          Object.entries(
-            data.schema.openingHoursSpecification.reduce((o, x) => {
-              o[x.name] = {
-                ...o[x.name],
-                ...x.dayOfWeek.reduce((days, day) => {
-                  days[day] = { opens: x.opens, closes: x.closes }
-                  return days
-                }, {}),
-              }
-              return o
-            }, {})
-          )
-            .map(x => ({ name: x[0] === "null" ? "" : x[0], days: x[1] }))
-            .map((o, i) => (
-              <>
+  console.log(openingTimes)
+
+  return (
+    <>
+      {(data.schema.openingHoursSpecification || data.page.openingTimes) && (
+        <section id="openingTimes">
+          <h2>
+            <FaDoorOpen /> Opening Times
+          </h2>
+          {data.page.openingTimes && (
+            <p dangerouslySetInnerHTML={{ __html: data.page.openingTimes }}></p>
+          )}
+
+          {data.schema.openingHoursSpecification &&
+            openingTimes.map((o, i) => (
+              <div key={o.id}>
                 {o.name && <h3>{o.name}</h3>}
 
                 <table>
@@ -41,7 +51,7 @@ const OpeningTimes = ({ data }) => (
                       "Saturday",
                       "Sunday",
                     ].map(day => (
-                      <tr>
+                      <tr key={day}>
                         <th>{day}</th>
                         <td>
                           {(!o.days[day] ||
@@ -59,11 +69,12 @@ const OpeningTimes = ({ data }) => (
                     ))}
                   </tbody>
                 </table>
-              </>
+              </div>
             ))}
-      </section>
-    )}
-  </>
-)
+        </section>
+      )}
+    </>
+  )
+}
 
 export default OpeningTimes

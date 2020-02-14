@@ -3,7 +3,7 @@ import { FaMapMarkerAlt } from 'react-icons/fa'
 
 const Map = ({ data }) => {
   const apiKey = 'AIzaSyBI-CY3rt_aGrcyQopvDBrv3_x_jxVxDR4'
-  return (
+  return data.page.googlePlaceId && (
     <section id="map">
       <h2>
         <FaMapMarkerAlt /> Find us
