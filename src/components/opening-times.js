@@ -22,8 +22,6 @@ const OpeningTimes = ({ data }) => {
     }, {})
   )
 
-  console.log(openingTimes)
-
   return (
     <>
       {(data.schema.openingHoursSpecification || data.page.openingTimes) && (
