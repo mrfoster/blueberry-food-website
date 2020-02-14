@@ -9,7 +9,7 @@
     "content": "<p>Blueberry Food Company specialises in creating the most delicious, tailor made buffets. We cater for both private parties and for business lunches or functions.</p>"
   },
   {
-    "slug": "castleton-visitor-centre",
+    "slug": "/castleton-visitor-centre",
     "template": "cafe",
     "schemaId": "https://www.blueberryfood.co.uk/castleton-visitor-centre",
     "schemaName": "castleton-visitor-centre",
@@ -83,7 +83,7 @@
     ]
   },
   {
-    "slug": "smedley-street-matlock",
+    "slug": "/smedley-street-matlock",
     "template": "cafe",
     "schemaId": "https://www.blueberryfood.co.uk/smedley-street-matlock",
     "schemaName": "smedley-street-matlock",
@@ -155,7 +155,7 @@
     ]
   },
   {
-    "slug": "arc-leisure-matlock",
+    "slug": "/arc-leisure-matlock",
     "template": "cafe",
     "schemaId": "https://www.blueberryfood.co.uk/arc-leisure-matlock",
     "schemaName": "arc-leisure-matlock",
@@ -217,7 +217,7 @@
     ]
   },
   {
-    "slug": "the-refreshment-room",
+    "slug": "/the-refreshment-room",
     "template": "cafe",
     "schemaId": "https://www.blueberryfood.co.uk/the-refreshment-room",
     "schemaName": "the-refreshment-room",
