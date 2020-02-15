@@ -18,26 +18,26 @@ geo:
 openingHours:
   - name:
     monday:
-      opens: 08:15
-      closes: 19:00
+      opens: '08:15'
+      closes: '19:00'
     tuesday:
-      opens: 08:15
-      closes: 19:00
+      opens: '08:15'
+      closes: '19:00'
     wednesday:
-      opens: 08:15
-      closes: 19:00
+      opens: '08:15'
+      closes: '19:00'
     thursday:
-      opens: 08:15
-      closes: 19:00
+      opens: '08:15'
+      closes: '19:00'
     friday:
-      opens: 08:15
-      closes: 19:00
+      opens: '08:15'
+      closes: '19:00'
     saturday:
-      opens: 08:15
-      closes: 17:45
+      opens: '08:15'
+      closes: '17:45'
     sunday:
-      opens: 08:15
-      closes: 17:45
+      opens: '08:15'
+      closes: '17:45'
 primaryImage:
   filePath: ../static/arc-leisure-matlock/1.jpg
   name: Cafe entrance

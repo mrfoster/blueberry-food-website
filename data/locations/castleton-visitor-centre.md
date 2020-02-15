@@ -18,50 +18,50 @@ geo:
 openingHours:
   - name: Summer April - October
     monday:
-      opens: 09:30
-      closes: 17:30
+      opens: '09:30'
+      closes: '17:30'
     tuesday:
-      opens: 09:30
-      closes: 17:30
+      opens: '09:30'
+      closes: '17:30'
     wednesday:
-      opens: 09:30
-      closes: 17:30
+      opens: '09:30'
+      closes: '17:30'
     thursday:
-      opens: 09:30
-      closes: 17:30
+      opens: '09:30'
+      closes: '17:30'
     friday:
-      opens: 09:30
-      closes: 17:30
+      opens: '09:30'
+      closes: '17:30'
     saturday:
-      opens: 09:30
-      closes: 17:30
+      opens: '09:30'
+      closes: '17:30'
     sunday:
-      opens: 09:30
-      closes: 17:30
+      opens: '09:30'
+      closes: '17:30'
     validFrom: 2019-04-01
     validThrough: 2019-10-31
   - name: Winter November - March
     monday:
-      opens: 10:00
-      closes: 16:30
+      opens: '10:00'
+      closes: '16:30'
     tuesday:
-      opens: 10:00
-      closes: 16:30
+      opens: '10:00'
+      closes: '16:30'
     wednesday:
-      opens: 10:00
-      closes: 16:30
+      opens: '10:00'
+      closes: '16:30'
     thursday:
-      opens: 10:00
-      closes: 16:30
+      opens: '10:00'
+      closes: '16:30'
     friday:
-      opens: 10:00
-      closes: 16:30
+      opens: '10:00'
+      closes: '16:30'
     saturday:
-      opens: 10:00
-      closes: 16:30
+      opens: '10:00'
+      closes: '16:30'
     sunday:
-      opens: 10:00
-      closes: 16:30
+      opens: '10:00'
+      closes: '16:30'
     validFrom: 2019-11-01
     validThrough: 2020-03-31
 primaryImage:

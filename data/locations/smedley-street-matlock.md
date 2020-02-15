@@ -18,26 +18,26 @@ geo:
 openingHours:
   - name:
     monday:
-      opens: 08:00
-      closes: 15:00
+      opens: '08:00'
+      closes: '15:00'
     tuesday:
-      opens: 08:00
-      closes: 15:00
+      opens: '08:00'
+      closes: '15:00'
     wednesday:
-      opens: 08:00
-      closes: 15:00
+      opens: '08:00'
+      closes: '15:00'
     thursday:
-      opens: 08:00
-      closes: 15:00
+      opens: '08:00'
+      closes: '15:00'
     friday:
-      opens: 08:00
-      closes: 15:00
+      opens: '08:00'
+      closes: '15:00'
     saturday:
-      opens: 00:00
-      closes: 00:00
+      opens: '00:00'
+      closes: '00:00'
     sunday:
-      opens: 00:00
-      closes: 00:00
+      opens: '00:00'
+      closes: '00:00'
 primaryImage:
   filePath: ../static/smedley-street-matlock/1.jpg
   name: Cafe entrance
