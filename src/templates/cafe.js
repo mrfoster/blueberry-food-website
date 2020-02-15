@@ -25,14 +25,14 @@ const Cafe = ({ data }) => {
           ]}
         />
       )}
-      <Helmet
+      {/* <Helmet
         script={[
           {
             type: 'application/ld+json',
             innerHTML: data.schemaContent.fields.content,
           },
         ]}
-      />
+      /> */}
 
       <Header title={data.page.name} />
 
