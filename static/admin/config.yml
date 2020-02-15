@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: mrfoster/blueberry-food-website
-  branch: netlify-cms
+  branch: features/netlify-cms
 
 media_folder: static/assets
 public_folder: /assets
