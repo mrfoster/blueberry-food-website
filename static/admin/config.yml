@@ -7,14 +7,28 @@ media_folder: static/assets
 public_folder: /assets
 
 collections:
-  - name: blog
-    label: Blog
-    folder: blog
+  - name: pages
+    label: Pages
+    media_folder: ''
+    public_folder: ''
+    files:
+      - file: data/home.md
+        label: Home
+        delete: false
+        name: home
+        fields:
+          - { name: path, label: Path, widget: hidden, default: / }
+          - { name: body, label: Body, widget: markdown }
+  - name: location
+    label: Locations
+    folder: data/locations
     media_folder: ''
     public_folder: ''
     create: true
     fields:
       - { name: path, label: Path }
-      - { name: date, label: Date, widget: datetime }
-      - { name: title, label: Title }
+      - { name: name, label: Name }
+      - { name: location, label: Location }
+      - { name: googlePlaceId, label: Google Place Id }
+      - { name: faceBook, label: Facebook Page }
       - { name: body, label: Body, widget: markdown }
