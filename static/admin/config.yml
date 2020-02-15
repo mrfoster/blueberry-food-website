@@ -22,13 +22,25 @@ collections:
   - name: location
     label: Locations
     folder: data/locations
-    media_folder: ''
-    public_folder: ''
+    path: '{{slug}}'
+    media_folder: 
+    public_folder: 
     create: true
     fields:
-      - { name: path, label: Path }
+      - { name: slug, label: Slug }
       - { name: name, label: Name }
+      - { name: image, label: Image, widget: image }
+      - name: images
+        label: Images
+        media_library:
+          config:
+            multiple: true
+      - label: "Manual PDF"
+        name: "manual_pdf"
+        widget: "file"
+        media_library:
+          config:
+            multiple: true
       - { name: location, label: Location }
       - { name: googlePlaceId, label: Google Place Id }
-      - { name: faceBook, label: Facebook Page }
       - { name: body, label: Body, widget: markdown }
