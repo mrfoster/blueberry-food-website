@@ -1,13 +1,47 @@
 ---
 slug: /castleton-visitor-centre
 template: cafe
-schemaId: https://www.blueberryfood.co.uk/castleton-visitor-centre
-schemaName: castleton-visitor-centre
 name: Blueberry Cafe
 location: Castleton Visitor Centre
-googlePlaceId: ChIJ0QcqYfssekgRcTidLHKH7RU
-faceBook: https://www.facebook.com/BlueberryCafeCastleton/
-vcf: ../static/castleton-visitor-centre/contact.vcf
+description: Blueberry Cafe at Castleton is situated inside Castleton's Visitor Centre, in the heart of the stunning Peak District. The cafe welcomes everyone including dogs with well behaved owners and muddy boots.
+email: enquiries@blueberryfood.co.uk
+telephone: +44 (0)1433 620020
+address:
+  streetAddress: Buxton Road
+  addressLocality: Castleton
+  addressRegion: Hope Valley
+  postalCode: S33 8WP
+  addressCountry: UK
+geo:
+  latitude: 53.3432947
+  longitude: -1.7776916
+openingHours:
+  - name: Summer April - October
+    dayOfWeek:
+      - Monday
+      - Tuesday
+      - Wednesday
+      - Thursday
+      - Friday
+      - Saturday
+      - Sunday
+    opens: 09:30
+    closes: 17:30
+    validFrom: 2019-04-01
+    validThrough: 2019-10-31
+  - name: Winter November - March
+    dayOfWeek:
+      - Monday
+      - Tuesday
+      - Wednesday
+      - Thursday
+      - Friday
+      - Saturday
+      - Sunday
+    opens: 10:00
+    closes: 16:30
+    validFrom: 2019-11-01
+    validThrough: 2020-03-31
 primaryImage:
   filePath: ../static/castleton-visitor-centre/1.jpg
   name: Cafe interior
@@ -42,6 +76,10 @@ links:
   - image: ../static/flogo_RGB_HEX-512.png
     url: https://www.facebook.com/BlueberryCafeCastleton
     title: Facebook Page
+  - image: ../static/food-hygiene-rating.png
+    url: https://ratings.food.gov.uk/business/en-GB/1207865/Blueberry-Cafe-HOPE-VALLEY
+    title: Food Hygiene Rating
+googlePlaceId: ChIJ0QcqYfssekgRcTidLHKH7RU
 ---
 
 Blueberry Cafe at Castleton is situated inside Castleton's Visitor Centre, in the heart of the stunning Peak District. The cafe welcomes everyone including dogs with well behaved owners and muddy boots.

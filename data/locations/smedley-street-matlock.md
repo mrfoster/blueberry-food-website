@@ -1,13 +1,30 @@
 ---
 slug: /smedley-street-matlock
 template: cafe
-schemaId: https://www.blueberryfood.co.uk/smedley-street-matlock
-schemaName: smedley-street-matlock
 name: Blue Pig Deli
 location: Smedley Street Matlock
-googlePlaceId: ChIJ-_HCzz6JeUgRjTAzqIAelP0
-faceBook: https://www.facebook.com/pages/Blueberry-Food-Company/1521259654555196
-vcf: ../static/smedley-street-matlock/contact.vcf
+description: Blueberry Food Company on Smedley street is home to our cosy Blueberry Cafe and it's also where we create the most delicious, tailor made buffets. We cater for both private parties and business lunches or functions and deliver free of charge.
+email: enquiries@blueberryfood.co.uk
+telephone: +44 (0)1629 593476
+address:
+  streetAddress: 87-89 Smedley St E
+  addressLocality: Matlock
+  addressRegion:
+  postalCode: DE4 3FQ
+  addressCountry: UK
+geo:
+  latitude: 53.1420474
+  longitude: -1.5506789
+openingHours:
+  - name:
+    dayOfWeek:
+      - Monday
+      - Tuesday
+      - Wednesday
+      - Thursday
+      - Friday
+    opens: 08:00
+    closes: 15:00
 primaryImage:
   filePath: ../static/smedley-street-matlock/1.jpg
   name: Cafe entrance
@@ -40,6 +57,7 @@ links:
   - image: ../static/flogo_RGB_HEX-512.png
     url: https://www.facebook.com/Blueberry-Food-Company-127740100603563
     title: Facebook Page
+googlePlaceId: ChIJ-_HCzz6JeUgRjTAzqIAelP0
 ---
 
 Blueberry Food Company on Smedley street is home to our cosy Blueberry Cafe and it's also where we create the most delicious, tailor made buffets. We cater for both private parties and business lunches or functions and deliver free of charge.

@@ -7,7 +7,7 @@
 const path = require('path')
 const fs = require('fs-extra')
 
-exports.onCreateNode = async ({ node, getNode, actions }) => {
+exports.onCreateNode = async ({ node, actions }) => {
   const { createNodeField } = actions
   if (node.absolutePath && node.absolutePath.endsWith('.json')) {
     const content = await fs.readFile(node.absolutePath, 'utf8')
@@ -16,14 +16,7 @@ exports.onCreateNode = async ({ node, getNode, actions }) => {
 }
 
 exports.createPages = ({ actions, graphql }) => {
-  const { createPage, createRedirect } = actions
-
-  createRedirect({
-    fromPath: `/therefreshmentroom`,
-    isPermanent: true,
-    redirectInBrowser: true,
-    toPath: `/the-refreshment-room`,
-  })
+  const { createPage } = actions
 
   return graphql(`
     {

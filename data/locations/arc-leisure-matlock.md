@@ -1,12 +1,43 @@
 ---
 slug: /arc-leisure-matlock
 template: cafe
-schemaId: https://www.blueberryfood.co.uk/arc-leisure-matlock
-schemaName: arc-leisure-matlock
 name: Blueberry Cafe
 location: Arc Leisure Matlock
-googlePlaceId: ChIJjco8NKCJeUgR6ve5QVs7Vmo
-vcf: ../static/arc-leisure-matlock/contact.vcf
+description: Blueberry Cafe at the Arc Leisure Centre offers an eat in or takeaway service, with menu options to suit all the family.
+email: enquiries@blueberryfood.co.uk
+telephone: +44 (0)7460 565348
+address:
+  streetAddress: Bakewell Rd
+  addressLocality:
+  addressRegion: Matlock
+  postalCode: DE4 3AZ
+  addressCountry: UK
+geo:
+  latitude: 53.1423184
+  longitude: -1.5720833
+openingHours:
+  - name:
+    monday:
+      opens: 08:15
+      closes: 19:00
+    tuesday:
+      opens: 08:15
+      closes: 19:00
+    wednesday:
+      opens: 08:15
+      closes: 19:00
+    thursday:
+      opens: 08:15
+      closes: 19:00
+    friday:
+      opens: 08:15
+      closes: 19:00
+    saturday:
+      opens: 08:15
+      closes: 17:45
+    sunday:
+      opens: 08:15
+      closes: 17:45
 primaryImage:
   filePath: ../static/arc-leisure-matlock/1.jpg
   name: Cafe entrance
@@ -31,9 +62,13 @@ documents:
   - filePath: ../static/arc-leisure-matlock/blueberry-cafe-kids-party-2019.png
     name: Children's Party Menu
 links:
+  - image: ../static/flogo_RGB_HEX-512.png
+    url: https://www.facebook.com/pages/Blueberry-Cafe-at-the-Arc/210996019253515
+    title: Facebook Page
   - image: ../static/food-hygiene-rating.png
     url: http://ratings.food.gov.uk/business/en-GB/258471/Blueberry-Cafe-Ltd-Matlock
     title: Food Hygiene Rating
+googlePlaceId: ChIJjco8NKCJeUgR6ve5QVs7Vmo
 ---
 
 Blueberry Cafe at the Arc Leisure Centre offers an eat in or takeaway service, with menu options to suit all the family.

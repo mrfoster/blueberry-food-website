@@ -1,17 +1,64 @@
 ---
 slug: /the-refreshment-room
 template: cafe
-schemaId: https://www.blueberryfood.co.uk/the-refreshment-room
-schemaName: the-refreshment-room
 name: The Refreshment Room
 location: The Monsal Trail, Miller's Dale Station
-faceBook: https://www.facebook.com/therefreshmentroom/
-vcf: ../static/the-refreshment-room/contact.vcf
+description: The Refreshment Room is operated by Blueberry Cafe and is set in a former railway building at Miller's Dale Station along the Monsal Trail
+email: enquiries@blueberryfood.co.uk
+telephone: +44 (0)1298 871869
+address:
+  streetAddress: The Refreshment Room
+  addressLocality: Wormhill
+  addressRegion: Buxton
+  postalCode: SK17 8SN
+  addressCountry: UK
+geo:
+  latitude: 53.256122
+  longitude: -1.7940223
+openingHoursBody: >-
+  Due to the unpredictability of weather conditions, please check [Facebook](https://www.facebook.com/therefreshmentroom/) or [contact us](mailto:enquiries@blueberryfood.co.uk) for current opening times.
+openingHours:
+  - name: Winter November - Easter
+    dayOfWeek:
+      - Monday
+      - Tuesday
+    opens: 00:00
+    closes: 00:00
+    validFrom: 2019-11-01
+    validThrough: 2020-04-10
+  - name: Winter November - Easter
+    dayOfWeek:
+      - Wednesday
+      - Thursday
+      - Friday
+    opens: 11:00
+    closes: 14:30
+    validFrom: 2019-11-01
+    validThrough: 2020-04-10
+  - name: Winter November - Easter
+    dayOfWeek:
+      - Saturday
+      - Sunday
+    opens: 10:00
+    closes: 16:00
+    validFrom: 2019-11-01
+    validThrough: 2020-04-10
+  - name: Summer April - October
+    dayOfWeek:
+      - Monday
+      - Tuesday
+      - Wednesday
+      - Thursday
+      - Friday
+      - Saturday
+      - Sunday
+    opens: 09:30
+    closes: 17:30
+    validFrom: 2019-04-01
+    validThrough: 2019-10-31
 primaryImage:
   filePath: ../static/the-refreshment-room/1.jpg
   name: Cafe exterior
-openingTimes: >-
-  Due to the unpredictability of weather conditions, please check [Facebook](https://www.facebook.com/therefreshmentroom/) or [contact us](mailto:enquiries@blueberryfood.co.uk) for current opening times.
 images:
   - filePath: ../static/the-refreshment-room/1.jpg
     name: Cafe exterior
