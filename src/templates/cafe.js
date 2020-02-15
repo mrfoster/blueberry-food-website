@@ -1,15 +1,15 @@
-import { graphql } from 'gatsby'
-import React from 'react'
-import Helmet from 'react-helmet'
-import { FaUtensils } from 'react-icons/fa'
-import Contact from '../components/contact'
-import Documents from '../components/documents'
-import Header from '../components/header'
-import Images from '../components/images'
-import Layout from '../components/layout'
-import Links from '../components/links'
-import Map from '../components/map'
-import OpeningTimes from '../components/opening-times'
+import { graphql } from "gatsby"
+import React from "react"
+import Helmet from "react-helmet"
+import { FaUtensils } from "react-icons/fa"
+import Contact from "../components/contact"
+import Documents from "../components/documents"
+import Header from "../components/header"
+import Images from "../components/images"
+import Layout from "../components/layout"
+import Links from "../components/links"
+import Map from "../components/map"
+import OpeningTimes from "../components/opening-times"
 
 const Cafe = ({ data }) => {
   return (
@@ -19,20 +19,20 @@ const Cafe = ({ data }) => {
         <Helmet
           meta={[
             {
-              name: 'description',
+              name: "description",
               content: data.schema.description,
             },
           ]}
         />
       )}
-      {/* <Helmet
+      <Helmet
         script={[
           {
             type: 'application/ld+json',
             innerHTML: data.schemaContent.fields.content,
           },
         ]}
-      /> */}
+      />
 
       <Header title={data.page.name} />
 
@@ -57,7 +57,7 @@ export default Cafe
 
 export const pageQuery = graphql`
   query($slug: String!, $schemaId: String!, $schemaName: String!) {
-    schemaContent: file(name: { eq: $schemaName }) {
+    schemaContent: file(name: { eq: $schemaName }, extension: { eq: "json" }) {
       fields {
         content
       }
