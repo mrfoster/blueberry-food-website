@@ -17,29 +17,51 @@ geo:
   longitude: -1.7776916
 openingHours:
   - name: Summer April - October
-    dayOfWeek:
-      - Monday
-      - Tuesday
-      - Wednesday
-      - Thursday
-      - Friday
-      - Saturday
-      - Sunday
-    opens: 09:30
-    closes: 17:30
+    monday:
+      opens: 09:30
+      closes: 17:30
+    tuesday:
+      opens: 09:30
+      closes: 17:30
+    wednesday:
+      opens: 09:30
+      closes: 17:30
+    thursday:
+      opens: 09:30
+      closes: 17:30
+    friday:
+      opens: 09:30
+      closes: 17:30
+    saturday:
+      opens: 09:30
+      closes: 17:30
+    sunday:
+      opens: 09:30
+      closes: 17:30
     validFrom: 2019-04-01
     validThrough: 2019-10-31
   - name: Winter November - March
-    dayOfWeek:
-      - Monday
-      - Tuesday
-      - Wednesday
-      - Thursday
-      - Friday
-      - Saturday
-      - Sunday
-    opens: 10:00
-    closes: 16:30
+    monday:
+      opens: 10:00
+      closes: 16:30
+    tuesday:
+      opens: 10:00
+      closes: 16:30
+    wednesday:
+      opens: 10:00
+      closes: 16:30
+    thursday:
+      opens: 10:00
+      closes: 16:30
+    friday:
+      opens: 10:00
+      closes: 16:30
+    saturday:
+      opens: 10:00
+      closes: 16:30
+    sunday:
+      opens: 10:00
+      closes: 16:30
     validFrom: 2019-11-01
     validThrough: 2020-03-31
 primaryImage:

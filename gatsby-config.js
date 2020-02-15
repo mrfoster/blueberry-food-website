@@ -19,6 +19,7 @@ module.exports = {
       },
     },
     'gatsby-transformer-json',
+    `gatsby-transformer-remark`,
     'gatsby-plugin-sass',
     {
       resolve: `gatsby-plugin-google-tagmanager`,
@@ -40,7 +41,6 @@ module.exports = {
       },
     },
     'gatsby-plugin-offline',
-
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     {

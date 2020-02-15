@@ -19,41 +19,51 @@ openingHoursBody: >-
   Due to the unpredictability of weather conditions, please check [Facebook](https://www.facebook.com/therefreshmentroom/) or [contact us](mailto:enquiries@blueberryfood.co.uk) for current opening times.
 openingHours:
   - name: Winter November - Easter
-    dayOfWeek:
-      - Monday
-      - Tuesday
-    opens: 00:00
-    closes: 00:00
-    validFrom: 2019-11-01
-    validThrough: 2020-04-10
-  - name: Winter November - Easter
-    dayOfWeek:
-      - Wednesday
-      - Thursday
-      - Friday
-    opens: 11:00
-    closes: 14:30
-    validFrom: 2019-11-01
-    validThrough: 2020-04-10
-  - name: Winter November - Easter
-    dayOfWeek:
-      - Saturday
-      - Sunday
-    opens: 10:00
-    closes: 16:00
+    monday:
+      opens: 00:00
+      closes: 00:00
+    tuesday:
+      opens: 00:00
+      closes: 00:00
+    wednesday:
+      opens: 11:00
+      closes: 14:30
+    thursday:
+      opens: 11:00
+      closes: 14:30
+    friday:
+      opens: 11:00
+      closes: 14:30
+    saturday:
+      opens: 10:00
+      closes: 16:00
+    sunday:
+      opens: 10:00
+      closes: 16:00
     validFrom: 2019-11-01
     validThrough: 2020-04-10
   - name: Summer April - October
-    dayOfWeek:
-      - Monday
-      - Tuesday
-      - Wednesday
-      - Thursday
-      - Friday
-      - Saturday
-      - Sunday
-    opens: 09:30
-    closes: 17:30
+    monday:
+      opens: 09:30
+      closes: 17:30
+    tuesday:
+      opens: 09:30
+      closes: 17:30
+    wednesday:
+      opens: 09:30
+      closes: 17:30
+    thursday:
+      opens: 09:30
+      closes: 17:30
+    friday:
+      opens: 09:30
+      closes: 17:30
+    saturday:
+      opens: 09:30
+      closes: 17:30
+    sunday:
+      opens: 09:30
+      closes: 17:30
     validFrom: 2019-04-01
     validThrough: 2019-10-31
 primaryImage:
