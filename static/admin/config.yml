@@ -29,18 +29,20 @@ collections:
     fields:
       - { name: slug, label: Slug }
       - { name: name, label: Name }
-      - { name: image, label: Image, widget: image }
+      - { name: image, label: Image, widget: image, required: false }
       - name: images
         label: Images
+        required: false
         media_library:
           config:
             multiple: true
       - label: "Manual PDF"
         name: "manual_pdf"
+        required: false
         widget: "file"
         media_library:
           config:
             multiple: true
       - { name: location, label: Location }
-      - { name: googlePlaceId, label: Google Place Id }
+      - { name: googlePlaceId, label: Google Place Id, required: false }
       - { name: body, label: Body, widget: markdown }
