@@ -144,8 +144,8 @@ collections:
     label: Tests
     label_singular: Test
     folder: data/tests
-    media_folder:
-    public_folder:
+    media_folder: ""
+    public_folder: ""
     create: true
     fields:
       - { name: slug, label: Slug, widget: string }
@@ -163,8 +163,8 @@ collections:
     label_singular: Test2
     folder: data/tests
     path: "{{slug}}"
-    media_folder:
-    public_folder:
+    media_folder: ""
+    public_folder: ""
     create: true
     fields:
       - { name: slug, label: Slug, widget: string }
