@@ -1,6 +1,7 @@
 ---
 slug: /castleton-visitor-centre
 template: cafe
+title: Blueberry Cafe - Castleton Visitor Centre
 name: Blueberry Cafe
 location: Castleton Visitor Centre
 description: Blueberry Cafe at Castleton is situated inside Castleton's Visitor Centre, in the heart of the stunning Peak District. The cafe welcomes everyone including dogs with well behaved owners and muddy boots.

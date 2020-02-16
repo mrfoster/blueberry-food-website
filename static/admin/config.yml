@@ -9,40 +9,171 @@ public_folder: /assets
 collections:
   - name: pages
     label: Pages
-    media_folder: ''
-    public_folder: ''
+    media_folder:
+    public_folder:
     files:
       - file: data/home.md
         label: Home
         delete: false
         name: home
         fields:
-          - { name: path, label: Path, widget: hidden, default: / }
+          - { name: slug, label: Path, widget: hidden, default: / }
+          - { name: template, label: Template, widget: hidden, default: home }
           - { name: body, label: Body, widget: markdown }
-  - name: location
+  - name: locations
     label: Locations
+    label_singular: Location
     folder: data/locations
-    path: '{{slug}}'
-    media_folder: 
-    public_folder: 
+    media_folder:
+    public_folder:
     create: true
     fields:
-      - { name: slug, label: Slug }
-      - { name: name, label: Name }
-      - { name: image, label: Image, widget: image, required: false }
+      - { name: slug, label: Slug, widget: string }
+      - { name: template, label: Template, widget: hidden, default: cafe }
+      - { name: title, label: Title, widget: string }
+      - { name: name, label: Name, widget: string }
+      - { name: location, label: Location, widget: string }
+      - { name: description, label: Description, widget: text }
+      - { name: email, label: Email, widget: string }
+      - { name: telephone, label: Telephone, widget: string }
+      - name: address
+        label: Address
+        widget: object
+        fields:
+          - { name: streetAddress, widget: string }
+          - { name: addressLocality, widget: string }
+          - { name: addressRegion, widget: string }
+          - { name: postalCode, widget: string }
+          - { name: country, widget: hidden, default: GB }
+      - name: geo
+        label: Geo
+        widget: object
+        required: false
+        fields:
+          - { name: latitude, widget: number }
+          - { name: longitude, widget: number }
+      - name: openingHoursContent
+        label: Opening Hours Content
+        widget: markdown
+      - name: openingHours
+        label: Opening Hours
+        widget: list
+        fields:
+          - { name: name, label: Name, widget: string, required: false }
+          - name: validFrom
+            label: Valid From
+            widget: date
+            required: false
+          - name: validThrough
+            label: Valid Through
+            widget: date
+            required: false
+          - name: monday
+            label: Monday
+            widget: object
+            fields:
+              - { name: opens, label: Opens, widget: string }
+              - { name: closes, label: Closes, widget: string }
+          - name: tuesday
+            label: Tuesday
+            widget: object
+            fields:
+              - { name: opens, label: Opens, widget: string }
+              - { name: closes, label: Closes, widget: string }
+          - name: wednesday
+            label: Wednesday
+            widget: object
+            fields:
+              - { name: opens, label: Opens, widget: string }
+              - { name: closes, label: Closes, widget: string }
+          - name: thursday
+            label: Thursday
+            widget: object
+            fields:
+              - { name: opens, label: Opens, widget: string }
+              - { name: closes, label: Closes, widget: string }
+          - name: friday
+            label: Friday
+            widget: object
+            fields:
+              - { name: opens, label: Opens, widget: string }
+              - { name: closes, label: Closes, widget: string }
+          - name: saturday
+            label: Saturday
+            widget: object
+            fields:
+              - { name: opens, label: Opens, widget: string }
+              - { name: closes, label: Closes, widget: string }
+          - name: sunday
+            label: Sunday
+            widget: object
+            fields:
+              - { name: opens, label: Opens, widget: string }
+              - { name: closes, label: Closes, widget: string }
+      - name: primaryImage
+        label: Primary Image
+        widget: object
+        fields:
+          - { name: filePath, label: Image, widget: image }
+          - { name: name, label: Name, widget: string }
       - name: images
         label: Images
+        widget: list
+        fields:
+          - { name: filePath, label: Image, widget: image }
+          - { name: name, label: Name, widget: string }
+      - name: documents
+        label: Documents
+        widget: list
+        fields:
+          - { name: filePath, label: File, widget: file }
+          - { name: name, label: Name, widget: string }
+      - name: links
+        label: Links
+        widget: list
+        fields:
+          - { name: image, label: Image, widget: image }
+          - { name: url, label: Url, widget: string }
+          - { name: title, label: Title, widget: string }
+      - name: googlePlaceId
+        label: Google Place Id
+        widget: string
         required: false
-        media_library:
-          config:
-            multiple: true
-      - label: "Manual PDF"
-        name: "manual_pdf"
-        required: false
-        widget: "file"
-        media_library:
-          config:
-            multiple: true
-      - { name: location, label: Location }
-      - { name: googlePlaceId, label: Google Place Id, required: false }
       - { name: body, label: Body, widget: markdown }
+  - name: tests
+    label: Tests
+    label_singular: Test
+    folder: data/tests
+    media_folder:
+    public_folder:
+    create: true
+    fields:
+      - { name: slug, label: Slug, widget: string }
+      - { name: title, label: Title, widget: string }
+      - { name: image, label: Image, widget: image }
+      - { name: file, label: File, widget: file }
+      - name: images
+        label: Images
+        widget: list
+        fields:
+          - { name: image, label: Image, widget: image }
+      - { name: map, label: Map, widget: map }
+  - name: tests2
+    label: Tests2
+    label_singular: Test2
+    folder: data/tests
+    path: '{{slug}}'
+    media_folder:
+    public_folder:
+    create: true
+    fields:
+      - { name: slug, label: Slug, widget: string }
+      - { name: title, label: Title, widget: string }
+      - { name: image, label: Image, widget: image }
+      - { name: file, label: File, widget: file }
+      - name: images
+        label: Images
+        widget: list
+        fields:
+          - { name: image, label: Image, widget: image }
+      - { name: map, label: Map, widget: map }

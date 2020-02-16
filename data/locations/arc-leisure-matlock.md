@@ -1,6 +1,7 @@
 ---
 slug: /arc-leisure-matlock
 template: cafe
+title: Blueberry Cafe - Arc Leisure Matlock
 name: Blueberry Cafe
 location: Arc Leisure Matlock
 description: Blueberry Cafe at the Arc Leisure Centre offers an eat in or takeaway service, with menu options to suit all the family.

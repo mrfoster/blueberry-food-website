@@ -1,6 +1,7 @@
 ---
 slug: /the-refreshment-room
 template: cafe
+title: The Refreshment Room - The Monsal Trail, Miller's Dale Station
 name: The Refreshment Room
 location: The Monsal Trail, Miller's Dale Station
 description: The Refreshment Room is operated by Blueberry Cafe and is set in a former railway building at Miller's Dale Station along the Monsal Trail
@@ -11,11 +12,11 @@ address:
   addressLocality: Wormhill
   addressRegion: Buxton
   postalCode: SK17 8SN
-  addressCountry: UK
+  addressCountry: GB
 geo:
   latitude: 53.256122
   longitude: -1.7940223
-openingHoursBody: >-
+openingHoursContent: >-
   Due to the unpredictability of weather conditions, please check [Facebook](https://www.facebook.com/therefreshmentroom/) or [contact us](mailto:enquiries@blueberryfood.co.uk) for current opening times.
 openingHours:
   - name: Winter November - Easter
@@ -99,8 +100,7 @@ The cafe menu offers a taste of the Peak District with a selection of hot homema
 
 Takeaway food is also available to buy from the cafe, why not take a picnic along the trail and stop off to the admire one of the many nature reserves or landmarks. Please see the [Monsal Trail information leaflet](https://www.peakdistrict.gov.uk/__data/assets/pdf_file/0011/125579/monsal-trail-leaflet.pdf) to plan your day.
 
-The Refreshment Room works hard to promote the Peak District and also to protect the local environment. All our takeaway disposables are compostable or
-100% recyclable.
+The Refreshment Room works hard to promote the Peak District and also to protect the local environment. All our takeaway disposables are compostable or 100% recyclable.
 
 Our staff are trained to answer your questions about the local area and to offer advice about nearby walks, trails and the general locality.
 
