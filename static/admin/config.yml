@@ -9,8 +9,8 @@ public_folder: /assets
 collections:
   - name: pages
     label: Pages
-    media_folder:
-    public_folder:
+    media_folder: ""
+    public_folder: ""
     files:
       - file: data/home.md
         label: Home
@@ -24,8 +24,9 @@ collections:
     label: Locations
     label_singular: Location
     folder: data/locations
-    media_folder:
-    public_folder:
+    path: "{{slug}}/index"
+    media_folder: ""
+    public_folder: ""
     create: true
     fields:
       - { name: slug, label: Slug, widget: string }
@@ -144,6 +145,7 @@ collections:
     label: Tests
     label_singular: Test
     folder: data/tests
+    path: "{{slug}}/index"
     media_folder: ""
     public_folder: ""
     create: true
@@ -162,8 +164,9 @@ collections:
     label: Tests2
     label_singular: Test2
     folder: data/tests2
-    media_folder: "{{slug}}"
-    public_folder: "{{slug}}"
+    path: "{{slug}}/index"
+    media_folder: ""
+    public_folder: ""
     create: true
     fields:
       - { name: slug, label: Slug, widget: string }
