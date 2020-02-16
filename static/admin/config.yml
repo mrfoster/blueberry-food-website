@@ -162,7 +162,7 @@ collections:
     label: Tests2
     label_singular: Test2
     folder: data/tests
-    path: '{{slug}}'
+    path: "{{slug}}"
     media_folder:
     public_folder:
     create: true
