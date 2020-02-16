@@ -161,10 +161,9 @@ collections:
   - name: tests2
     label: Tests2
     label_singular: Test2
-    folder: data/tests
-    path: "{{slug}}"
-    media_folder: ""
-    public_folder: ""
+    folder: data/tests2
+    media_folder: "{{slug}}"
+    public_folder: "{{slug}}"
     create: true
     fields:
       - { name: slug, label: Slug, widget: string }
