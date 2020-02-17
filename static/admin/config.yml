@@ -16,7 +16,7 @@ collections:
     media_folder: ""
     public_folder: ""
     files:
-      - file: data/home.md
+      - file: content/home.md
         label: Home
         delete: false
         name: home
@@ -27,7 +27,7 @@ collections:
   - name: locations
     label: Locations
     label_singular: Location
-    folder: data/locations
+    folder: content/locations
     path: "{{slug}}/index"
     media_folder: ""
     public_folder: ""
@@ -55,8 +55,8 @@ collections:
         widget: object
         required: false
         fields:
-          - { name: latitude, widget: number }
-          - { name: longitude, widget: number }
+          - { name: latitude, widget: number, valueType: float }
+          - { name: longitude, widget: number, valueType: float }
       - name: openingHoursContent
         label: Opening Hours Content
         widget: markdown

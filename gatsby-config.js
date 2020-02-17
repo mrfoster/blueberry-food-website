@@ -10,7 +10,8 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        path: `${__dirname}/data`,
+        name: `content`,
+        path: `${__dirname}/content`
       },
     },
     {
@@ -44,6 +45,7 @@ module.exports = {
     },
     "gatsby-plugin-offline",
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-netlify-cms`,
     `gatsby-transformer-sharp`,
     {
       resolve: "gatsby-plugin-netlify",
@@ -55,6 +57,5 @@ module.exports = {
         ],
       },
     },
-    `gatsby-plugin-netlify-cms`,
   ],
 }

@@ -1,5 +1,4 @@
 ---
-slug: /the-refreshment-room
 template: cafe
 title: The Refreshment Room - The Monsal Trail, Miller's Dale Station
 name: The Refreshment Room
@@ -89,9 +88,12 @@ documents:
   - filePath: the-refreshment-room-menu-drinks.pdf
     name: Drinks Menu
 links:
-  - image: ../static/flogo_RGB_HEX-512.png
-    url: https://www.facebook.com//therefreshmentroom/
+  - image: facebook.png
+    url: https://www.facebook.com/therefreshmentroom/
     title: Facebook Page
+  - image: trip-advisor.png
+    url: https://www.tripadvisor.co.uk/Restaurant_Review-g190756-d17227909-Reviews-The_Refreshment_Room-Buxton_Derbyshire_England.html
+    title: Trip Advisor
 ---
 
 The Refreshment Room is operated by Blueberry Cafe and is set in a former railway building at Miller's Dale Station along the Monsal Trail.

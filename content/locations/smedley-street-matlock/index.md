@@ -1,5 +1,4 @@
 ---
-slug: /smedley-street-matlock
 template: cafe
 title: Blue Pig Deli - Smedley Street Matlock
 name: Blue Pig Deli
@@ -12,7 +11,7 @@ address:
   addressLocality: Matlock
   addressRegion:
   postalCode: DE4 3FQ
-  addressCountry: UK
+  addressCountry: GB
 geo:
   latitude: 53.1420474
   longitude: -1.5506789
@@ -65,10 +64,10 @@ documents:
   - filePath: blue-pig-deli-menu-june-2019.pdf
     name: Cafe Menu
 links:
-  - image: ../static/food-hygiene-rating.png
+  - image: food-hygiene-rating.png
     url: http://ratings.food.gov.uk/business/en-GB/1035177/Blueberry-Food-Company%2c-Ground-Floor-Derbyshire
     title: Food Hygiene Rating
-  - image: ../static/flogo_RGB_HEX-512.png
+  - image: facebook.png
     url: https://www.facebook.com/Blueberry-Food-Company-127740100603563
     title: Facebook Page
 googlePlaceId: ChIJ-_HCzz6JeUgRjTAzqIAelP0

@@ -11,7 +11,7 @@ address:
   addressLocality:
   addressRegion: Matlock
   postalCode: DE4 3AZ
-  addressCountry: UK
+  addressCountry: GB
 geo:
   latitude: 53.1423184
   longitude: -1.5720833
@@ -62,10 +62,10 @@ documents:
   - filePath: blueberry-cafe-kids-party-2019.png
     name: Children's Party Menu
 links:
-  - image: ../static/flogo_RGB_HEX-512.png
+  - image: facebook.png
     url: https://www.facebook.com/pages/Blueberry-Cafe-at-the-Arc/210996019253515
     title: Facebook Page
-  - image: ../static/food-hygiene-rating.png
+  - image: food-hygiene-rating.png
     url: http://ratings.food.gov.uk/business/en-GB/258471/Blueberry-Cafe-Ltd-Matlock
     title: Food Hygiene Rating
 googlePlaceId: ChIJjco8NKCJeUgR6ve5QVs7Vmo

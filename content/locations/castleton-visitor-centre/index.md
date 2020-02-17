@@ -1,5 +1,4 @@
 ---
-slug: /castleton-visitor-centre
 template: cafe
 title: Blueberry Cafe - Castleton Visitor Centre
 name: Blueberry Cafe
@@ -12,7 +11,7 @@ address:
   addressLocality: Castleton
   addressRegion: Hope Valley
   postalCode: S33 8WP
-  addressCountry: UK
+  addressCountry: GB
 geo:
   latitude: 53.3432947
   longitude: -1.7776916
@@ -87,19 +86,19 @@ documents:
   - filePath: blueberry-cafe-castleton-drinks-menu-march-2019.pdf
     name: Drinks Menu
 links:
-  - image: ../static/eqm-logo.jpg
+  - image: eqm-logo.jpg
     url: http://www.eqm.org.uk/peakdistrict/index.asp
     title: Environmental Quality Mark
-  - image: ../static/trip-advisor.png
-    url: https://www.tripadvisor.co.uk/Restaurant_Review-g499576-d12941738-Reviews-Blueberry_Cafe-Castleton_Hope_Valley_Peak_District_National_Park_England.html
+  - image: trip-advisor.png
+    url: https://www.tripadvisor.co.uk/Restaurant_Review-g499576-d12941738-Reviews-Blueberry_Cafe_Castleton-Castleton_Hope_Valley_Peak_District_National_Park_Engla.html
     title: Trip Advisor
-  - image: ../static/visit-peak-district.jpg
+  - image: visit-peak-district.jpg
     url: https://www.visitpeakdistrict.com/
     title: Visit Peak District
-  - image: ../static/flogo_RGB_HEX-512.png
+  - image: facebbook.png
     url: https://www.facebook.com/BlueberryCafeCastleton
     title: Facebook Page
-  - image: ../static/food-hygiene-rating.png
+  - image: food-hygiene-rating.png
     url: https://ratings.food.gov.uk/business/en-GB/1207865/Blueberry-Cafe-HOPE-VALLEY
     title: Food Hygiene Rating
 googlePlaceId: ChIJ0QcqYfssekgRcTidLHKH7RU
