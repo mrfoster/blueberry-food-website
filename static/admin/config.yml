@@ -3,6 +3,10 @@ backend:
   repo: mrfoster/blueberry-food-website
   branch: features/netlify-cms
 
+site_url: https://blueberryfood.co.uk
+display_url: https://blueberryfood.co.uk
+logo_url: https://blueberryfood.co.uk/logo.svg
+
 media_folder: static/assets
 public_folder: /assets
 
@@ -141,41 +145,3 @@ collections:
         widget: string
         required: false
       - { name: body, label: Body, widget: markdown }
-  - name: tests
-    label: Tests
-    label_singular: Test
-    folder: data/tests
-    path: "{{slug}}/index"
-    media_folder: ""
-    public_folder: ""
-    create: true
-    fields:
-      - { name: slug, label: Slug, widget: string }
-      - { name: title, label: Title, widget: string }
-      - { name: image, label: Image, widget: image }
-      - { name: file, label: File, widget: file }
-      - name: images
-        label: Images
-        widget: list
-        fields:
-          - { name: image, label: Image, widget: image }
-      - { name: map, label: Map, widget: map }
-  - name: tests2
-    label: Tests2
-    label_singular: Test2
-    folder: data/tests2
-    path: "{{slug}}/index"
-    media_folder: ""
-    public_folder: ""
-    create: true
-    fields:
-      - { name: slug, label: Slug, widget: string }
-      - { name: title, label: Title, widget: string }
-      - { name: image, label: Image, widget: image }
-      - { name: file, label: File, widget: file }
-      - name: images
-        label: Images
-        widget: list
-        fields:
-          - { name: image, label: Image, widget: image }
-      - { name: map, label: Map, widget: map }

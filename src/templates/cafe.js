@@ -10,25 +10,17 @@ import Layout from "../components/layout"
 import Links from "../components/links"
 import Map from "../components/map"
 import OpeningTimes from "../components/opening-times"
+import SEO from "../components/seo"
 
 const Cafe = ({ data }) => {
   return (
     <Layout>
-      <Helmet title={data.schema.name} />
-      {data.schema.name && (
-        <Helmet
-          meta={[
-            {
-              name: "description",
-              content: data.schema.description,
-            },
-          ]}
-        />
-      )}
+      <SEO title={data.schema.name} description={data.schema.description} />
+
       <Helmet
         script={[
           {
-            type: 'application/ld+json',
+            type: "application/ld+json",
             innerHTML: data.schemaContent.fields.content,
           },
         ]}

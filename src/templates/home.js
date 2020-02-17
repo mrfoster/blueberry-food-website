@@ -1,12 +1,12 @@
-import { graphql, Link } from 'gatsby'
-import Img from 'gatsby-image'
-import React from 'react'
-import Helmet from 'react-helmet'
-import { FaTruck, FaUtensils } from 'react-icons/fa'
-import Contact from '../components/contact'
-import Header from '../components/header'
-import Layout from '../components/layout'
-import './home.scss'
+import { graphql, Link } from "gatsby"
+import Img from "gatsby-image"
+import React from "react"
+import Helmet from "react-helmet"
+import { FaTruck, FaUtensils } from "react-icons/fa"
+import Contact from "../components/contact"
+import Header from "../components/header"
+import Layout from "../components/layout"
+import "./home.scss"
 
 const Home = ({ data }) => {
   const cafePages = data.cafePages.pages.map(x => x.page)
@@ -15,12 +15,13 @@ const Home = ({ data }) => {
       <Helmet
         script={[
           {
-            type: 'application/ld+json',
+            type: "application/ld+json",
             innerHTML: data.schemaContent.fields.content,
           },
         ]}
       />
       <Header title={data.page.name} />
+
       <section className="blocks">
         <h2>
           <FaUtensils /> Cafes
@@ -34,16 +35,16 @@ const Home = ({ data }) => {
                   {page.name}
                   <br />
                   {page.location}
-                </span>{' '}
+                </span>{" "}
                 <Img
                   alt={page.name}
                   fluid={page.primaryImage.filePath.childImageSharp.fluid}
                   style={{
-                    position: 'absolute',
+                    position: "absolute",
                     left: 0,
                     top: 0,
-                    width: '100%',
-                    height: '100%',
+                    width: "100%",
+                    height: "100%",
                   }}
                 />
               </Link>

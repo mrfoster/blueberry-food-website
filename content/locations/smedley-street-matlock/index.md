@@ -40,29 +40,29 @@ openingHours:
       opens: '00:00'
       closes: '00:00'
 primaryImage:
-  filePath: ../static/smedley-street-matlock/1.jpg
+  filePath: 1.jpg
   name: Cafe entrance
 images:
-  - filePath: ../static/smedley-street-matlock/1.jpg
+  - filePath: 1.jpg
     name: Cafe entrance
-  - filePath: ../static/smedley-street-matlock/2.jpg
+  - filePath: 2.jpg
     name: Counter
-  - filePath: ../static/smedley-street-matlock/3.jpg
+  - filePath: 3.jpg
     name: Seating area
-  - filePath: ../static/smedley-street-matlock/4.jpg
+  - filePath: 4.jpg
     name: Seating view
-  - filePath: ../static/smedley-street-matlock/5.jpg
+  - filePath: 5.jpg
     name: Shop front
-  - filePath: ../static/smedley-street-matlock/7.jpg
+  - filePath: 7.jpg
     name: Fireplace
-  - filePath: ../static/smedley-street-matlock/8.jpg
+  - filePath: 8.jpg
     name: Counter
-  - filePath: ../static/smedley-street-matlock/9.jpg
+  - filePath: 9.jpg
     name: Window view
-  - filePath: ../static/smedley-street-matlock/10.jpg
+  - filePath: 10.jpg
     name: Coffee machine
 documents:
-  - filePath: ../static/smedley-street-matlock/blue-pig-deli-menu-june-2019.pdf
+  - filePath: blue-pig-deli-menu-june-2019.pdf
     name: Cafe Menu
 links:
   - image: ../static/food-hygiene-rating.png

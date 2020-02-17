@@ -66,25 +66,25 @@ openingHours:
     validFrom: 2019-11-01
     validThrough: 2020-03-31
 primaryImage:
-  filePath: ../static/castleton-visitor-centre/1.jpg
+  filePath: 1.jpg
   name: Cafe interior
 images:
-  - filePath: ../static/castleton-visitor-centre/1.jpg
+  - filePath: 1.jpg
     name: Cafe interior
-  - filePath: ../static/castleton-visitor-centre/3.jpg
+  - filePath: 3.jpg
     name: Cheese board
-  - filePath: ../static/castleton-visitor-centre/4.jpg
+  - filePath: 4.jpg
     name: Feature wall
-  - filePath: ../static/castleton-visitor-centre/5.jpg
+  - filePath: 5.jpg
     name: Visitor centre opening
-  - filePath: ../static/castleton-visitor-centre/6.jpg
+  - filePath: 6.jpg
     name: Sandwiches
-  - filePath: ../static/castleton-visitor-centre/7.jpg
+  - filePath: 7.jpg
     name: Cafe entrance
 documents:
-  - filePath: ../static/castleton-visitor-centre/blueberry-cafe-castleton-menu-feb-2019.pdf
+  - filePath: blueberry-cafe-castleton-menu-feb-2019.pdf
     name: Main Menu
-  - filePath: ../static/castleton-visitor-centre/blueberry-cafe-castleton-drinks-menu-march-2019.pdf
+  - filePath: blueberry-cafe-castleton-drinks-menu-march-2019.pdf
     name: Drinks Menu
 links:
   - image: ../static/eqm-logo.jpg

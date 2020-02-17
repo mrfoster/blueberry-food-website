@@ -1,7 +1,6 @@
 ---
-slug: /arc-leisure-matlock
 template: cafe
-title: Blueberry Cafe - Arc Leisure Matlock
+title: Arc Leisure Matlock
 name: Blueberry Cafe
 location: Arc Leisure Matlock
 description: Blueberry Cafe at the Arc Leisure Centre offers an eat in or takeaway service, with menu options to suit all the family.
@@ -40,27 +39,27 @@ openingHours:
       opens: '08:15'
       closes: '17:45'
 primaryImage:
-  filePath: ../static/arc-leisure-matlock/1.jpg
+  filePath: 1.jpg
   name: Cafe entrance
 images:
-  - filePath: ../static/arc-leisure-matlock/1.jpg
+  - filePath: 1.jpg
     name: Cafe entrance
-  - filePath: ../static/arc-leisure-matlock/3.jpg
+  - filePath: 3.jpg
     name: Cafe counter
-  - filePath: ../static/arc-leisure-matlock/4.jpg
+  - filePath: 4.jpg
     name: Children's play area
-  - filePath: ../static/arc-leisure-matlock/5.jpg
+  - filePath: 5.jpg
     name: Cafe counter
-  - filePath: ../static/arc-leisure-matlock/7.jpg
+  - filePath: 7.jpg
     name: Leisure centre
-  - filePath: ../static/arc-leisure-matlock/2.jpg
+  - filePath: 2.jpg
     name: Cup of coffee
 documents:
-  - filePath: ../static/arc-leisure-matlock/blueberry-arc-menu-2020.pdf
+  - filePath: blueberry-arc-menu-2020.pdf
     name: Menu
-  - filePath: ../static/arc-leisure-matlock/blueberry-arc-drinks-menu-2020.pdf
+  - filePath: blueberry-arc-drinks-menu-2020.pdf
     name: Drinks Menu
-  - filePath: ../static/arc-leisure-matlock/blueberry-cafe-kids-party-2019.png
+  - filePath: blueberry-cafe-kids-party-2019.png
     name: Children's Party Menu
 links:
   - image: ../static/flogo_RGB_HEX-512.png

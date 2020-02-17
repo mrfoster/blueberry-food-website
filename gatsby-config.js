@@ -1,12 +1,14 @@
 module.exports = {
   siteMetadata: {
     siteUrl: `https://www.blueberryfood.co.uk`,
-    title: 'Blueberry Food Website',
+    description: `Blueberry Food Company specialises in creating the most delicious, tailor made buffets. We cater for both private parties and for business lunches or functions.`,
+    title: "Blueberry Food Website",
+    author: `Chris Foster, christopherfoster@hotmail.co.uk`,
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
+    "gatsby-plugin-react-helmet",
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: "gatsby-source-filesystem",
       options: {
         path: `${__dirname}/data`,
       },
@@ -18,33 +20,33 @@ module.exports = {
         path: `${__dirname}/static`,
       },
     },
-    'gatsby-transformer-json',
+    "gatsby-transformer-json",
     `gatsby-transformer-remark`,
-    'gatsby-plugin-sass',
+    "gatsby-plugin-sass",
     {
       resolve: `gatsby-plugin-google-tagmanager`,
       options: {
-        id: 'GTM-WCF9F36',
+        id: "GTM-WCF9F36",
       },
     },
-    'gatsby-plugin-sitemap',
+    "gatsby-plugin-sitemap",
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Blueberry Food Website',
-        short_name: 'blueberry',
-        start_url: '/',
-        background_color: '#ffffff',
-        theme_color: '#ffffff',
-        display: 'minimal-ui',
-        icon: 'static/logo.png', // This path is relative to the root of the site.
+        name: "Blueberry Food Website",
+        short_name: "blueberry",
+        start_url: "/",
+        background_color: "#ffffff",
+        theme_color: "#ffffff",
+        display: "minimal-ui",
+        icon: "static/logo.png", // This path is relative to the root of the site.
       },
     },
-    'gatsby-plugin-offline',
+    "gatsby-plugin-offline",
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     {
-      resolve: 'gatsby-plugin-netlify',
+      resolve: "gatsby-plugin-netlify",
       options: {
         allPageHeaders: [
           // TODO: remove unsafe-inline once gatsby supports it
@@ -53,6 +55,6 @@ module.exports = {
         ],
       },
     },
-    `gatsby-plugin-netlify-cms`
+    `gatsby-plugin-netlify-cms`,
   ],
 }

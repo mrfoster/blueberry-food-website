@@ -68,25 +68,25 @@ openingHours:
     validFrom: 2019-04-01
     validThrough: 2019-10-31
 primaryImage:
-  filePath: ../static/the-refreshment-room/1.jpg
+  filePath: 1.jpg
   name: Cafe exterior
 images:
-  - filePath: ../static/the-refreshment-room/1.jpg
+  - filePath: 1.jpg
     name: Cafe exterior
-  - filePath: ../static/the-refreshment-room/3.jpg
+  - filePath: 3.jpg
     name: Seating area
-  - filePath: ../static/the-refreshment-room/7.jpg
+  - filePath: 7.jpg
     name: Counter
-  - filePath: ../static/the-refreshment-room/10.jpg
+  - filePath: 10.jpg
     name: Chalk menu
-  - filePath: ../static/the-refreshment-room/12.jpg
+  - filePath: 12.jpg
     name: Counter
-  - filePath: ../static/the-refreshment-room/14.jpg
+  - filePath: 14.jpg
     name: Seating area
 documents:
-  - filePath: ../static/the-refreshment-room/the-refreshment-room-menu-food.pdf
+  - filePath: the-refreshment-room-menu-food.pdf
     name: Food Menu
-  - filePath: ../static/the-refreshment-room/the-refreshment-room-menu-drinks.pdf
+  - filePath: the-refreshment-room-menu-drinks.pdf
     name: Drinks Menu
 links:
   - image: ../static/flogo_RGB_HEX-512.png
