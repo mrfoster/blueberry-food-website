@@ -41,7 +41,7 @@ openingHours:
       opens: '10:00'
       closes: '16:00'
     validFrom: 2019-11-01
-    validThrough: 2020-04-10
+    validThrough: 2020-04-01
   - name: Summer April - October
     monday:
       opens: '09:30'
@@ -64,8 +64,8 @@ openingHours:
     sunday:
       opens: '09:30'
       closes: '17:30'
-    validFrom: 2019-04-01
-    validThrough: 2019-10-31
+    validFrom: 2020-04-01
+    validThrough: 2020-10-31
 primaryImage:
   filePath: 1.jpg
   name: Cafe exterior

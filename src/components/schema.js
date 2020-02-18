@@ -1,8 +1,8 @@
 import React from "react"
 import Helmet from "react-helmet"
 
-const Schema = ({ data }) => (
-  <Helmet
+const Schema = ({ data }) => {
+  return <Helmet
     script={[
       {
         type: "application/ld+json",
@@ -10,6 +10,6 @@ const Schema = ({ data }) => (
       },
     ]}
   />
-)
+  }
 
 export default Schema

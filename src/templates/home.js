@@ -6,24 +6,33 @@ import Contact from "../components/contact"
 import Header from "../components/header"
 import Layout from "../components/layout"
 import "./home.scss"
+import SEO from "../components/seo"
 import Schema from "../components/schema"
 
 const Home = ({ data }) => {
-  const page = { ...data.page.frontmatter }
-  // const cafePages = data.cafePages.pages.map(x => x.page)
+  const page = { ...data.page.frontmatter, content: data.page.content }
+  const locations = data.locations.edges
+    .map(edge => edge.node)
+    .map(location => ({
+      ...location.frontmatter,
+      ...location.fields,
+    }))
+
   return (
     <Layout>
-      {/* <Schema data={data} /> */}
+      <SEO title={page.name} description={page.description} />
+
+      <Schema data={page} />
 
       <Header title={page.name} />
 
-      {/* <section className="blocks">
+      <section className="blocks">
         <h2>
           <FaUtensils /> Cafes
         </h2>
 
         <ul>
-          {cafePages.map(page => (
+          {locations.map(page => (
             <li key={page.slug}>
               <Link to={page.slug} className="link">
                 <span>
@@ -48,16 +57,16 @@ const Home = ({ data }) => {
         </ul>
       </section>
 
-      {!!data.page.content && (
+      {!!page.content && (
         <section>
           <h2>
             <FaTruck /> Catering
           </h2>
 
-          <div dangerouslySetInnerHTML={{ __html: data.page.content }} />
+          <div dangerouslySetInnerHTML={{ __html: page.content }} />
         </section>
       )}
-      <Contact data={{ page: data.page, schema: data.schema.provider }} /> */}
+      <Contact data={page} />
     </Layout>
   )
 }
@@ -65,13 +74,49 @@ const Home = ({ data }) => {
 export default Home
 
 export const pageQuery = graphql`
-  query($id: String!) {
+  query HomeTemplate($id: String!) {
+    locations: allMarkdownRemark(
+      filter: { frontmatter: { template: { eq: "cafe" } } }
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            name
+            location
+            primaryImage {
+              filePath {
+                childImageSharp {
+                  fluid(maxWidth: 470, maxHeight: 350) {
+                    ...GatsbyImageSharpFluid_withWebp
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
     page: markdownRemark(id: { eq: $id }) {
       frontmatter {
         template
         title
         name
+        description
+        email
+        telephone
+        address {
+          streetAddress
+          addressLocality
+          addressRegion
+          postalCode
+          addressCountry
+        }
       }
+      content: html
     }
   }
 `

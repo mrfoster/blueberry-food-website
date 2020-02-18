@@ -65,7 +65,7 @@ links:
   - image: facebook.png
     url: https://www.facebook.com/pages/Blueberry-Cafe-at-the-Arc/210996019253515
     title: Facebook Page
-  - image: food-hygiene-rating.png
+  - image: food-hygiene-rating.jpg
     url: http://ratings.food.gov.uk/business/en-GB/258471/Blueberry-Cafe-Ltd-Matlock
     title: Food Hygiene Rating
 googlePlaceId: ChIJjco8NKCJeUgR6ve5QVs7Vmo

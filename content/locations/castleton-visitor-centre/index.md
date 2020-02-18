@@ -86,8 +86,8 @@ documents:
   - filePath: blueberry-cafe-castleton-drinks-menu-march-2019.pdf
     name: Drinks Menu
 links:
-  - image: eqm-logo.jpg
-    url: http://www.eqm.org.uk/peakdistrict/index.asp
+  - image: eqm-logo.png
+    url: https://www.eqm.org.uk/peakdistrict
     title: Environmental Quality Mark
   - image: trip-advisor.png
     url: https://www.tripadvisor.co.uk/Restaurant_Review-g499576-d12941738-Reviews-Blueberry_Cafe_Castleton-Castleton_Hope_Valley_Peak_District_National_Park_Engla.html
@@ -95,10 +95,10 @@ links:
   - image: visit-peak-district.jpg
     url: https://www.visitpeakdistrict.com/
     title: Visit Peak District
-  - image: facebbook.png
+  - image: facebook.png
     url: https://www.facebook.com/BlueberryCafeCastleton
     title: Facebook Page
-  - image: food-hygiene-rating.png
+  - image: food-hygiene-rating.jpg
     url: https://ratings.food.gov.uk/business/en-GB/1207865/Blueberry-Cafe-HOPE-VALLEY
     title: Food Hygiene Rating
 googlePlaceId: ChIJ0QcqYfssekgRcTidLHKH7RU

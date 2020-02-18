@@ -64,7 +64,7 @@ documents:
   - filePath: blue-pig-deli-menu-june-2019.pdf
     name: Cafe Menu
 links:
-  - image: food-hygiene-rating.png
+  - image: food-hygiene-rating.jpg
     url: http://ratings.food.gov.uk/business/en-GB/1035177/Blueberry-Food-Company%2c-Ground-Floor-Derbyshire
     title: Food Hygiene Rating
   - image: facebook.png

@@ -13,28 +13,33 @@ import SEO from "../components/seo"
 import Schema from "../components/schema"
 
 const Cafe = ({ data }) => {
-  const page = { ...data.page.frontmatter, html: data.page.html }
+  const page = {
+    ...data.page.frontmatter,
+    ...data.page.fields,
+    html: data.page.html,
+  }
   return (
     <Layout>
-      {/* <SEO title={data.schema.name} description={data.schema.description} />
+      <SEO title={page.name} description={page.description} />
 
-      <Schema data={data} /> */}
+      <Schema data={page} />
 
       <Header title={page.name} />
 
-      {/* <h2>
-        <FaUtensils /> {data.page.location}
+      <h2>
+        <FaUtensils /> {page.location}
       </h2>
+
       {data.page.content && (
         <section dangerouslySetInnerHTML={{ __html: data.page.content }} />
       )}
 
-      <Images data={data} />
-      <Contact data={data} />
-      <OpeningTimes data={data} />
-      <Documents data={data} />
-      <Map data={data} />
-      <Links data={data} /> */}
+      <Images data={page} />
+      <Contact data={page} />
+      <OpeningTimes data={page} />
+      <Documents data={page} />
+      <Map data={page} />
+      <Links data={page} />
     </Layout>
   )
 }
@@ -98,7 +103,7 @@ export const pageQuery = graphql`
         }
         primaryImage {
           filePath {
-            id
+            publicURL
           }
           name
         }
@@ -114,23 +119,27 @@ export const pageQuery = graphql`
         }
         documents {
           filePath {
-            id
+            publicURL
           }
           name
         }
         links {
           image {
             childImageSharp {
-              fluid(maxWidth: 800, maxHeight: 600) {
-                ...GatsbyImageSharpFluid_withWebp_tracedSVG
+              fixed(width: 150) {
+                ...GatsbyImageSharpFixed_withWebp_tracedSVG
               }
             }
           }
           url
           title
         }
+        googlePlaceId
       }
-      html
+      content: html
+      fields {
+        openingHoursContent
+      }
     }
   }
 `
