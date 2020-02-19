@@ -7,8 +7,8 @@
 const path = require("path")
 const { createFilePath } = require("gatsby-source-filesystem")
 
-const remark = require("remark");
-const remarkHTML = require("remark-html");
+const remark = require("remark")
+const remarkHTML = require("remark-html")
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
@@ -24,24 +24,25 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     })
   }
 
-  // add custom markdown field from frontmatter.. 
+  // add custom markdown field from frontmatter..
   // https://github.com/gatsbyjs/gatsby/issues/5021
-  // TODO: consider using something like 
+  // TODO: consider using something like
   // https://github.com/WhiteAbeLincoln/gatsby-transformer-remark-frontmatter
 
-  const openingHoursContent = node.frontmatter && node.frontmatter.openingHoursContent;
+  const openingHoursContent =
+    node.frontmatter && node.frontmatter.openingHoursContent
 
   if (openingHoursContent) {
     const value = remark()
       .use(remarkHTML)
       .processSync(openingHoursContent)
-      .toString();
+      .toString()
 
     createNodeField({
       name: `openingHoursContent`,
       node,
-      value
-    });
+      value,
+    })
   }
 }
 
@@ -81,7 +82,7 @@ exports.createPages = ({ actions, graphql }) => {
         template: page.frontmatter.template,
       }))
 
-    return pages.forEach(page => {
+    pages.forEach(page => {
       createPage({
         path: `/${page.slug}`,
         component: path.resolve(`src/templates/${page.template}.js`),

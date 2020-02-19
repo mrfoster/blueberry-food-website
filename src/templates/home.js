@@ -10,7 +10,16 @@ import SEO from "../components/seo"
 import Schema from "../components/schema"
 
 const Home = ({ data }) => {
-  const page = { ...data.page.frontmatter, content: data.page.content }
+  const page = {
+    ...data.page.frontmatter,
+    ...data.page.fields,
+    content: data.page.content,
+    // https://schema.org/FoodService
+    schema: {
+      type: "FoodService",
+      nestedProvider: true,
+    },
+  }
   const locations = data.locations.edges
     .map(edge => edge.node)
     .map(location => ({
@@ -117,6 +126,9 @@ export const pageQuery = graphql`
         }
       }
       content: html
+      fields {
+        slug
+      }
     }
   }
 `

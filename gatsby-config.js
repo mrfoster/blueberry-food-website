@@ -11,7 +11,7 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: `content`,
-        path: `${__dirname}/content`
+        path: `${__dirname}/content`,
       },
     },
     {
@@ -21,7 +21,19 @@ module.exports = {
         path: `${__dirname}/static`,
       },
     },
-    `gatsby-transformer-remark`,
+    {
+      resolve: "gatsby-transformer-remark",
+      options: {
+        plugins: [
+          {
+            resolve: "gatsby-remark-copy-linked-files",
+            options: {
+              destinationDir: "static",
+            },
+          },
+        ],
+      },
+    },
     "gatsby-plugin-sass",
     {
       resolve: `gatsby-plugin-google-tagmanager`,

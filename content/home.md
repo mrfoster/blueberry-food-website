@@ -9,7 +9,7 @@ address:
   addressLocality: Matlock
   addressRegion:
   postalCode: DE4 3FQ
-  addressCountry: GBB
+  addressCountry: GB
 ---
 
 Blueberry Food Company specialises in creating the most delicious, tailor made buffets. We cater for both private parties and for business lunches or functions.

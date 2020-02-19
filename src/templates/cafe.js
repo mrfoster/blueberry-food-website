@@ -17,10 +17,19 @@ const Cafe = ({ data }) => {
     ...data.page.frontmatter,
     ...data.page.fields,
     html: data.page.html,
+    title: `${data.page.frontmatter.name} - ${data.page.frontmatter.location}`,
+    // https://schema.org/CafeOrCoffeeShop
+    schema: {
+      type: "CafeOrCoffeeShop",
+      meta: {
+        priceRange: "£",
+        servesCuisine: "Traditional, Local",
+      },
+    },
   }
   return (
     <Layout>
-      <SEO title={page.name} description={page.description} />
+      <SEO title={page.title} description={page.description} />
 
       <Schema data={page} />
 
@@ -126,7 +135,7 @@ export const pageQuery = graphql`
         links {
           image {
             childImageSharp {
-              fixed(width: 150) {
+              fixed(width: 120) {
                 ...GatsbyImageSharpFixed_withWebp_tracedSVG
               }
             }
@@ -138,6 +147,7 @@ export const pageQuery = graphql`
       }
       content: html
       fields {
+        slug
         openingHoursContent
       }
     }

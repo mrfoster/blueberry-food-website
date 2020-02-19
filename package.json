@@ -16,6 +16,7 @@
     "gatsby-plugin-sass": "2.1.28",
     "gatsby-plugin-sharp": "2.4.5",
     "gatsby-plugin-sitemap": "2.2.27",
+    "gatsby-remark-copy-linked-files": "^2.1.37",
     "gatsby-source-filesystem": "2.1.48",
     "gatsby-transformer-remark": "^2.6.51",
     "gatsby-transformer-sharp": "2.3.14",
@@ -33,8 +34,7 @@
     "bootstrap": "4.4.1",
     "prettier": "1.19.1"
   },
-  "keywords": [
-  ],
+  "keywords": [],
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",

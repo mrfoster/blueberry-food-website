@@ -27,7 +27,7 @@ const OpeningTimes = ({ data }) => {
         )}
 
         {openingHours.map((o, i) => (
-          <div key={i}>
+          <div className="opening-time" key={i}>
             {o.name && <h3>{o.name}</h3>}
 
             <table>
