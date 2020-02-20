@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: mrfoster/blueberry-food-website
-  branch: features/netlify-cms
+  branch: master
 
 site_url: https://blueberryfood.co.uk
 display_url: https://blueberryfood.co.uk
