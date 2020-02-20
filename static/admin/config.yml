@@ -89,44 +89,44 @@ collections:
             label: Monday
             widget: object
             fields:
-              - { name: opens, label: Opens, widget: string }
-              - { name: closes, label: Closes, widget: string }
+              - { name: opens, label: Opens, widget: string, required: false }
+              - { name: closes, label: Closes, widget: string, required: false }
           - name: tuesday
             label: Tuesday
             widget: object
             fields:
-              - { name: opens, label: Opens, widget: string }
-              - { name: closes, label: Closes, widget: string }
+              - { name: opens, label: Opens, widget: string, required: false }
+              - { name: closes, label: Closes, widget: string, required: false }
           - name: wednesday
             label: Wednesday
             widget: object
             fields:
-              - { name: opens, label: Opens, widget: string }
-              - { name: closes, label: Closes, widget: string }
+              - { name: opens, label: Opens, widget: string, required: false }
+              - { name: closes, label: Closes, widget: string, required: false }
           - name: thursday
             label: Thursday
             widget: object
             fields:
-              - { name: opens, label: Opens, widget: string }
-              - { name: closes, label: Closes, widget: string }
+              - { name: opens, label: Opens, widget: string, required: false }
+              - { name: closes, label: Closes, widget: string, required: false }
           - name: friday
             label: Friday
             widget: object
             fields:
-              - { name: opens, label: Opens, widget: string }
-              - { name: closes, label: Closes, widget: string }
+              - { name: opens, label: Opens, widget: string, required: false }
+              - { name: closes, label: Closes, widget: string, required: false }
           - name: saturday
             label: Saturday
             widget: object
             fields:
-              - { name: opens, label: Opens, widget: string }
-              - { name: closes, label: Closes, widget: string }
+              - { name: opens, label: Opens, widget: string, required: false }
+              - { name: closes, label: Closes, widget: string, required: false }
           - name: sunday
             label: Sunday
             widget: object
             fields:
-              - { name: opens, label: Opens, widget: string }
-              - { name: closes, label: Closes, widget: string }
+              - { name: opens, label: Opens, widget: string, required: false }
+              - { name: closes, label: Closes, widget: string, required: false }
       - name: primaryImage
         label: Primary Image
         widget: object
