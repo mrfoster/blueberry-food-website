@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
-import Img from 'gatsby-image'
-import { FaImages } from 'react-icons/fa'
-import Slider from 'react-slick'
+import React, { Component } from "react"
+import Img from "gatsby-image"
+import { FaImages } from "react-icons/fa"
+import Slider from "react-slick"
 
 class Images extends Component {
   state = {
@@ -17,7 +17,7 @@ class Images extends Component {
   }
 
   setIndex = i => {
-    const l = this.props.data.page.images.length
+    const l = this.props.data.images.length
 
     if (i < 0) {
       i = l - 1
@@ -28,13 +28,13 @@ class Images extends Component {
   }
 
   render() {
-    const data = this.props.data
+    const images = this.props.data.images
     const settings = {
-      className: 'center',
+      className: "center",
       focusOnSelect: true,
       centerMode: true,
       infinite: true,
-      centerPadding: '20%',
+      centerPadding: "20%",
       slidesToShow: 1,
       speed: 500,
       // nextArrow: <span/>,
@@ -42,13 +42,13 @@ class Images extends Component {
     }
     return (
       <>
-        {!!data.page.images.length && (
+        {images?.length && (
           <section id="images">
             <h2>
               <FaImages /> Images
             </h2>
             <Slider {...settings} className="images">
-              {data.page.images.map((image, index) => (
+              {images.map((image, index) => (
                 <div key={index}>
                   <Img
                     fluid={image.filePath.childImageSharp.fluid}

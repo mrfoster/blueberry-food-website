@@ -1,0 +1,159 @@
+backend:
+  name: github
+  repo: mrfoster/blueberry-food-website
+  branch: master
+
+site_url: https://blueberryfood.co.uk
+display_url: https://blueberryfood.co.uk
+logo_url: https://blueberryfood.co.uk/logo.svg
+
+media_folder: static/assets
+public_folder: /assets
+
+collections:
+  - name: pages
+    label: Pages
+    media_folder: ""
+    public_folder: ""
+    files:
+      - file: content/home.md
+        label: Home
+        delete: false
+        name: home
+        fields:
+          - { name: template, label: Template, widget: hidden, default: home }
+          - { name: name, label: Name, widget: string }
+          - { name: description, label: Description, widget: text }
+          - { name: email, label: Email, widget: string }
+          - { name: telephone, label: Telephone, widget: string }
+          - name: address
+            label: Address
+            widget: object
+            fields:
+              - { name: streetAddress, widget: string }
+              - { name: addressLocality, widget: string, required: false }
+              - { name: addressRegion, widget: string, required: false }
+              - { name: postalCode, widget: string }
+              - { name: country, widget: hidden, default: GB }
+          - { name: body, label: Body, widget: markdown }
+  - name: locations
+    label: Locations
+    label_singular: Location
+    folder: content/locations
+    path: "{{slug}}/index"
+    media_folder: ""
+    public_folder: ""
+    create: true
+    fields:
+      - { name: template, label: Template, widget: hidden, default: cafe }
+      - { name: title, label: Title, widget: string }
+      - { name: name, label: Name, widget: string }
+      - { name: location, label: Location, widget: string }
+      - { name: description, label: Description, widget: text }
+      - { name: email, label: Email, widget: string }
+      - { name: telephone, label: Telephone, widget: string }
+      - name: address
+        label: Address
+        widget: object
+        fields:
+          - { name: streetAddress, widget: string }
+          - { name: addressLocality, widget: string, required: false }
+          - { name: addressRegion, widget: string, required: false }
+          - { name: postalCode, widget: string }
+          - { name: country, widget: hidden, default: GB }
+      - name: geo
+        label: Geo
+        widget: object
+        required: false
+        fields:
+          - { name: latitude, widget: number, valueType: float }
+          - { name: longitude, widget: number, valueType: float }
+      - name: openingHoursContent
+        label: Opening Hours Content
+        required: false
+        widget: markdown
+      - name: openingHours
+        label: Opening Hours
+        widget: list
+        fields:
+          - { name: name, label: Name, widget: string, required: false }
+          - name: validFrom
+            label: Valid From
+            widget: date
+            required: false
+          - name: validThrough
+            label: Valid Through
+            widget: date
+            required: false
+          - name: monday
+            label: Monday
+            widget: object
+            fields:
+              - { name: opens, label: Opens, widget: string, required: false }
+              - { name: closes, label: Closes, widget: string, required: false }
+          - name: tuesday
+            label: Tuesday
+            widget: object
+            fields:
+              - { name: opens, label: Opens, widget: string, required: false }
+              - { name: closes, label: Closes, widget: string, required: false }
+          - name: wednesday
+            label: Wednesday
+            widget: object
+            fields:
+              - { name: opens, label: Opens, widget: string, required: false }
+              - { name: closes, label: Closes, widget: string, required: false }
+          - name: thursday
+            label: Thursday
+            widget: object
+            fields:
+              - { name: opens, label: Opens, widget: string, required: false }
+              - { name: closes, label: Closes, widget: string, required: false }
+          - name: friday
+            label: Friday
+            widget: object
+            fields:
+              - { name: opens, label: Opens, widget: string, required: false }
+              - { name: closes, label: Closes, widget: string, required: false }
+          - name: saturday
+            label: Saturday
+            widget: object
+            fields:
+              - { name: opens, label: Opens, widget: string, required: false }
+              - { name: closes, label: Closes, widget: string, required: false }
+          - name: sunday
+            label: Sunday
+            widget: object
+            fields:
+              - { name: opens, label: Opens, widget: string, required: false }
+              - { name: closes, label: Closes, widget: string, required: false }
+      - name: primaryImage
+        label: Primary Image
+        widget: object
+        fields:
+          - { name: filePath, label: Image, widget: image }
+          - { name: name, label: Name, widget: string }
+      - name: images
+        label: Images
+        widget: list
+        fields:
+          - { name: filePath, label: Image, widget: image }
+          - { name: name, label: Name, widget: string }
+      - name: documents
+        label: Documents
+        widget: list
+        fields:
+          - { name: filePath, label: File, widget: file }
+          - { name: name, label: Name, widget: string }
+      - name: links
+        label: Links
+        widget: list
+        fields:
+          - { name: image, label: Image, widget: image }
+          - { name: url, label: Url, widget: string }
+          - { name: title, label: Title, widget: string }
+      - name: googlePlaceId
+        label: Google Place Id
+        widget: string
+        required: false
+      - { name: body, label: Body, widget: markdown }
