@@ -1,6 +1,6 @@
 ---
 template: cafe
-title: Blue Pig Deli - Smedley Street Matlock
+title: Smedley Street Matlock
 name: Blue Pig Deli
 location: Smedley Street Matlock
 description: Blueberry Food Company on Smedley street is home to our cosy Blueberry Cafe and it's also where we create the most delicious, tailor made buffets. We cater for both private parties and business lunches or functions and deliver free of charge.

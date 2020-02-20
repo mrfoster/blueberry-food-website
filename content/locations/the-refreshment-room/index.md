@@ -1,6 +1,6 @@
 ---
 template: cafe
-title: The Refreshment Room - The Monsal Trail, Miller's Dale Station
+title: The Refreshment Room
 name: The Refreshment Room
 location: The Monsal Trail, Miller's Dale Station
 description: The Refreshment Room is operated by Blueberry Cafe and is set in a former railway building at Miller's Dale Station along the Monsal Trail
