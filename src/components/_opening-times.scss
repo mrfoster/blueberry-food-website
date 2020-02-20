@@ -1,9 +1,16 @@
 #openingTimes {
-    table {
-        font-size: 0.8em;
-        th {
-            text-align: right;
-            padding-right: 1em;
-        }
+  @media (min-width: 600px) {
+    .opening-time {
+      float: left;
+      margin-right: 2em;
     }
+  }
+
+  table {
+    font-size: 0.8em;
+    th {
+      text-align: right;
+      padding-right: 1em;
+    }
+  }
 }

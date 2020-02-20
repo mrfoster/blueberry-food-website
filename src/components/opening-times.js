@@ -2,76 +2,66 @@ import React from "react"
 import { FaDoorOpen } from "react-icons/fa"
 
 const OpeningTimes = ({ data }) => {
-  const openingTimes = Object.values(
-    data.schema.openingHoursSpecification.reduce((o, x) => {
-      const key = `${x.name} ${x.validFrom} ${x.validThrough}`
-      o[key] = {
-        ...x,
-        id: key,
-        validFrom: new Date(x.validFrom),
-        validThrough: new Date(x.validThrough),
-        days: {
-          ...o[key]?.days,
-          ...x.dayOfWeek.reduce((days, day) => {
-            days[day] = { opens: x.opens, closes: x.closes }
-            return days
-          }, {}),
-        },
-      }
-      return o
-    }, {})
-  )
+  const today = new Date()
+  today.setHours(0, 0, 0, 0)
+
+  const openingHours = (data.openingHours || [])
+    .map(x => ({
+      ...x,
+      validFrom: x.validFrom ? new Date(x.validFrom) : null,
+      validThrough: x.validThrough ? new Date(x.validThrough) : null,
+    }))
+    .filter(x => !x.validThrough || x.validThrough >= today)
+    .map(x => ({ ...x, sort: x.validFrom?.getTime() }))
+    .sort((a, b) => (a.sort > b.sort ? 1 : a.sort < b.sort ? -1 : 0))
+    .slice(0, 2)
 
   return (
-    <>
-      {(data.schema.openingHoursSpecification || data.page.openingTimes) && (
-        <section id="openingTimes">
-          <h2>
-            <FaDoorOpen /> Opening Times
-          </h2>
-          {data.page.openingTimes && (
-            <p dangerouslySetInnerHTML={{ __html: data.page.openingTimes }}></p>
-          )}
+    (openingHours?.length || data.openingHoursContent) && (
+      <section id="openingTimes">
+        <h2>
+          <FaDoorOpen /> Opening Times
+        </h2>
+        {data.openingHoursContent && (
+          <p dangerouslySetInnerHTML={{ __html: data.openingHoursContent }}></p>
+        )}
 
-          {data.schema.openingHoursSpecification &&
-            openingTimes.map((o, i) => (
-              <div key={o.id}>
-                {o.name && <h3>{o.name}</h3>}
+        {openingHours.map((o, i) => (
+          <div className="opening-time" key={i}>
+            {o.name && <h3>{o.name}</h3>}
 
-                <table>
-                  <tbody>
-                    {[
-                      "Monday",
-                      "Tuesday",
-                      "Wednesday",
-                      "Thursday",
-                      "Friday",
-                      "Saturday",
-                      "Sunday",
-                    ].map(day => (
-                      <tr key={day}>
-                        <th>{day}</th>
-                        <td>
-                          {(!o.days[day] ||
-                            o.days[day].opens === o.days[day].closes) && (
-                            <>Closed</>
-                          )}
-                          {o.days[day] &&
-                            o.days[day].opens !== o.days[day].closes && (
-                              <>
-                                {o.days[day].opens} - {o.days[day].closes}
-                              </>
-                            )}
-                        </td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            ))}
-        </section>
-      )}
-    </>
+            <table>
+              <tbody>
+                {[
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday",
+                  "Saturday",
+                  "Sunday",
+                ].map(dayName => {
+                  const day = o[dayName.toLowerCase()]
+                  return (
+                    <tr key={dayName}>
+                      <th>{dayName}</th>
+                      <td>
+                        {(!day || day.opens === day.closes) && <>Closed</>}
+                        {day && day.opens !== day.closes && (
+                          <>
+                            {day.opens} - {day.closes}
+                          </>
+                        )}
+                      </td>
+                    </tr>
+                  )
+                })}
+              </tbody>
+            </table>
+          </div>
+        ))}
+      </section>
+    )
   )
 }
 

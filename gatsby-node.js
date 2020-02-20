@@ -4,36 +4,66 @@
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
 
-const path = require('path')
-const fs = require('fs-extra')
+const path = require("path")
+const { createFilePath } = require("gatsby-source-filesystem")
 
-exports.onCreateNode = async ({ node, getNode, actions }) => {
+const remark = require("remark")
+const remarkHTML = require("remark-html")
+
+exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
-  if (node.absolutePath && node.absolutePath.endsWith('.json')) {
-    const content = await fs.readFile(node.absolutePath, 'utf8')
-    createNodeField({ node, name: 'content', value: content })
+
+  if (node.internal.type === `MarkdownRemark`) {
+    const value = createFilePath({ node, getNode })
+    const slug = path.basename(value)
+
+    createNodeField({
+      name: `slug`,
+      node,
+      value: slug === "home" ? "" : slug,
+    })
+  }
+
+  // add custom markdown field from frontmatter..
+  // https://github.com/gatsbyjs/gatsby/issues/5021
+  // TODO: consider using something like
+  // https://github.com/WhiteAbeLincoln/gatsby-transformer-remark-frontmatter
+
+  const openingHoursContent =
+    node.frontmatter && node.frontmatter.openingHoursContent
+
+  if (openingHoursContent) {
+    const value = remark()
+      .use(remarkHTML)
+      .processSync(openingHoursContent)
+      .toString()
+
+    createNodeField({
+      name: `openingHoursContent`,
+      node,
+      value,
+    })
   }
 }
 
 exports.createPages = ({ actions, graphql }) => {
-  const { createPage, createRedirect } = actions
-
-  createRedirect({
-    fromPath: `/therefreshmentroom`,
-    isPermanent: true,
-    redirectInBrowser: true,
-    toPath: `/the-refreshment-room`,
-  })
+  const { createPage } = actions
 
   return graphql(`
     {
-      allPages: allPagesJson {
+      allPages: allMarkdownRemark(
+        filter: { frontmatter: { template: { ne: null } } }
+        limit: 1000
+      ) {
         pages: edges {
           page: node {
-            slug
-            template
-            schemaId
-            schemaName
+            id
+            fields {
+              slug
+            }
+            frontmatter {
+              template
+            }
           }
         }
       }
@@ -45,15 +75,19 @@ exports.createPages = ({ actions, graphql }) => {
     }
 
     const pages = result.data.allPages.pages
+      .map(x => x.page)
+      .map(page => ({
+        id: page.id,
+        slug: page.fields.slug,
+        template: page.frontmatter.template,
+      }))
 
-    return pages.forEach(({ page }) => {
+    pages.forEach(page => {
       createPage({
-        path: page.slug,
+        path: `/${page.slug}`,
         component: path.resolve(`src/templates/${page.template}.js`),
         context: {
-          slug: page.slug,
-          schemaId: page.schemaId,
-          schemaName: page.schemaName,
+          id: page.id,
         },
       })
     })
