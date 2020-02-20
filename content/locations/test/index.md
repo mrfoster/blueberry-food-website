@@ -1,5 +1,4 @@
 ---
-slug: aaa
 template: cafe
 title: test
 name: Chris Foster
@@ -17,8 +16,37 @@ geo:
   latitude: 213
   longitude: 123
 openingHoursContent: sfdsdf sdfsdf sdfds
+openingHours:
+  - friday:
+      closes: '00:00'
+      opens: '00:00'
+    monday:
+      closes: '12:00'
+      opens: '10:00'
+    name: test
+    saturday:
+      closes: '00:00'
+      opens: '00:00'
+    sunday:
+      closes: '00:00'
+      opens: '00:00'
+    thursday:
+      closes: '00:00'
+      opens: '00:00'
+    tuesday:
+      closes: '00:00'
+      opens: '00:00'
+    validFrom: ''
+    validThrough: ''
+    wednesday:
+      closes: '18:00'
+      opens: '08:00'
 primaryImage:
   filePath: 10.jpg
   name: aaa
+images:
+  - filePath: 3.jpg
+    name: Test
+links: []
 ---
 sdfdf
