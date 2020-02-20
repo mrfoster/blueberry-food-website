@@ -21,8 +21,20 @@ collections:
         delete: false
         name: home
         fields:
-          - { name: slug, label: Path, widget: hidden, default: / }
           - { name: template, label: Template, widget: hidden, default: home }
+          - { name: name, label: Name, widget: string }
+          - { name: description, label: Description, widget: text }
+          - { name: email, label: Email, widget: string }
+          - { name: telephone, label: Telephone, widget: string }
+          - name: address
+            label: Address
+            widget: object
+            fields:
+              - { name: streetAddress, widget: string }
+              - { name: addressLocality, widget: string, required: false }
+              - { name: addressRegion, widget: string, required: false }
+              - { name: postalCode, widget: string }
+              - { name: country, widget: hidden, default: GB }
           - { name: body, label: Body, widget: markdown }
   - name: locations
     label: Locations
@@ -33,7 +45,6 @@ collections:
     public_folder: ""
     create: true
     fields:
-      - { name: slug, label: Slug, widget: string }
       - { name: template, label: Template, widget: hidden, default: cafe }
       - { name: title, label: Title, widget: string }
       - { name: name, label: Name, widget: string }
@@ -46,8 +57,8 @@ collections:
         widget: object
         fields:
           - { name: streetAddress, widget: string }
-          - { name: addressLocality, widget: string }
-          - { name: addressRegion, widget: string }
+          - { name: addressLocality, widget: string, required: false }
+          - { name: addressRegion, widget: string, required: false }
           - { name: postalCode, widget: string }
           - { name: country, widget: hidden, default: GB }
       - name: geo
@@ -59,6 +70,7 @@ collections:
           - { name: longitude, widget: number, valueType: float }
       - name: openingHoursContent
         label: Opening Hours Content
+        required: false
         widget: markdown
       - name: openingHours
         label: Opening Hours
