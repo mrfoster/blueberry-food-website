@@ -42,7 +42,7 @@ class Images extends Component {
     }
     return (
       <>
-        {!!images.length && (
+        {images?.length && (
           <section id="images">
             <h2>
               <FaImages /> Images

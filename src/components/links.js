@@ -4,7 +4,7 @@ import Img from "gatsby-image"
 
 const Links = ({ data }) => (
   <>
-    {!!data.links.length && (
+    {data.links?.length && (
       <section id="links" className="links">
         <h2>
           <FaLink /> Links

@@ -5,7 +5,7 @@ const OpeningTimes = ({ data }) => {
   const today = new Date()
   today.setHours(0, 0, 0, 0)
 
-  const openingHours = data.openingHours
+  const openingHours = (data.openingHours || [])
     .map(x => ({
       ...x,
       validFrom: x.validFrom ? new Date(x.validFrom) : null,
@@ -17,7 +17,7 @@ const OpeningTimes = ({ data }) => {
     .slice(0, 2)
 
   return (
-    (openingHours.length || data.openingHoursContent) && (
+    (openingHours?.length || data.openingHoursContent) && (
       <section id="openingTimes">
         <h2>
           <FaDoorOpen /> Opening Times
