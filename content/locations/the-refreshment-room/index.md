@@ -13,6 +13,7 @@ address:
   addressRegion: Buxton
   postalCode: SK17 8SN
   streetAddress: The Refreshment Room
+  addressCountry: GB
 geo:
   latitude: 53.256122
   longitude: -1.7940223

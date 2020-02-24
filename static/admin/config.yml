@@ -60,7 +60,7 @@ collections:
           - { name: addressLocality, widget: string, required: false }
           - { name: addressRegion, widget: string, required: false }
           - { name: postalCode, widget: string }
-          - { name: country, widget: hidden, default: GB }
+          - { name: addressCountry, widget: hidden, default: GB }
       - name: geo
         label: Geo
         widget: object
