@@ -112,6 +112,7 @@ export const pageQuery = graphql`
         }
         images {
           filePath {
+            publicURL
             childImageSharp {
               fluid(maxWidth: 800, maxHeight: 600) {
                 ...GatsbyImageSharpFluid_withWebp_tracedSVG
