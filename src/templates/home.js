@@ -49,17 +49,19 @@ const Home = ({ data }) => {
                   <br />
                   {page.location}
                 </span>{" "}
-                <Img
-                  alt={page.name}
-                  fluid={page.primaryImage.filePath.childImageSharp.fluid}
-                  style={{
-                    position: "absolute",
-                    left: 0,
-                    top: 0,
-                    width: "100%",
-                    height: "100%",
-                  }}
-                />
+                {page.images?.length && (
+                  <Img
+                    alt={page.name}
+                    fluid={page.primaryImage.filePath.childImageSharp.fluid}
+                    style={{
+                      position: "absolute",
+                      left: 0,
+                      top: 0,
+                      width: "100%",
+                      height: "100%",
+                    }}
+                  />
+                )}
               </Link>
             </li>
           ))}

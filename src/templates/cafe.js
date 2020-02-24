@@ -110,12 +110,6 @@ export const pageQuery = graphql`
             closes
           }
         }
-        primaryImage {
-          filePath {
-            publicURL
-          }
-          name
-        }
         images {
           filePath {
             childImageSharp {

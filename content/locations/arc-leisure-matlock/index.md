@@ -38,9 +38,6 @@ openingHours:
     sunday:
       opens: '08:15'
       closes: '17:45'
-primaryImage:
-  filePath: 1.jpg
-  name: Cafe entrance
 images:
   - filePath: 1.jpg
     name: Cafe entrance

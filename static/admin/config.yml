@@ -127,15 +127,10 @@ collections:
             fields:
               - { name: opens, label: Opens, widget: string, required: false }
               - { name: closes, label: Closes, widget: string, required: false }
-      - name: primaryImage
-        label: Primary Image
-        widget: object
-        fields:
-          - { name: filePath, label: Image, widget: image }
-          - { name: name, label: Name, widget: string }
       - name: images
         label: Images
         widget: list
+        required: true
         fields:
           - { name: filePath, label: Image, widget: image }
           - { name: name, label: Name, widget: string }

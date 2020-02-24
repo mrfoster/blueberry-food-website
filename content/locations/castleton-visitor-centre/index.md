@@ -64,9 +64,6 @@ openingHours:
       closes: '16:30'
     validFrom: 2019-11-01
     validThrough: 2020-03-31
-primaryImage:
-  filePath: 1.jpg
-  name: Cafe interior
 images:
   - filePath: 1.jpg
     name: Cafe interior

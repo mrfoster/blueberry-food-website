@@ -21,8 +21,12 @@ const Schema = ({ data }) => {
     url: urlResolve(`/${data.slug}`),
     name: data.title,
     description: data.description,
-    image: data.primaryImage
-      ? urlResolve(data.primaryImage.filePath.publicURL)
+    photo: data.images?.length
+      ? data.images.map(image => ({
+          "@type": "ImageObject",
+          url: image.filePath.publicURL,
+          name: image.name,
+        }))
       : undefined,
   }
 

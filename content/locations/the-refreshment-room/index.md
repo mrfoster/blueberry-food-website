@@ -69,9 +69,6 @@ openingHours:
     wednesday:
       closes: '17:30'
       opens: '09:30'
-primaryImage:
-  filePath: 1.jpg
-  name: Cafe exterior
 images:
   - filePath: 1.jpg
     name: Cafe exterior
