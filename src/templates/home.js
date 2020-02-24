@@ -52,7 +52,7 @@ const Home = ({ data }) => {
                 {page.images?.length && (
                   <Img
                     alt={page.name}
-                    fluid={page.primaryImage.filePath.childImageSharp.fluid}
+                    fluid={page.images[0].filePath.childImageSharp.fluid}
                     style={{
                       position: "absolute",
                       left: 0,
@@ -97,7 +97,7 @@ export const pageQuery = graphql`
           frontmatter {
             name
             location
-            primaryImage {
+            images {
               filePath {
                 childImageSharp {
                   fluid(maxWidth: 470, maxHeight: 350) {
