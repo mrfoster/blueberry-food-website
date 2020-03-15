@@ -1,5 +1,5 @@
 import { graphql } from "gatsby"
-import React from "react"
+import React, { Component } from "react"
 import { FaUtensils } from "react-icons/fa"
 import Contact from "../components/contact"
 import Documents from "../components/documents"
@@ -12,45 +12,64 @@ import OpeningTimes from "../components/opening-times"
 import SEO from "../components/seo"
 import Schema from "../components/schema"
 
-const Cafe = ({ data }) => {
-  const page = {
-    ...data.page.frontmatter,
-    ...data.page.fields,
-    html: data.page.html,
-    title: `${data.page.frontmatter.name} - ${data.page.frontmatter.location}`,
-    // https://schema.org/CafeOrCoffeeShop
-    schema: {
-      type: "CafeOrCoffeeShop",
-      meta: {
-        priceRange: "£",
-        servesCuisine: "Traditional, Local",
+class Cafe extends Component {
+  constructor(props) {
+    super(props)
+
+    const data = props.data
+
+    const page = {
+      ...data.page.frontmatter,
+      ...data.page.fields,
+      content: data.page.content,
+      html: data.page.html,
+      title: `${data.page.frontmatter.name} - ${data.page.frontmatter.location}`,
+      // https://schema.org/CafeOrCoffeeShop
+      schema: {
+        type: "CafeOrCoffeeShop",
+        meta: {
+          priceRange: "£",
+          servesCuisine: "Traditional, Local",
+        },
       },
-    },
+    }
+
+    this.state = { page }
   }
-  return (
-    <Layout>
-      <SEO title={page.title} description={page.description} />
 
-      <Schema data={page} />
+  componentDidMount() {
+    document.documentElement.style.setProperty("--colour1", "#aa0000")
+    document.documentElement.style.setProperty("--colour2", "#aa0000")
+  }
 
-      <Header title={page.name} />
+  render() {
+    const page = this.state.page
 
-      <h2>
-        <FaUtensils /> {page.location}
-      </h2>
+    return (
+      <Layout>
+        <SEO title={page.title} description={page.description} />
 
-      {data.page.content && (
-        <section dangerouslySetInnerHTML={{ __html: data.page.content }} />
-      )}
+        <Schema data={page} />
 
-      <Images data={page} />
-      <Contact data={page} />
-      <OpeningTimes data={page} />
-      <Documents data={page} />
-      <Map data={page} />
-      <Links data={page} />
-    </Layout>
-  )
+        <Header title={page.name} />
+
+        <h2>
+          <FaUtensils /> {page.location}
+        </h2>
+
+        {page.content && (
+          <section dangerouslySetInnerHTML={{ __html: page.content }} />
+        )}
+
+        <Images data={page} />
+        <Contact data={page} />
+        <OpeningTimes data={page} />
+        <Documents data={page} />
+        <Map data={page} />
+        <Links data={page} />
+      </Layout>
+    )
+  }
 }
 
 export default Cafe

@@ -1,4 +1,5 @@
 
+
 $colour1: #26166b;
 $colour2: #093697;
 $shadowColour: #000;
@@ -10,6 +11,12 @@ $innerBorderColour: #aaa;
 $link-color: $colour2;
 // $font-family-base:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 $font-size-base: 1.2rem !default; // Assumes the browser default, typically `16px`
+
+:root {
+  --colour1: #{$colour1};
+  --colour2: #{$colour2};
+}
+
 @import 'node_modules/bootstrap/scss/bootstrap-reboot';
 @import '_links';
 @import '_images';
@@ -22,12 +29,14 @@ h4,
 h5,
 h6 {
   color: $colour1;
+  color: var(--colour1);
 }
 
 h2,
 h3 {
   > svg {
     color: $colour2;
+    color: var(--colour2);
   }
 }
 
@@ -89,6 +98,7 @@ section {
   h1 {
     margin: 0 0 0 53px;
     color: $colour2;
+    color: var(--colour2);
   }
 
   padding-bottom: 1em;
@@ -106,6 +116,7 @@ section {
   position: fixed;
   bottom: 0;
   background-color: $colour1;
+  background-color: var(--colour1);
   color: $backgroundColour;
   padding: 1em;
   right: 0;
