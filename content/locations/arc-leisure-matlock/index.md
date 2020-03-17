@@ -3,41 +3,49 @@ template: cafe
 title: Arc Leisure Matlock
 name: Blueberry Cafe
 location: Arc Leisure Matlock
-description: Blueberry Cafe at the Arc Leisure Centre offers an eat in or takeaway service, with menu options to suit all the family.
+description: >-
+  Blueberry Cafe at the Arc Leisure Centre offers an eat in or takeaway service,
+  with menu options to suit all the family.
 email: enquiries@blueberryfood.co.uk
 telephone: +44 (0)7460 565348
 address:
   streetAddress: Bakewell Rd
-  addressLocality:
+  addressLocality: null
   addressRegion: Matlock
   postalCode: DE4 3AZ
   addressCountry: GB
 geo:
   latitude: 53.1423184
   longitude: -1.5720833
+openingHoursContent: >-
+  We are currently open!  Please come and visit us, we appreciate your continued
+  support.  We are following Government guidelines to protect our customers and
+  staff.  17th March 2020
 openingHours:
-  - name:
-    monday:
-      opens: '08:15'
-      closes: '19:00'
+  - validFrom: 2020-03-17T10:52:33.191Z
+    validThrough: 2020-03-17T10:52:33.524Z
+    name: null
     tuesday:
       opens: '08:15'
       closes: '19:00'
+    monday:
+      opens: '08:15'
+      closes: '19:00'
+    sunday:
+      opens: '08:15'
+      closes: '17:45'
     wednesday:
       opens: '08:15'
       closes: '19:00'
+    saturday:
+      opens: '08:15'
+      closes: '17:45'
     thursday:
       opens: '08:15'
       closes: '19:00'
     friday:
       opens: '08:15'
       closes: '19:00'
-    saturday:
-      opens: '08:15'
-      closes: '17:45'
-    sunday:
-      opens: '08:15'
-      closes: '17:45'
 images:
   - filePath: 1.jpg
     name: Cafe entrance
@@ -60,10 +68,11 @@ documents:
     name: Children's Party Menu
 links:
   - image: facebook.png
-    url: https://www.facebook.com/pages/Blueberry-Cafe-at-the-Arc/210996019253515
+    url: 'https://www.facebook.com/pages/Blueberry-Cafe-at-the-Arc/210996019253515'
     title: Facebook Page
   - image: food-hygiene-rating.jpg
-    url: http://ratings.food.gov.uk/business/en-GB/258471/Blueberry-Cafe-Ltd-Matlock
+    url: >-
+      http://ratings.food.gov.uk/business/en-GB/258471/Blueberry-Cafe-Ltd-Matlock
     title: Food Hygiene Rating
 googlePlaceId: ChIJjco8NKCJeUgR6ve5QVs7Vmo
 ---
