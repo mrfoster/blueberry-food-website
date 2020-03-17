@@ -18,6 +18,11 @@ geo:
   latitude: 53.256122
   longitude: -1.7940223
 openingHoursContent: >-
+  We are currently open!  Please come and visit us, we appreciate your continued
+  support.  We are following Government guidelines to protect our customers and
+  staff.  17th March 2020
+
+
   Due to the unpredictability of weather conditions, please check
   [Facebook](https://www.facebook.com/therefreshmentroom/) or [contact
   us](mailto:enquiries@blueberryfood.co.uk) for current opening times.
@@ -50,26 +55,26 @@ openingHours:
     validThrough: 2020-10-31T00:00:00.000Z
     name: Summer April - October
     tuesday:
-      closes: '17:30'
-      opens: '09:30'
+      closes: '17:00'
+      opens: '09:00'
     monday:
-      closes: '17:30'
-      opens: '09:30'
+      closes: '17:00'
+      opens: '09:00'
     sunday:
-      closes: '17:30'
-      opens: '09:30'
+      closes: '17:00'
+      opens: '09:00'
     wednesday:
-      closes: '17:30'
-      opens: '09:30'
+      closes: '17:00'
+      opens: '09:00'
     saturday:
-      closes: '17:30'
-      opens: '09:30'
+      closes: '17:00'
+      opens: '09:00'
     thursday:
-      closes: '17:30'
-      opens: '09:30'
+      closes: '17:00'
+      opens: '09:00'
     friday:
-      closes: '17:30'
-      opens: '09:30'
+      closes: '17:00'
+      opens: '09:00'
 images:
   - filePath: 1.jpg
     name: Cafe exterior
