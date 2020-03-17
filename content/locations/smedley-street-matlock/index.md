@@ -3,41 +3,51 @@ template: cafe
 title: Smedley Street Matlock
 name: Blue Pig Deli
 location: Smedley Street Matlock
-description: Blueberry Food Company on Smedley street is home to our cosy Blueberry Cafe and it's also where we create the most delicious, tailor made buffets. We cater for both private parties and business lunches or functions and deliver free of charge.
+description: >-
+  Blue Pig Deli on Smedley street is home to our Blueberry takeaway service and
+  it's also where we create the most delicious, tailor made buffets. We cater
+  for both private parties and business lunches or functions and deliver free of
+  charge.
 email: enquiries@blueberryfood.co.uk
 telephone: +44 (0)1629 593476
 address:
   streetAddress: 87-89 Smedley St E
   addressLocality: Matlock
-  addressRegion:
+  addressRegion: null
   postalCode: DE4 3FQ
   addressCountry: GB
 geo:
   latitude: 53.1420474
   longitude: -1.5506789
+openingHoursContent: >-
+  We are currently open!  Please come and visit us, we appreciate your continued
+  support.  We are following Government guidelines to protect our customers and
+  staff.  17th March 2020
 openingHours:
-  - name:
-    monday:
-      opens: '08:00'
-      closes: '15:00'
+  - validFrom: 2020-03-17T10:53:29.692Z
+    validThrough: 2020-03-17T10:53:29.925Z
+    name: null
     tuesday:
       opens: '08:00'
       closes: '15:00'
+    monday:
+      opens: '08:00'
+      closes: '15:00'
+    sunday:
+      opens: '00:00'
+      closes: '00:00'
     wednesday:
       opens: '08:00'
       closes: '15:00'
+    saturday:
+      opens: '00:00'
+      closes: '00:00'
     thursday:
       opens: '08:00'
       closes: '15:00'
     friday:
       opens: '08:00'
       closes: '15:00'
-    saturday:
-      opens: '00:00'
-      closes: '00:00'
-    sunday:
-      opens: '00:00'
-      closes: '00:00'
 images:
   - filePath: 1.jpg
     name: Cafe entrance
@@ -62,10 +72,11 @@ documents:
     name: Cafe Menu
 links:
   - image: food-hygiene-rating.jpg
-    url: http://ratings.food.gov.uk/business/en-GB/1035177/Blueberry-Food-Company%2c-Ground-Floor-Derbyshire
+    url: >-
+      http://ratings.food.gov.uk/business/en-GB/1035177/Blueberry-Food-Company%2c-Ground-Floor-Derbyshire
     title: Food Hygiene Rating
   - image: facebook.png
-    url: https://www.facebook.com/Blueberry-Food-Company-127740100603563
+    url: 'https://www.facebook.com/Blueberry-Food-Company-127740100603563'
     title: Facebook Page
 googlePlaceId: ChIJ-_HCzz6JeUgRjTAzqIAelP0
 ---
