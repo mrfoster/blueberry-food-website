@@ -20,7 +20,7 @@ geo:
 openingHoursContent: >-
   We are currently open!  Please come and visit us, we appreciate your continued
   support.  We are following Government guidelines to protect our customers and
-  staff.  17th March 2020
+  staff.  17th March 2020.
 openingHours:
   - validFrom: 2020-03-17T10:52:33.191Z
     validThrough: 2020-03-17T10:52:33.524Z
