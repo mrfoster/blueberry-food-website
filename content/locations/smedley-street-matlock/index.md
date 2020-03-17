@@ -22,7 +22,7 @@ geo:
 openingHoursContent: >-
   We are currently open!  Please come and visit us, we appreciate your continued
   support.  We are following Government guidelines to protect our customers and
-  staff.  17th March 2020
+  staff.  17th March 2020.
 openingHours:
   - validFrom: 2020-03-17T10:53:29.692Z
     validThrough: 2020-03-17T10:53:29.925Z
@@ -80,9 +80,8 @@ links:
     title: Facebook Page
 googlePlaceId: ChIJ-_HCzz6JeUgRjTAzqIAelP0
 ---
+Blue Pig Deli on Smedley street is home to our Blueberry takeaway service and it's also where we create the most delicious, tailor made buffets. We cater for both private parties and business lunches or functions and deliver free of charge.
 
-Blueberry Food Company on Smedley street is home to our cosy Blueberry Cafe and it's also where we create the most delicious, tailor made buffets. We cater for both private parties and business lunches or functions and deliver free of charge.
-
-The Cafe offers freshly ground coffee, homemade cakes and slices, freshly filled cobs and baguettes, breakfasts, salads and homemade hot food.
+The Deli offers freshly ground coffee, homemade cakes and slices, freshly filled cobs and baguettes, breakfasts, salads and homemade hot food.
 
 All our food is sourced from local suppliers and we are always striving to reduce any negative impact our business may have on the local environment.
