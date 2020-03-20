@@ -20,9 +20,9 @@ geo:
   latitude: 53.1420474
   longitude: -1.5506789
 openingHoursContent: >-
-  We are currently open!  Please come and visit us, we appreciate your continued
+  We are still open!  Please come and visit us, we appreciate your continued
   support.  We are following Government guidelines to protect our customers and
-  staff.  17th March 2020.
+  staff. 20th March 2020
 openingHours:
   - validFrom: 2020-03-17T10:53:29.692Z
     validThrough: 2020-03-17T10:53:29.925Z
