@@ -18,9 +18,9 @@ geo:
   latitude: 53.1423184
   longitude: -1.5720833
 openingHoursContent: >-
-  We are currently open!  Please come and visit us, we appreciate your continued
-  support.  We are following Government guidelines to protect our customers and
-  staff.  17th March 2020.
+  Due to the latest government guidance we are closed until further notice. Our
+  other sites in Matlock, Castleton and Millers Dale remain open for takeaway
+  only service. Thank you for your support. 20th March 2020
 openingHours:
   - validFrom: 2020-03-17T10:52:33.191Z
     validThrough: 2020-03-17T10:52:33.524Z
