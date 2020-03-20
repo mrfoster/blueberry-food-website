@@ -19,9 +19,11 @@ geo:
   latitude: 53.3432947
   longitude: -1.7776916
 openingHoursContent: >-
-  We are currently open!  Please come and visit us, we appreciate your continued
-  support.  We are following Government guidelines to protect our customers and
-  staff.  17th March 2020
+  We are still open!\
+
+  Due to recent Government advice we will remain open, but for takeaway sales
+  only.  Indoor seating areas will be closed to customers, but the kiosk will be
+  open as usual. 20th March 2020
 openingHours:
   - validFrom: 2019-04-01T00:00:00.000Z
     validThrough: 2019-10-31T00:00:00.000Z
