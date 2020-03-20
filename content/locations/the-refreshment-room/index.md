@@ -18,9 +18,11 @@ geo:
   latitude: 53.256122
   longitude: -1.7940223
 openingHoursContent: >-
-  We are currently open!  Please come and visit us, we appreciate your continued
-  support.  We are following Government guidelines to protect our customers and
-  staff.  17th March 2020
+  We are still open!\
+
+  Due to recent Government advice we will remain open, but for takeaway sales
+  only.  Indoor seating areas will be closed to customers, but we have some
+  great outdoor benches with a fantastic view! 20th March 2020
 
 
   Due to the unpredictability of weather conditions, please check
@@ -105,6 +107,7 @@ links:
     title: Food Hygiene Rating
     url: >-
       https://ratings.food.gov.uk/business/en-GB/1131139/The-Refreshment-Room-MILLERS-DALE
+googlePlaceId: ''
 ---
 
 The Refreshment Room is operated by Blueberry Cafe and is set in a former railway building at Miller's Dale Station along the Monsal Trail.
