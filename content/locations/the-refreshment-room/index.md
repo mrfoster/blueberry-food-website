@@ -18,11 +18,11 @@ geo:
   latitude: 53.256122
   longitude: -1.7940223
 openingHoursContent: >-
-  We are still open!\
+  We will be closed as of Tuesday 24th March until further notice due to the
+  coronavirus pandemic. We would like to thank all our fantastic customers for
+  their support over these last few difficult days.
 
-  Due to recent Government advice we will remain open, but for takeaway sales
-  only.  Indoor seating areas will be closed to customers, but we have some
-  great outdoor benches with a fantastic view! 20th March 2020
+  Take care and we’ll see you all soon
 
 
   Due to the unpredictability of weather conditions, please check
