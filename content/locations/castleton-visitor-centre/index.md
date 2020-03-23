@@ -18,7 +18,7 @@ address:
 geo:
   latitude: 53.3432947
   longitude: -1.7776916
-openingHoursContent: ''
+openingHoursContent: We will be
 openingHours:
   - validFrom: 2019-04-01T00:00:00.000Z
     validThrough: 2019-10-31T00:00:00.000Z
