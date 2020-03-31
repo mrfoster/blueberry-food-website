@@ -29,54 +29,54 @@ openingHoursContent: >-
   [Facebook](https://www.facebook.com/therefreshmentroom/) or [contact
   us](mailto:enquiries@blueberryfood.co.uk) for current opening times.
 openingHours:
-  - validFrom: 2019-11-01T00:00:00.000Z
-    validThrough: 2020-04-01T00:00:00.000Z
+  - validFrom: 2020-10-31T00:00:00.000Z
+    validThrough: 2021-04-02T00:00:00.000Z
     name: Winter November - Easter
     tuesday:
-      closes: '14:30'
+      closes: '15:00'
       opens: '11:00'
     monday:
-      closes: '14:30'
+      closes: '15:00'
       opens: '11:00'
     sunday:
       closes: '16:00'
       opens: '10:00'
     wednesday:
-      closes: '14:30'
+      closes: '15:00'
       opens: '11:00'
     saturday:
       closes: '16:00'
       opens: '10:00'
     thursday:
-      closes: '14:30'
+      closes: '15:00'
       opens: '11:00'
     friday:
-      closes: '14:30'
+      closes: '15:00'
       opens: '11:00'
-  - validFrom: 2020-04-01T00:00:00.000Z
-    validThrough: 2020-10-31T00:00:00.000Z
+  - validFrom: 2020-04-04T00:00:00.000Z
+    validThrough: 2020-10-30T00:00:00.000Z
     name: Summer April - October
     tuesday:
       closes: '17:00'
-      opens: '09:00'
+      opens: '09:30'
     monday:
       closes: '17:00'
-      opens: '09:00'
+      opens: '09:30'
     sunday:
       closes: '17:00'
-      opens: '09:00'
+      opens: '09:30'
     wednesday:
       closes: '17:00'
-      opens: '09:00'
+      opens: '09:30'
     saturday:
       closes: '17:00'
-      opens: '09:00'
+      opens: '09:30'
     thursday:
       closes: '17:00'
-      opens: '09:00'
+      opens: '09:30'
     friday:
       closes: '17:00'
-      opens: '09:00'
+      opens: '09:30'
 images:
   - filePath: 1.jpg
     name: Cafe exterior
