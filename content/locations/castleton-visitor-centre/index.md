@@ -31,25 +31,25 @@ openingHours:
     validThrough: 2019-10-31T00:00:00.000Z
     name: Summer April - October
     tuesday:
-      opens: '09:30'
+      opens: '09:00'
       closes: '17:00'
     monday:
-      opens: '09:30'
+      opens: '09:00'
       closes: '17:00'
     sunday:
-      opens: '09:30'
+      opens: '09:00'
       closes: '17:00'
     wednesday:
-      opens: '09:30'
+      opens: '09:00'
       closes: '17:00'
     saturday:
-      opens: '09:30'
+      opens: '09:00'
       closes: '17:00'
     thursday:
-      opens: '09:30'
+      opens: '09:00'
       closes: '17:00'
     friday:
-      opens: '09:30'
+      opens: '09:00'
       closes: '17:00'
   - validFrom: 2019-11-01T00:00:00.000Z
     validThrough: 2020-03-31T00:00:00.000Z
