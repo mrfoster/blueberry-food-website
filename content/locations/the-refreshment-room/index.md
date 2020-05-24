@@ -18,11 +18,12 @@ geo:
   latitude: 53.256122
   longitude: -1.7940223
 openingHoursContent: >-
-  We will be closed as of Tuesday 24th March until further notice due to the
-  coronavirus pandemic. We would like to thank all our fantastic customers for
-  their support over these last few difficult days.
+  We are now OPEN, serving takeaway food and drinks only!  We are open 7 days a
+  week, 10am-4pm.
 
-  Take care and we’ll see you all soon
+
+  Please respect the local residents when you visit and abide by the Covid-19
+  guidelines.
 
 
   Due to the unpredictability of weather conditions, please check
