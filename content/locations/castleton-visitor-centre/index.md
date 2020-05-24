@@ -21,11 +21,12 @@ geo:
 openingHoursContent: >-
   \
 
-  We will be closed as of Tuesday 24th March until further notice due to the
-  coronavirus pandemic. We would like to thank all our fantastic customers for
-  their support over these last few difficult days.
+  We are now OPEN, serving takeaway food and drinks only!  We are open 7 days a
+  week, 10am-4pm.
 
-  Take care and we’ll see you all soon
+
+  Please respect the local residents when you visit and abide by the Covid-19
+  guidelines.
 openingHours:
   - validFrom: 2020-04-04T00:00:00.000Z
     validThrough: 2020-10-30T00:00:00.000Z
