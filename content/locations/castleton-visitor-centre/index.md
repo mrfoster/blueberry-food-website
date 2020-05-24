@@ -20,8 +20,11 @@ geo:
   longitude: -1.7776916
 openingHoursContent: >-
   We are now OPEN, serving takeaway food and drinks only!  We are open 7 days a
-  week, 10am-4pm.  Please respect the local residents when you visit and abide
-  by the Covid-19 guidelines.
+  week, 10am-4pm.  
+
+
+  Please respect the local residents when you visit and abide by the Covid-19
+  guidelines.
 openingHours:
   - validFrom: 2020-04-04T00:00:00.000Z
     validThrough: 2020-10-30T00:00:00.000Z
