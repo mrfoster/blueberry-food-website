@@ -19,8 +19,6 @@ geo:
   latitude: 53.3432947
   longitude: -1.7776916
 openingHoursContent: >-
-  \
-
   We are now OPEN, serving takeaway food and drinks only!  We are open 7 days a
   week, 10am-4pm.
 
