@@ -58,26 +58,26 @@ openingHours:
     validThrough: 2020-10-30T00:00:00.000Z
     name: Summer April - October
     tuesday:
-      closes: '17:00'
-      opens: '09:30'
+      closes: '16:00'
+      opens: '10:00'
     monday:
-      closes: '17:00'
-      opens: '09:30'
+      closes: '16:00'
+      opens: '10:00'
     sunday:
       closes: '17:00'
-      opens: '09:30'
+      opens: '10:00'
     wednesday:
-      closes: '17:00'
-      opens: '09:30'
+      closes: '16:00'
+      opens: '10:00'
     saturday:
       closes: '17:00'
-      opens: '09:30'
+      opens: '10:00'
     thursday:
-      closes: '17:00'
-      opens: '09:30'
+      closes: '16:00'
+      opens: '10:00'
     friday:
-      closes: '17:00'
-      opens: '09:30'
+      closes: '16:00'
+      opens: '10:00'
 images:
   - filePath: 1.jpg
     name: Cafe exterior
