@@ -30,26 +30,26 @@ openingHours:
     validThrough: 2020-10-30T00:00:00.000Z
     name: Summer April - October
     tuesday:
-      opens: '09:30'
-      closes: '17:30'
+      opens: '10:00'
+      closes: '16:00'
     monday:
-      opens: '09:30'
-      closes: '17:00'
+      opens: '10:09'
+      closes: '16:00'
     sunday:
-      opens: '09:30'
+      opens: '10:00'
       closes: '17:00'
     wednesday:
-      opens: '09:30'
-      closes: '17:00'
+      opens: '10:00'
+      closes: '16:00'
     saturday:
-      opens: '09:30'
+      opens: '10:00'
       closes: '17:00'
     thursday:
-      opens: '09:30'
-      closes: '17:00'
+      opens: '10:00'
+      closes: '16:00'
     friday:
-      opens: '09:30'
-      closes: '17:00'
+      opens: '10:00'
+      closes: '16:00'
   - validFrom: 2020-10-31T00:00:00.000Z
     validThrough: 2021-04-02T00:00:00.000Z
     name: Winter November - March
