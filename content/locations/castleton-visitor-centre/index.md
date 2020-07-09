@@ -18,38 +18,35 @@ address:
 geo:
   latitude: 53.3432947
   longitude: -1.7776916
-openingHoursContent: >-
-  We are now OPEN, serving takeaway food and drinks only!  We are open 7 days a
-  week, 10am-4pm.  
+openingHoursContent: |-
+  Both the Blueberry Kiosk and Cafe are now OPEN!
 
-
-  Please respect the local residents when you visit and abide by the Covid-19
-  guidelines.
+  To book a table in the Cafe please phone 01433 620020.
 openingHours:
   - validFrom: 2020-04-04T00:00:00.000Z
     validThrough: 2020-10-30T00:00:00.000Z
     name: Summer April - October
     tuesday:
-      opens: '10:00'
-      closes: '16:00'
+      opens: '09:30'
+      closes: '17:00'
     monday:
-      opens: '10:09'
-      closes: '16:00'
+      opens: 09.30
+      closes: '17.00'
     sunday:
-      opens: '10:00'
+      opens: '09:30'
       closes: '17:00'
     wednesday:
-      opens: '10:00'
-      closes: '16:00'
+      opens: '09:30'
+      closes: '17:00'
     saturday:
-      opens: '10:00'
+      opens: '09:30'
       closes: '17:00'
     thursday:
-      opens: '10:00'
-      closes: '16:00'
+      opens: '09:30'
+      closes: '17:00'
     friday:
-      opens: '10:00'
-      closes: '16:00'
+      opens: '09:30'
+      closes: '17:00'
   - validFrom: 2020-10-31T00:00:00.000Z
     validThrough: 2021-04-02T00:00:00.000Z
     name: Winter November - March
@@ -88,10 +85,10 @@ images:
   - filePath: 7.jpg
     name: Cafe entrance
 documents:
-  - filePath: blueberry-cafe-castleton-menu-feb-2019.pdf
-    name: Main Menu
-  - filePath: blueberry-cafe-castleton-drinks-menu-march-2019.pdf
-    name: Drinks Menu
+  - filePath: blueberry-menu-castleton-march-2020.pdf
+    name: Blueberry Cafe Castleton Main Menu
+  - filePath: blueberry-castleton-drinks-march-2020.pdf
+    name: Blueberry Cafe Castleton Drinks Menu
 links:
   - image: eqm-logo.png
     url: 'https://www.eqm.org.uk/peakdistrict'
