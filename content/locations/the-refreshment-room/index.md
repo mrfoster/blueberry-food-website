@@ -18,12 +18,10 @@ geo:
   latitude: 53.256122
   longitude: -1.7940223
 openingHoursContent: >-
-  We are now OPEN, serving takeaway food and drinks only!  We are open 7 days a
-  week, 10am-4pm.
+  The Cafe is now OPEN,  we are also serving takeaway food and drinks.
 
 
-  Please respect the local residents when you visit and abide by the Covid-19
-  guidelines.
+  To reserve a table inside the Cafe, please phone 01298 871869.
 
 
   Due to the unpredictability of weather conditions, please check
@@ -58,26 +56,26 @@ openingHours:
     validThrough: 2020-10-30T00:00:00.000Z
     name: Summer April - October
     tuesday:
-      closes: '16:00'
-      opens: '10:00'
+      closes: '17:00'
+      opens: '09:30'
     monday:
-      closes: '16:00'
-      opens: '10:00'
+      closes: '17:00'
+      opens: '09:30'
     sunday:
       closes: '17:00'
-      opens: '10:00'
+      opens: '09:30'
     wednesday:
-      closes: '16:00'
-      opens: '10:00'
+      closes: '17:00'
+      opens: '09:30'
     saturday:
       closes: '17:00'
-      opens: '10:00'
+      opens: '09:30'
     thursday:
-      closes: '16:00'
-      opens: '10:00'
+      closes: '17:00'
+      opens: '09:30'
     friday:
-      closes: '16:00'
-      opens: '10:00'
+      closes: '17:00'
+      opens: '09:30'
 images:
   - filePath: 1.jpg
     name: Cafe exterior
@@ -92,10 +90,10 @@ images:
   - filePath: 14.jpg
     name: Seating area
 documents:
-  - filePath: the-refreshment-room-menu-food.pdf
-    name: Food Menu
-  - filePath: the-refreshment-room-menu-drinks.pdf
-    name: Drinks Menu
+  - filePath: the-refreshment-room-main-menu-2020.pdf
+    name: The Refreshment Room Food Menu
+  - filePath: the-refreshment-room-drinks-menu-2020.pdf
+    name: The Refreshment Room Drinks Menu
 links:
   - image: facebook.png
     title: Facebook Page
