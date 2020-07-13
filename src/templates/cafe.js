@@ -38,8 +38,8 @@ class Cafe extends Component {
   }
 
   componentDidMount() {
-    document.documentElement.style.setProperty("--colour1", "#aa0000")
-    document.documentElement.style.setProperty("--colour2", "#aa0000")
+    // document.documentElement.style.setProperty("--colour1", "#aa0000")
+    // document.documentElement.style.setProperty("--colour2", "#aa0000")
   }
 
   render() {
