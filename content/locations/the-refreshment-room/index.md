@@ -18,57 +18,63 @@ geo:
   latitude: 53.256122
   longitude: -1.7940223
 openingHoursContent: >-
+  The Cafe is now OPEN,  we are also serving takeaway food and drinks.
+
+
+  To reserve a table inside the Cafe, please phone 01298 871869.
+
+
   Due to the unpredictability of weather conditions, please check
   [Facebook](https://www.facebook.com/therefreshmentroom/) or [contact
   us](mailto:enquiries@blueberryfood.co.uk) for current opening times.
 openingHours:
-  - friday:
-      closes: '14:30'
-      opens: '11:00'
-    monday:
-      closes: '00:00'
-      opens: '00:00'
+  - validFrom: 2020-10-31T00:00:00.000Z
+    validThrough: 2021-04-02T00:00:00.000Z
     name: Winter November - Easter
-    saturday:
-      closes: '16:00'
-      opens: '10:00'
+    tuesday:
+      closes: '15:00'
+      opens: '11:00'
+    monday:
+      closes: '15:00'
+      opens: '11:00'
     sunday:
       closes: '16:00'
       opens: '10:00'
-    thursday:
-      closes: '14:30'
-      opens: '11:00'
-    tuesday:
-      closes: '00:00'
-      opens: '00:00'
-    validFrom: 2019-11-01T00:00:00.000Z
-    validThrough: 2020-04-01T00:00:00.000Z
     wednesday:
-      closes: '14:30'
+      closes: '15:00'
       opens: '11:00'
-  - friday:
-      closes: '17:30'
+    saturday:
+      closes: '16:00'
+      opens: '10:00'
+    thursday:
+      closes: '15:00'
+      opens: '11:00'
+    friday:
+      closes: '15:00'
+      opens: '11:00'
+  - validFrom: 2020-04-04T00:00:00.000Z
+    validThrough: 2020-10-30T00:00:00.000Z
+    name: Summer April - October
+    tuesday:
+      closes: '17:00'
       opens: '09:30'
     monday:
-      closes: '17:30'
-      opens: '09:30'
-    name: Summer April - October
-    saturday:
-      closes: '17:30'
+      closes: '17:00'
       opens: '09:30'
     sunday:
-      closes: '17:30'
+      closes: '17:00'
+      opens: '09:30'
+    wednesday:
+      closes: '17:00'
+      opens: '09:30'
+    saturday:
+      closes: '17:00'
       opens: '09:30'
     thursday:
-      closes: '17:30'
+      closes: '17:00'
       opens: '09:30'
-    tuesday:
-      closes: '17:30'
-      opens: '09:30'
-    validFrom: 2020-04-01T00:00:00.000Z
-    validThrough: 2020-10-31T00:00:00.000Z
-    wednesday:
-      closes: '17:30'
+    friday:
+      closes: '17:00'
       opens: '09:30'
 images:
   - filePath: 1.jpg
@@ -84,10 +90,10 @@ images:
   - filePath: 14.jpg
     name: Seating area
 documents:
-  - filePath: the-refreshment-room-menu-food.pdf
-    name: Food Menu
-  - filePath: the-refreshment-room-menu-drinks.pdf
-    name: Drinks Menu
+  - filePath: the-refreshment-room-main-menu-2020.pdf
+    name: The Refreshment Room Food Menu
+  - filePath: the-refreshment-room-drinks-menu-2020.pdf
+    name: The Refreshment Room Drinks Menu
 links:
   - image: facebook.png
     title: Facebook Page
@@ -100,6 +106,7 @@ links:
     title: Food Hygiene Rating
     url: >-
       https://ratings.food.gov.uk/business/en-GB/1131139/The-Refreshment-Room-MILLERS-DALE
+googlePlaceId: ''
 ---
 
 The Refreshment Room is operated by Blueberry Cafe and is set in a former railway building at Miller's Dale Station along the Monsal Trail.
