@@ -18,10 +18,8 @@ geo:
   latitude: 53.1423184
   longitude: -1.5720833
 openingHoursContent: >-
-  We will be closed as of Saturday 21st March until further notice due to the
-  coronavirus pandemic. We would like to thank all our fantastic customers for
-  their support over these last few difficult days. Take care and we’ll see you
-  all soon.
+  We are currently CLOSED due to the Coronavirus pandemic, fingers crossed we
+  will be re-opening soon!
 openingHours:
   - validFrom: 2020-03-17T10:52:33.191Z
     validThrough: 2020-03-17T10:52:33.524Z
