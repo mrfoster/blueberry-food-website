@@ -20,8 +20,8 @@ geo:
   latitude: 53.1420474
   longitude: -1.5506789
 openingHoursContent: >-
-  We are currently closed due to the Coronavirus pandemic.  We will let you know
-  as soon as we re-open for business.  Take care and stay safe.
+  We are now OPEN and serving takeaway hot and cold food/drinks.  We look
+  forward to seeing you again!
 openingHours:
   - validFrom: 2020-03-17T10:53:29.692Z
     validThrough: 2020-03-17T10:53:29.925Z
@@ -30,7 +30,7 @@ openingHours:
       opens: '08:00'
       closes: '15:00'
     monday:
-      opens: '08:00'
+      opens: '09:00'
       closes: '15:00'
     sunday:
       opens: '00:00'
