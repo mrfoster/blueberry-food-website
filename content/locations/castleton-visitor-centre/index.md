@@ -3,10 +3,9 @@ template: cafe
 title: Castleton Visitor Centre
 name: Blueberry Cafe
 location: Castleton Visitor Centre
-description: >-
-  Blueberry Cafe at Castleton is situated inside Castleton's Visitor Centre, in
-  the heart of the stunning Peak District. The cafe welcomes everyone including
-  dogs with well behaved owners and muddy boots.
+description: Blueberry Cafe at Castleton is situated inside Castleton's Visitor
+  Centre, in the heart of the stunning Peak District. The cafe welcomes everyone
+  including dogs with well behaved owners and muddy boots.
 email: enquiries@blueberryfood.co.uk
 telephone: +44 (0)1433 620020
 address:
@@ -27,50 +26,50 @@ openingHours:
     validThrough: 2020-10-30T00:00:00.000Z
     name: Summer April - October
     tuesday:
-      opens: '09:30'
-      closes: '17:00'
+      opens: 09:30
+      closes: 17:00
     monday:
-      opens: 09.30
-      closes: '17.00'
+      opens: 9.3
+      closes: "17.00"
     sunday:
-      opens: '09:30'
-      closes: '17:00'
+      opens: 09:30
+      closes: 17:00
     wednesday:
-      opens: '09:30'
-      closes: '17:00'
+      opens: 09:30
+      closes: 17:00
     saturday:
-      opens: '09:30'
-      closes: '17:00'
+      opens: 09:30
+      closes: 17:00
     thursday:
-      opens: '09:30'
-      closes: '17:00'
+      opens: 09:30
+      closes: 17:00
     friday:
-      opens: '09:30'
-      closes: '17:00'
+      opens: 09:30
+      closes: 17:00
   - validFrom: 2020-10-31T00:00:00.000Z
     validThrough: 2021-04-02T00:00:00.000Z
     name: Winter November - March
     tuesday:
-      opens: '10:00'
-      closes: '16:00'
+      opens: 10:00
+      closes: 16:00
     monday:
-      opens: '10:00'
-      closes: '16:00'
+      opens: 10:00
+      closes: 16:00
     sunday:
-      opens: '10:00'
-      closes: '16:00'
+      opens: 10:00
+      closes: 16:00
     wednesday:
-      opens: '10:00'
-      closes: '16:00'
+      opens: 10:00
+      closes: 16:00
     saturday:
-      opens: '10:00'
-      closes: '16:00'
+      opens: 10:00
+      closes: 16:00
     thursday:
-      opens: '10:00'
-      closes: '16:00'
+      opens: 10:00
+      closes: 16:00
     friday:
-      opens: '10:00'
-      closes: '16:00'
+      opens: 10:00
+      closes: 16:00
 images:
   - filePath: 1.jpg
     name: Cafe interior
@@ -91,21 +90,19 @@ documents:
     name: Blueberry Cafe Castleton Drinks Menu
 links:
   - image: eqm-logo.png
-    url: 'https://www.eqm.org.uk/peakdistrict'
+    url: https://www.eqm.org.uk/peakdistrict
     title: Environmental Quality Mark
   - image: trip-advisor.png
-    url: >-
-      https://www.tripadvisor.co.uk/Restaurant_Review-g499576-d12941738-Reviews-Blueberry_Cafe_Castleton-Castleton_Hope_Valley_Peak_District_National_Park_Engla.html
+    url: https://www.tripadvisor.co.uk/Restaurant_Review-g499576-d12941738-Reviews-Blueberry_Cafe_Castleton-Castleton_Hope_Valley_Peak_District_National_Park_Engla.html
     title: Trip Advisor
   - image: visit-peak-district.jpg
-    url: 'https://www.visitpeakdistrict.com/'
+    url: https://www.visitpeakdistrict.com/
     title: Visit Peak District
   - image: facebook.png
-    url: 'https://www.facebook.com/BlueberryCafeCastleton'
+    url: https://www.facebook.com/BlueberryCafeCastleton
     title: Facebook Page
   - image: food-hygiene-rating.jpg
-    url: >-
-      https://ratings.food.gov.uk/business/en-GB/1207865/Blueberry-Cafe-HOPE-VALLEY
+    url: https://ratings.food.gov.uk/business/en-GB/1258737/Blueberry-Cafe-(Castleton)-Ltd.-Hope-Valley
     title: Food Hygiene Rating
 googlePlaceId: ChIJ0QcqYfssekgRcTidLHKH7RU
 ---
