@@ -31,7 +31,7 @@
     "remark-html": "11.0.2"
   },
   "devDependencies": {
-    "bootstrap": "4.5.0",
+    "bootstrap": "4.5.1",
     "prettier": "2.0.5"
   },
   "keywords": [],
