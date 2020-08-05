@@ -14,7 +14,7 @@ const Schema = ({ data }) => {
       }
     `
   )
-  const urlResolve = path => `${site.siteMetadata.siteUrl}${path}`
+  const urlResolve = (path) => `${site.siteMetadata.siteUrl}${path}`
 
   // https://schema.org/Thing
   const thing = {
@@ -22,7 +22,7 @@ const Schema = ({ data }) => {
     name: data.title,
     description: data.description,
     image: data.images?.length
-      ? data.images.map(image => ({
+      ? data.images.map((image) => ({
           "@type": "ImageObject",
           url: urlResolve(image.filePath.publicURL),
           name: image.name,
@@ -56,7 +56,7 @@ const Schema = ({ data }) => {
   // https://schema.org/LocalBusiness
   const localBusiness = data.openingHours && {
     openingHoursSpecification: data.openingHours
-      .map(o =>
+      .map((o) =>
         [
           "Monday",
           "Tuesday",
@@ -66,7 +66,7 @@ const Schema = ({ data }) => {
           "Saturday",
           "Sunday",
         ]
-          .map(day => ({
+          .map((day) => ({
             name: o.name,
             validFrom: o.validFrom,
             validThrough: o.validThrough,
@@ -93,8 +93,8 @@ const Schema = ({ data }) => {
 
   // https://schema.org/FoodEstablishment
   const menus = (
-    data.documents?.filter(d => d.name.toLowerCase().includes("menu")) || []
-  ).map(d => urlResolve(d.filePath.publicURL))
+    data.documents?.filter((d) => d.name.toLowerCase().includes("menu")) || []
+  ).map((d) => urlResolve(d.filePath.publicURL))
 
   const foodEstablishment = menus.length && {
     hasMenu: menus,

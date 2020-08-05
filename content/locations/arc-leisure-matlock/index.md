@@ -25,26 +25,26 @@ openingHours:
     validThrough: 2020-03-17T10:52:33.524Z
     name: null
     tuesday:
-      opens: '08:15'
-      closes: '19:00'
+      opens: "08:15"
+      closes: "19:00"
     monday:
-      opens: '08:15'
-      closes: '19:00'
+      opens: "08:15"
+      closes: "19:00"
     sunday:
-      opens: '08:15'
-      closes: '17:45'
+      opens: "08:15"
+      closes: "17:45"
     wednesday:
-      opens: '08:15'
-      closes: '19:00'
+      opens: "08:15"
+      closes: "19:00"
     saturday:
-      opens: '08:15'
-      closes: '17:45'
+      opens: "08:15"
+      closes: "17:45"
     thursday:
-      opens: '08:15'
-      closes: '19:00'
+      opens: "08:15"
+      closes: "19:00"
     friday:
-      opens: '08:15'
-      closes: '19:00'
+      opens: "08:15"
+      closes: "19:00"
 images:
   - filePath: 1.jpg
     name: Cafe entrance
@@ -67,7 +67,7 @@ documents:
     name: Children's Party Menu
 links:
   - image: facebook.png
-    url: 'https://www.facebook.com/pages/Blueberry-Cafe-at-the-Arc/210996019253515'
+    url: "https://www.facebook.com/pages/Blueberry-Cafe-at-the-Arc/210996019253515"
     title: Facebook Page
   - image: food-hygiene-rating.jpg
     url: >-

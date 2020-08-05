@@ -16,7 +16,7 @@ class Images extends Component {
     this.setIndex(this.state.currentIndex + 1)
   }
 
-  setIndex = i => {
+  setIndex = (i) => {
     const l = this.props.data.images.length
 
     if (i < 0) {

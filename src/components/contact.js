@@ -1,5 +1,5 @@
-import React from 'react'
-import { FaAddressCard } from 'react-icons/fa'
+import React from "react"
+import { FaAddressCard } from "react-icons/fa"
 
 const Contact = ({ data }) => {
   const address = data.address
@@ -18,7 +18,7 @@ const Contact = ({ data }) => {
       <em>Address:</em>
       <address>
         {addressLines
-          .filter(x => !!x)
+          .filter((x) => !!x)
           .map((l, i) => (
             <span key={i}>
               {l}
@@ -28,14 +28,12 @@ const Contact = ({ data }) => {
       </address>
       {data.telephone && (
         <p>
-          <em>Tel:</em>{' '}
-          <a href={`tel:${data.telephone}`}>{data.telephone}</a>
+          <em>Tel:</em> <a href={`tel:${data.telephone}`}>{data.telephone}</a>
         </p>
       )}
       {data.email && (
         <p>
-          <em>Email:</em>{' '}
-          <a href={`mailto:${data.email}`}>{data.email}</a>
+          <em>Email:</em> <a href={`mailto:${data.email}`}>{data.email}</a>
         </p>
       )}
 

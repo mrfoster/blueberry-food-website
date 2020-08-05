@@ -1,6 +1,6 @@
-import React from 'react'
+import React from "react"
 
-const Heading = props => {
+const Heading = (props) => {
   return (
     <>
       {props.children[0]}

@@ -21,8 +21,8 @@ const Home = ({ data }) => {
     },
   }
   const locations = data.locations.edges
-    .map(edge => edge.node)
-    .map(location => ({
+    .map((edge) => edge.node)
+    .map((location) => ({
       ...location.frontmatter,
       ...location.fields,
     }))
@@ -41,7 +41,7 @@ const Home = ({ data }) => {
         </h2>
 
         <ul>
-          {locations.map(page => (
+          {locations.map((page) => (
             <li key={page.slug}>
               <Link to={page.slug} className="link">
                 <span>

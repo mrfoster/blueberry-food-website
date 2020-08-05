@@ -6,13 +6,13 @@ const OpeningTimes = ({ data }) => {
   today.setHours(0, 0, 0, 0)
 
   const openingHours = (data.openingHours || [])
-    .map(x => ({
+    .map((x) => ({
       ...x,
       validFrom: x.validFrom ? new Date(x.validFrom) : null,
       validThrough: x.validThrough ? new Date(x.validThrough) : null,
     }))
-    .filter(x => !x.validThrough || x.validThrough >= today)
-    .map(x => ({ ...x, sort: x.validFrom?.getTime() }))
+    .filter((x) => !x.validThrough || x.validThrough >= today)
+    .map((x) => ({ ...x, sort: x.validFrom?.getTime() }))
     .sort((a, b) => (a.sort > b.sort ? 1 : a.sort < b.sort ? -1 : 0))
     .slice(0, 2)
 
@@ -40,7 +40,7 @@ const OpeningTimes = ({ data }) => {
                   "Friday",
                   "Saturday",
                   "Sunday",
-                ].map(dayName => {
+                ].map((dayName) => {
                   const day = o[dayName.toLowerCase()]
                   return (
                     <tr key={dayName}>

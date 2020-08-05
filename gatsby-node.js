@@ -68,21 +68,21 @@ exports.createPages = ({ actions, graphql }) => {
         }
       }
     }
-  `).then(result => {
+  `).then((result) => {
     if (result.errors) {
-      result.errors.forEach(e => console.error(e.toString()))
+      result.errors.forEach((e) => console.error(e.toString()))
       return Promise.reject(result.errors)
     }
 
     const pages = result.data.allPages.pages
-      .map(x => x.page)
-      .map(page => ({
+      .map((x) => x.page)
+      .map((page) => ({
         id: page.id,
         slug: page.fields.slug,
         template: page.frontmatter.template,
       }))
 
-    pages.forEach(page => {
+    pages.forEach((page) => {
       createPage({
         path: `/${page.slug}`,
         component: path.resolve(`src/templates/${page.template}.js`),

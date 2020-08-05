@@ -1,19 +1,19 @@
-import React, { Component } from 'react'
-import { Link } from 'gatsby'
-import Bounce from 'react-reveal/Bounce'
-import Reveal from 'react-reveal/Reveal'
-import { FaUtensils } from 'react-icons/fa'
+import React, { Component } from "react"
+import { Link } from "gatsby"
+import Bounce from "react-reveal/Bounce"
+import Reveal from "react-reveal/Reveal"
+import { FaUtensils } from "react-icons/fa"
 
 class Header extends Component {
   componentDidMount() {
     const effects = [
-      'bounce',
-      'rubberBand',
-      'swing',
-      'tada',
-      'wobble',
-      'jello',
-      'heartBeat',
+      "bounce",
+      "rubberBand",
+      "swing",
+      "tada",
+      "wobble",
+      "jello",
+      "heartBeat",
     ]
 
     this.setState({
