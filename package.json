@@ -27,7 +27,7 @@
     "react-helmet": "6.1.0",
     "react-icons": "3.10.0",
     "react-reveal": "1.2.2",
-    "react-slick": "0.27.3",
+    "react-slick": "0.27.10",
     "remark-html": "12.0.0"
   },
   "devDependencies": {
