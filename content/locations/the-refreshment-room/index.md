@@ -2,10 +2,9 @@
 template: cafe
 title: The Refreshment Room
 name: The Refreshment Room
-location: "The Monsal Trail, Miller's Dale Station"
-description: >-
-  The Refreshment Room is operated by Blueberry Cafe and is set in a former
-  railway building at Miller's Dale Station along the Monsal Trail
+location: The Monsal Trail, Miller's Dale Station
+description: The Refreshment Room is operated by Blueberry Cafe and is set in a
+  former railway building at Miller's Dale Station along the Monsal Trail
 email: enquiries@blueberryfood.co.uk
 telephone: +44 (0)1298 871869
 address:
@@ -24,58 +23,56 @@ openingHoursContent: >-
   To reserve a table inside the Cafe, please phone 01298 871869.
 
 
-  Due to the unpredictability of weather conditions, please check
-  [Facebook](https://www.facebook.com/therefreshmentroom/) or [contact
-  us](mailto:enquiries@blueberryfood.co.uk) for current opening times.
+  Due to the unpredictability of weather conditions, please check [Facebook](https://www.facebook.com/therefreshmentroom/) or [contact us](mailto:enquiries@blueberryfood.co.uk) for current opening times.
 openingHours:
   - validFrom: 2020-10-31T00:00:00.000Z
     validThrough: 2021-04-02T00:00:00.000Z
     name: Winter November - Easter
     tuesday:
-      closes: "15:00"
-      opens: "11:00"
+      closes: 15:00
+      opens: 10:00
     monday:
-      closes: "15:00"
-      opens: "11:00"
+      closes: 15:00
+      opens: 10:00
     sunday:
-      closes: "16:00"
-      opens: "10:00"
+      closes: 15:00
+      opens: 10:00
     wednesday:
-      closes: "15:00"
-      opens: "11:00"
+      closes: 15:00
+      opens: 10:00
     saturday:
-      closes: "16:00"
-      opens: "10:00"
+      closes: 15:00
+      opens: 10:00
     thursday:
-      closes: "15:00"
-      opens: "11:00"
+      closes: 15:00
+      opens: 10:00
     friday:
-      closes: "15:00"
-      opens: "11:00"
+      closes: 15:00
+      opens: 10:00
   - validFrom: 2020-04-04T00:00:00.000Z
     validThrough: 2020-10-30T00:00:00.000Z
     name: Summer April - October
     tuesday:
-      closes: "17:00"
-      opens: "09:30"
+      closes: 17:00
+      opens: 09:30
     monday:
-      closes: "17:00"
-      opens: "09:30"
+      closes: 17:00
+      opens: 09:30
     sunday:
-      closes: "17:00"
-      opens: "09:30"
+      closes: 17:00
+      opens: 09:30
     wednesday:
-      closes: "17:00"
-      opens: "09:30"
+      closes: 17:00
+      opens: 09:30
     saturday:
-      closes: "17:00"
-      opens: "09:30"
+      closes: 17:00
+      opens: 09:30
     thursday:
-      closes: "17:00"
-      opens: "09:30"
+      closes: 17:00
+      opens: 09:30
     friday:
-      closes: "17:00"
-      opens: "09:30"
+      closes: 17:00
+      opens: 09:30
 images:
   - filePath: 1.jpg
     name: Cafe exterior
@@ -97,16 +94,14 @@ documents:
 links:
   - image: facebook.png
     title: Facebook Page
-    url: "https://www.facebook.com/therefreshmentroom/"
+    url: https://www.facebook.com/therefreshmentroom/
   - image: trip-advisor.png
     title: Trip Advisor
-    url: >-
-      https://www.tripadvisor.co.uk/Restaurant_Review-g190756-d17227909-Reviews-The_Refreshment_Room-Buxton_Derbyshire_England.html
+    url: https://www.tripadvisor.co.uk/Restaurant_Review-g190756-d17227909-Reviews-The_Refreshment_Room-Buxton_Derbyshire_England.html
   - image: food-hygiene-rating.jpg
     title: Food Hygiene Rating
-    url: >-
-      https://ratings.food.gov.uk/business/en-GB/1258869/The-Refreshment-Room-Buxton
-googlePlaceId: "ChIJ6yxyFdEvekgRxZIBOlfBvqA"
+    url: https://ratings.food.gov.uk/business/en-GB/1258869/The-Refreshment-Room-Buxton
+googlePlaceId: ChIJ6yxyFdEvekgRxZIBOlfBvqA
 ---
 
 The Refreshment Room is operated by Blueberry Cafe and is set in a former railway building at Miller's Dale Station along the Monsal Trail.
