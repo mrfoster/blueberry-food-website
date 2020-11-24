@@ -22,26 +22,26 @@ openingHours:
     validThrough: 2021-03-17T00:00:00.000Z
     name: null
     tuesday:
-      opens: 09:30
-      closes: 18:30
+      opens: "09:30"
+      closes: "18:30"
     monday:
-      opens: 09:30
-      closes: 18:30
+      opens: "09:30"
+      closes: "18:30"
     sunday:
-      opens: 09:30
-      closes: 18:30
+      opens: "09:30"
+      closes: "18:30"
     wednesday:
-      opens: 09:30
-      closes: 19:00
+      opens: "09:30"
+      closes: "19:00"
     saturday:
-      opens: 09:30
-      closes: 18:30
+      opens: "09:30"
+      closes: "18:30"
     thursday:
-      opens: 08:15
-      closes: 18:30
+      opens: "08:15"
+      closes: "18:30"
     friday:
-      opens: 09:30
-      closes: 18:30
+      opens: "09:30"
+      closes: "18:30"
   - validFrom: 2020-10-13T13:33:56.806Z
     validThrough: 2020-10-13T13:33:56.968Z
 images:

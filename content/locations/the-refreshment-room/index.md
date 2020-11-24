@@ -29,50 +29,50 @@ openingHours:
     validThrough: 2021-04-02T00:00:00.000Z
     name: Winter November - Easter
     tuesday:
-      closes: 15:00
-      opens: 10:00
+      closes: "15:00"
+      opens: "10:00"
     monday:
-      closes: 15:00
-      opens: 10:00
+      closes: "15:00"
+      opens: "10:00"
     sunday:
-      closes: 15:00
-      opens: 10:00
+      closes: "15:00"
+      opens: "10:00"
     wednesday:
-      closes: 15:00
-      opens: 10:00
+      closes: "15:00"
+      opens: "10:00"
     saturday:
-      closes: 15:00
-      opens: 10:00
+      closes: "15:00"
+      opens: "10:00"
     thursday:
-      closes: 15:00
-      opens: 10:00
+      closes: "15:00"
+      opens: "10:00"
     friday:
-      closes: 15:00
-      opens: 10:00
+      closes: "15:00"
+      opens: "10:00"
   - validFrom: 2020-04-04T00:00:00.000Z
     validThrough: 2020-10-30T00:00:00.000Z
     name: Summer April - October
     tuesday:
-      closes: 17:00
-      opens: 09:30
+      closes: "17:00"
+      opens: "09:30"
     monday:
-      closes: 17:00
-      opens: 09:30
+      closes: "17:00"
+      opens: "09:30"
     sunday:
-      closes: 17:00
-      opens: 09:30
+      closes: "17:00"
+      opens: "09:30"
     wednesday:
-      closes: 17:00
-      opens: 09:30
+      closes: "17:00"
+      opens: "09:30"
     saturday:
-      closes: 17:00
-      opens: 09:30
+      closes: "17:00"
+      opens: "09:30"
     thursday:
-      closes: 17:00
-      opens: 09:30
+      closes: "17:00"
+      opens: "09:30"
     friday:
-      closes: 17:00
-      opens: 09:30
+      closes: "17:00"
+      opens: "09:30"
 images:
   - filePath: 1.jpg
     name: Cafe exterior
