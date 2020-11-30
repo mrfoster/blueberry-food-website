@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "bootstrap": "4.5.3",
-    "prettier": "2.2.0"
+    "prettier": "2.2.1"
   },
   "keywords": [],
   "license": "MIT",
