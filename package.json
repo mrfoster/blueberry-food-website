@@ -5,7 +5,7 @@
   "version": "1.0.2",
   "author": "Chris Foster",
   "dependencies": {
-    "gatsby": "2.27.2",
+    "gatsby": "2.32.12",
     "gatsby-image": "2.6.0",
     "gatsby-plugin-google-tagmanager": "2.6.0",
     "gatsby-plugin-manifest": "2.7.0",
