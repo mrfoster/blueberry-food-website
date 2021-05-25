@@ -1,8 +1,8 @@
 import React, { Component } from "react"
 import { Link } from "gatsby"
-import Bounce from "react-reveal/Bounce"
-import Reveal from "react-reveal/Reveal"
+import { Bounce } from "react-awesome-reveal"
 import { FaUtensils } from "react-icons/fa"
+import Reveal from "react-awesome-reveal";
 
 class Header extends Component {
   componentDidMount() {

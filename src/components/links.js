@@ -1,6 +1,6 @@
 import React from "react"
 import { FaLink } from "react-icons/fa"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 
 const Links = ({ data }) => (
   <>
@@ -18,7 +18,7 @@ const Links = ({ data }) => (
                 rel="noopener noreferrer"
                 title={l.title}
               >
-                <Img fixed={l.image.childImageSharp.fixed} alt={l.title} />
+                <GatsbyImage image={l.image.childImageSharp.gatsbyImageData} alt={l.title} />
                 <span>{l.title}</span>
               </a>
             </li>

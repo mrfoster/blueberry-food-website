@@ -26,50 +26,50 @@ openingHours:
     validThrough: 2020-10-30T00:00:00.000Z
     name: Summer April - October
     tuesday:
-      opens: 09:30
-      closes: 17:00
+      opens: "09:30"
+      closes: "17:00"
     monday:
       opens: "09.30"
       closes: "17.00"
     sunday:
-      opens: 09:30
-      closes: 17:00
+      opens: "09:30"
+      closes: "17:00"
     wednesday:
-      opens: 09:30
-      closes: 17:00
+      opens: "09:30"
+      closes: "17:00"
     saturday:
-      opens: 09:30
-      closes: 17:00
+      opens: "09:30"
+      closes: "17:00"
     thursday:
-      opens: 09:30
-      closes: 17:00
+      opens: "09:30"
+      closes: "17:00"
     friday:
-      opens: 09:30
-      closes: 17:00
+      opens: "09:30"
+      closes: "17:00"
   - validFrom: 2020-10-31T00:00:00.000Z
     validThrough: 2021-04-02T00:00:00.000Z
     name: Winter November - March
     tuesday:
-      opens: 10:00
-      closes: 15:00
+      opens: "10:00"
+      closes: "15:00"
     monday:
-      opens: 10:00
-      closes: 15:30
+      opens: "10:00"
+      closes: "15:30"
     sunday:
-      opens: 10:00
-      closes: 15:00
+      opens: "10:00"
+      closes: "15:00"
     wednesday:
-      opens: 10:00
-      closes: 15:00
+      opens: "10:00"
+      closes: "15:00"
     saturday:
-      opens: 10:00
-      closes: 15:00
+      opens: "10:00"
+      closes: "15:00"
     thursday:
-      opens: 10:00
-      closes: 15:00
+      opens: "10:00"
+      closes: "15:00"
     friday:
-      opens: 10:00
-      closes: 15:00
+      opens: "10:00"
+      closes: "15:00"
 images:
   - filePath: 1.jpg
     name: Cafe interior

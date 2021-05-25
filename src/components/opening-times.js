@@ -23,7 +23,7 @@ const OpeningTimes = ({ data }) => {
           <FaDoorOpen /> Opening Times
         </h2>
         {data.openingHoursContent && (
-          <p dangerouslySetInnerHTML={{ __html: data.openingHoursContent }}></p>
+          <div dangerouslySetInnerHTML={{ __html: data.openingHoursContent }}></div>
         )}
 
         {openingHours.map((o, i) => (
