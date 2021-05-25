@@ -10,6 +10,35 @@ const { createFilePath } = require("gatsby-source-filesystem")
 const remark = require("remark")
 const remarkHTML = require("remark-html")
 
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions
+  const typeDefs = `
+    type MarkdownRemark implements Node @infer {
+      frontmatter: Frontmatter!
+    }
+
+    type Frontmatter @infer {
+      openingHours: [OpeningHours]
+    }
+
+    type OpeningHours @infer {
+      monday: OpeningHoursDay
+      tuesday: OpeningHoursDay
+      wednesday: OpeningHoursDay
+      thursday: OpeningHoursDay
+      friday: OpeningHoursDay
+      saturday: OpeningHoursDay
+      sunday: OpeningHoursDay
+    }
+
+    type OpeningHoursDay @dontInfer {
+      opens: String
+      closes: String
+    }
+  `
+  createTypes(typeDefs)
+}
+
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
 
