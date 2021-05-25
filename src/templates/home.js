@@ -1,12 +1,12 @@
 import { graphql, Link } from "gatsby"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import React from "react"
 import { FaTruck, FaUtensils } from "react-icons/fa"
 import Contact from "../components/contact"
 import Header from "../components/header"
 import Layout from "../components/layout"
 import "./home.scss"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import Schema from "../components/schema"
 
 const Home = ({ data }) => {
@@ -29,7 +29,7 @@ const Home = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title={page.name} description={page.description} />
+      <Seo title={page.name} description={page.description} />
 
       <Schema data={page} />
 
@@ -50,9 +50,9 @@ const Home = ({ data }) => {
                   {page.location}
                 </span>{" "}
                 {page.images?.length && (
-                  <Img
+                  <GatsbyImage
                     alt={page.name}
-                    fluid={page.images[0].filePath.childImageSharp.fluid}
+                    image={page.images[0].filePath.childImageSharp.gatsbyImageData}
                     style={{
                       position: "absolute",
                       left: 0,
@@ -100,9 +100,7 @@ export const pageQuery = graphql`
             images {
               filePath {
                 childImageSharp {
-                  fluid(maxWidth: 470, maxHeight: 350) {
-                    ...GatsbyImageSharpFluid_withWebp
-                  }
+                  gatsbyImageData(layout: CONSTRAINED, width: 470, height: 350, placeholder: TRACED_SVG)
                 }
               }
             }

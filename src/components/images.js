@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import { FaImages } from "react-icons/fa"
 import Slider from "react-slick"
 
@@ -16,7 +16,7 @@ class Images extends Component {
     this.setIndex(this.state.currentIndex + 1)
   }
 
-  setIndex = (i) => {
+  setIndex = i => {
     const l = this.props.data.images.length
 
     if (i < 0) {
@@ -50,8 +50,8 @@ class Images extends Component {
             <Slider {...settings} className="images">
               {images.map((image, index) => (
                 <div key={index}>
-                  <Img
-                    fluid={image.filePath.childImageSharp.fluid}
+                  <GatsbyImage
+                    image={image.filePath.childImageSharp.gatsbyImageData}
                     alt={image.name}
                     className="image"
                   />

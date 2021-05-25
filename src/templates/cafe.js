@@ -9,7 +9,7 @@ import Layout from "../components/layout"
 import Links from "../components/links"
 import Map from "../components/map"
 import OpeningTimes from "../components/opening-times"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import Schema from "../components/schema"
 
 class Cafe extends Component {
@@ -47,7 +47,7 @@ class Cafe extends Component {
 
     return (
       <Layout>
-        <SEO title={page.title} description={page.description} />
+        <Seo title={page.title} description={page.description} />
 
         <Schema data={page} />
 
@@ -133,9 +133,7 @@ export const pageQuery = graphql`
           filePath {
             publicURL
             childImageSharp {
-              fluid(maxWidth: 800, maxHeight: 600) {
-                ...GatsbyImageSharpFluid_withWebp_tracedSVG
-              }
+              gatsbyImageData(layout: CONSTRAINED, width: 800, height: 600, placeholder: TRACED_SVG)
             }
           }
           name
@@ -149,9 +147,7 @@ export const pageQuery = graphql`
         links {
           image {
             childImageSharp {
-              fixed(width: 120) {
-                ...GatsbyImageSharpFixed_withWebp_tracedSVG
-              }
+              gatsbyImageData(layout: FIXED, width: 120, placeholder: TRACED_SVG)
             }
           }
           url
