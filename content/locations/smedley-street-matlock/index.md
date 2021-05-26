@@ -67,8 +67,8 @@ images:
   - filePath: 10.jpg
     name: Coffee machine
 documents:
-  - filePath: blue-pig-deli-menu-june-2019.pdf
-    name: Cafe Menu
+  - filePath: blue-pig-deli-menu-march-21-1-.pdf
+    name: Blue Pig Deli Menu
 links:
   - image: food-hygiene-rating.jpg
     url: http://ratings.food.gov.uk/business/en-GB/1035177/Blueberry-Food-Company%2c-Ground-Floor-Derbyshire
