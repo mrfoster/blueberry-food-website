@@ -16,7 +16,10 @@ const OpeningTimes = ({ data }) => {
     .sort((a, b) => (a.sort > b.sort ? 1 : a.sort < b.sort ? -1 : 0))
     .slice(0, 2)
 
+    console.log(data.openingHours);
+
   return (
+   
     (openingHours?.length || data.openingHoursContent) && (
       <section id="openingTimes">
         <h2>

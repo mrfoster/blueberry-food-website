@@ -1,3 +1,5 @@
+const yaml = require('js-yaml');
+
 module.exports = {
   siteMetadata: {
     siteUrl: `https://www.blueberryfood.co.uk`,
@@ -24,6 +26,12 @@ module.exports = {
     {
       resolve: "gatsby-transformer-remark",
       options: {
+        engines: {
+          yaml: {
+            parse: yaml.load.bind(yaml),
+            stringify: yaml.dump.bind(yaml)
+          }
+        },
         plugins: [
           {
             resolve: "gatsby-remark-copy-linked-files",
