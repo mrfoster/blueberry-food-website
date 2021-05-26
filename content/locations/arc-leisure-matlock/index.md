@@ -18,30 +18,30 @@ geo:
   longitude: -1.5720833
 openingHoursContent: ""
 openingHours:
-  - validFrom: 2020-03-17T10:52:33.191Z
-    validThrough: 2021-03-17T00:00:00.000Z
+  - validFrom: 2021-03-17T00:00:00.000Z
+    validThrough: 2022-03-17T00:00:00.000Z
     name: null
     tuesday:
-      opens: "09:30"
-      closes: "18:30"
+      opens: 09:30
+      closes: 18:30
     monday:
-      opens: "09:30"
-      closes: "18:30"
+      opens: 09:30
+      closes: 18:30
     sunday:
-      opens: "09:30"
-      closes: "18:30"
+      opens: 09:30
+      closes: 16:00
     wednesday:
-      opens: "09:30"
-      closes: "19:00"
+      opens: 09:30
+      closes: 18:30
     saturday:
-      opens: "09:30"
-      closes: "18:30"
+      opens: 09:30
+      closes: 16:00
     thursday:
-      opens: "08:15"
-      closes: "18:30"
+      opens: 09:30
+      closes: 18:30
     friday:
-      opens: "09:30"
-      closes: "18:30"
+      opens: 09:30
+      closes: 18:30
   - validFrom: 2020-10-13T13:33:56.806Z
     validThrough: 2020-10-13T13:33:56.968Z
 images:
