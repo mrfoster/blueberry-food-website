@@ -84,10 +84,10 @@ images:
   - filePath: 7.jpg
     name: Cafe entrance
 documents:
-  - filePath: blueberry-menu-castleton-march-2020.pdf
-    name: Blueberry Cafe Castleton Main Menu
-  - filePath: blueberry-castleton-drinks-march-2020.pdf
-    name: Blueberry Cafe Castleton Drinks Menu
+  - filePath: blueberry-menu-castleton-2021.pdf
+    name: Cafe Food Menus
+  - filePath: blueberry-castleton-drinks-2021.pdf
+    name: Cafe Drinks Menu
 links:
   - image: eqm-logo.png
     url: https://www.eqm.org.uk/peakdistrict
