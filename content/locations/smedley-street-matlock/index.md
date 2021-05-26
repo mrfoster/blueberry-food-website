@@ -25,7 +25,7 @@ openingHours:
     validThrough: 2022-03-17T00:00:00.000Z
     name: null
     tuesday:
-      opens: 08:00
+      opens: 08:30
       closes: 15:00
     monday:
       opens: 08:30
@@ -34,17 +34,19 @@ openingHours:
       opens: 00:00
       closes: 00:00
     wednesday:
-      opens: 08:00
+      opens: 08:30
       closes: 15:00
     saturday:
       opens: 00:00
       closes: 00:00
     thursday:
-      opens: 08:00
+      opens: 08:30
       closes: 15:00
     friday:
-      opens: 08:00
+      opens: 08:30
       closes: 15:00
+  - validFrom: 2021-05-26T11:29:13.744Z
+    validThrough: 2021-05-26T11:29:13.997Z
 images:
   - filePath: 1.jpg
     name: Cafe entrance
