@@ -45,8 +45,6 @@ openingHours:
     friday:
       opens: 08:30
       closes: 15:00
-  - validFrom: 2021-05-26T11:29:13.744Z
-    validThrough: 2021-05-26T11:29:13.997Z
 images:
   - filePath: 1.jpg
     name: Cafe entrance
